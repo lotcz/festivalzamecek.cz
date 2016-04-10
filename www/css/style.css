@@ -76,3 +76,23 @@ a, a:hover, a:active, a:visited, a:focus {
 	text-decoration:none;
 	outline:0;
 }
+
+.facebook-link a {
+	width:5cm;
+	padding:3mm;
+	background-color:#3a5795;
+	line-height:90%;
+	margin:auto;
+	display:block;
+	border-radius:4px;
+}
+
+.facebook-link a, .facebook-link a:hover, .facebook-link a:active, .facebook-link a:visited, .facebook-link a:focus {
+	color:White;
+}
+
+.facebook-link a .small {
+	font-size:80%;
+	color:LightGray;
+}
+
