@@ -1,0 +1,8 @@
+nav.navbar-main {
+	background-color:White;
+	color:#8e007e;
+}
+
+nav.navbar-main a.navbar-brand {
+	width:0;
+}

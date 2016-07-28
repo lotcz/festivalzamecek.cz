@@ -77,22 +77,33 @@ a, a:hover, a:active, a:visited, a:focus {
 	outline:0;
 }
 
-.facebook-link a {
+.special-link a {
 	width:5cm;
 	padding:3mm;
-	background-color:#3a5795;
-	line-height:90%;
 	margin:auto;
 	display:block;
 	border-radius:4px;
+	line-height:90%;
 }
 
-.facebook-link a, .facebook-link a:hover, .facebook-link a:active, .facebook-link a:visited, .facebook-link a:focus {
+.special-link a, .special-link a:hover, .special-link a:active, .special-link a:visited, .special-link a:focus {
 	color:White;
 }
 
-.facebook-link a .small {
+.special-link a .small {
 	font-size:80%;
 	color:LightGray;
 }
 
+.facebook-link a {
+	background-color:#3a5795;
+}
+
+.gallery-link a {	
+	background-color:#f78f1e;	
+}
+
+.gallery-link a .small {
+	font-size:80%;
+	color:#eee;
+}
