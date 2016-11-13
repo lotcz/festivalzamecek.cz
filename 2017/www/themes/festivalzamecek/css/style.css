@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
 	font-family: coolvetica;
 	src: url('fonts/coolvetica.eot');
 	src: local('☺'), url('../fonts/coolvetica.woff') format('woff'), url('../fonts/coolvetica.ttf') format('truetype'), url('../fonts/coolvetica.svg') format('svg');
@@ -7,44 +7,9 @@
 }
 
 body {
-	padding-top:0;
-	padding-bottom: 0;	
-	font-size:20px;
-	line-height: 133%;
 	font-family: coolvetica, Arial Heavy, Arial, sans-serif;
 	color:#8e007e;
 	letter-spacing: 0.5px;	
-}
-
-.site-wrapper {
-  display: table;
-  width: 100%;
-  padding:10px;
-}
-
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-  text-align:left;
-}
-
-@media (min-width: 768px) { 
-  
-  /* Handle the widths */
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 992px) { 
-  .cover-container {
-    width: 700px;
-  }
 }
 
 p {
