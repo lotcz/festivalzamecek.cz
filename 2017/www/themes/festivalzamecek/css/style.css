@@ -7,18 +7,33 @@
 }
 
 body {
+	font-size: 200%;
+}
+
+h1 {
+	font-size:30px;
+	text-indent:15px;
+}
+
+h2 {
+	font-size:25px;
+}
+
+.content p {
+	text-indent:25px;
+}
+
+.cool {
 	font-family: coolvetica, Arial Heavy, Arial, sans-serif;
 	color:#8e007e;
 	letter-spacing: 0.5px;	
 }
 
-p {
-	text-indent:1cm;
-}
-
-h1 {
+#cool {
+	color:#8e007e;
+	padding:0;
+	margin-top:-4px;
 	font-size:200%;
-	font-weight:bold;
 }
 
 .green {
@@ -29,7 +44,7 @@ h1 {
 	color: #c58dbe;
 }
 
-.lightBlue {
+.light {
 	color:#96b3c5;
 }
 
@@ -42,33 +57,20 @@ a, a:hover, a:active, a:visited, a:focus {
 	outline:0;
 }
 
-.special-link a {
-	width:5cm;
-	padding:3mm;
-	margin:auto;
-	display:block;
-	border-radius:4px;
-	line-height:90%;
+@media (min-width: 768px) {
+	#block-festivalzamecek-search {
+		max-width:200px;
+		vertical-align:middle;
+		float:right;
+		margin-top:12.5px;
+	}
 }
 
-.special-link a, .special-link a:hover, .special-link a:active, .special-link a:visited, .special-link a:focus {
-	color:White;
+.offcanvas-lining {
+    background: #fff;
 }
 
-.special-link a .small {
-	font-size:80%;
-	color:LightGray;
-}
-
-.facebook-link a {
-	background-color:#3a5795;
-}
-
-.gallery-link a {	
-	background-color:#f78f1e;	
-}
-
-.gallery-link a .small {
-	font-size:80%;
-	color:#eee;
+.festival-date {
+	float:left;
+	margin-left: 15px;
 }
