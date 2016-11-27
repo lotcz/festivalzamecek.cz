@@ -109,7 +109,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="name navbar-brand cool" id="cool" href="{$U_HOME}" title="{$GALLERY_TITLE}" rel="home">
+                    <a class="name navbar-brand cool" id="cool" href="http://www.festivalzamecek.cz" title="festival Z?me?ek 2017" rel="home">
 						<span class="">Z</span><span class="green">á</span><span class="light">m</span><span class="orange">e</span><span class="">č</span><span class="pink">e</span><span class="orange">k</span>
 						<span class="pink">2</span><span class="">0</span><span class="light">1</span><span class="orange">7</span>
 					</a>
