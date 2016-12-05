@@ -7,7 +7,7 @@
 }
 
 body {
-	font-size: 200%;
+	
 }
 
 h1 {
@@ -18,12 +18,22 @@ h2 {
 	font-size:25px;
 }
 
+.region-sidebar-second h2 {
+	margin-top:0;
+}
+
 .page-header {	
 	margin-bottom:10px;
 }
 
-.main-container {
-    padding-left: 40px;
+@media (min-width: 768px) {
+	.main-container {
+		padding-left: 40px;
+	}
+	
+	#block-festivalzamecek-main-menu {
+		float:right;
+	}
 }
 
 .content p {
@@ -47,11 +57,6 @@ h2 {
 #festival-date {
 	float:left;
 	margin-left:15px;
-	margin-top:18px;
-}
-
-#block-festivalzamecek-main-menu {
-	float:right;
 }
 
 #block-festivalzamecek-footer li {
@@ -91,4 +96,19 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .offcanvas-lining {
     background: #fff;
+}
+
+.google-maps {
+	position: relative;
+	padding-bottom: 75%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
+}
+
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
 }

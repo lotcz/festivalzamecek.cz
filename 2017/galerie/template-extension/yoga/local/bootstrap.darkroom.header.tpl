@@ -102,7 +102,7 @@
         <!-- Bootstrap navbar, moved to the header as variables are missing in menubar.tpl, actual menus remain in menubar.tpl -->
         <nav class="navbar navbar-default navbar-main" role="navigation">
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-header" style="display:block;">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -110,14 +110,19 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="{$U_HOME}">{$GALLERY_TITLE}</a>
-					
-					<a class="name navbar-brand cool text-right" id="cool" href="http://www.festivalzamecek.cz" title="festival Zámeček 2017" rel="home">
+                </div>
+				
+				<a style="font-size:20px;float:right;" href="http://www.festivalzamecek.cz" title="festival Zámeček 2017" >
+					<span class="glyphicon glyphicon-share-alt"></span>
+					přejít na stránky 
+					<span class="cool" id="cool" style="font-size:30px;">
 						<span class="">Z</span><span class="green">á</span><span class="light">m</span><span class="orange">e</span><span class="">č</span><span class="pink">e</span><span class="orange">k</span>
 						<span class="pink">2</span><span class="">0</span><span class="light">1</span><span class="orange">7</span>
-					</a>
-                </div>
-                <div class="collapse navbar-collapse navbar-right" id="primary-navbar">
-{$MENUBAR}
+					</span>
+				</a>
+                
+				<div class="collapse navbar-collapse navbar-right" id="primary-navbar">
+					{$MENUBAR}
                 </div>
             </div>
         </nav>
