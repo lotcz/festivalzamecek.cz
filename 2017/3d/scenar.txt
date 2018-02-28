@@ -1,0 +1,6 @@
+- žába - po kliknutí vyroste strom a "á"
+- trabant - po kliknutí spadne "m" a "e"
+- strom - po kliknutí spadne "e", "k" a "7"
+- po kliknutí na spadlé písmeno jej lze vzít a umístit na podstavec
+
+

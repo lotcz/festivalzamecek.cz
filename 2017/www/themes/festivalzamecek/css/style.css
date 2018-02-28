@@ -112,3 +112,14 @@ a, a:hover, a:active, a:visited, a:focus {
 	width: 100% !important;
 	height: 100% !important;
 }
+
+ul.bands-list {
+	list-style-type: none;	
+	font-size:20px;
+	padding-left:0;
+}
+
+.views-field-field-cas-vystoupeni {
+	width:65px;
+	display:inline-block;
+}
