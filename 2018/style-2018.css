@@ -1,0 +1,112 @@
+body {
+	background-image:url(img/zamecek_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height:100%;
+	font-size:150%;
+	font-family:Arial, sans-serif;
+	text-transform:uppercase;
+}
+
+body, .primary-color {
+	color:black;
+}
+
+.secondary-color,
+section h4,
+.band .band-name {
+	color:#ec1670;
+}
+
+h1, h2, h3, h4 {
+	margin:0;
+	padding:0;	
+}
+
+h1, h2 {
+	text-align:left;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+
+header #date {
+	font-size:200%;
+}
+
+h1 {
+	font-size: 300%;
+}
+
+h2 {
+	font-size: 200%;
+}
+
+h3 {
+	font-size: 100%;
+}
+
+h3 a,
+h3 a:visited,
+h3 a:hover,
+h3 a:active {
+	font-size: 100%;
+	color:#ec1670;
+	text-decoration:none;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: white;
+}
+
+/* BANDS */
+
+.band {
+	-background-color:#fada03;
+	-border:solid 1px #ec1670;
+	-border-radius:10px;
+	margin:40px 0 10px 0;
+	padding:10px;
+	display:flex;
+	text-align:left;
+	flex-direction:row;
+} 
+
+.band .band-name {
+	margin:0;
+	font-weight:bold;
+}
+
+.band img {
+	width:150px;
+	height:100px;
+	margin-right:10px;
+	margin-left:5px;
+}
+
+.band .band-section,
+.band img {
+	display:inline-block;
+}
+
+.band .band-section {
+	padding:0px 10px 10px 10px;
+} 
+
+.band .band-description {
+	display:block;	
+} 
+
+.bands .right-aligned {
+	text-align:right;
+}
+
+.bands .right-aligned {
+	flex-direction:row-reverse;
+}
+
+.bands .right-aligned img {
+	margin-left:10px;
+	margin-right:5px;
+}
+			
