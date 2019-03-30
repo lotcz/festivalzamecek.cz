@@ -1,0 +1,183 @@
+@font-face {
+	font-family: "Syncopate Bold";
+	src: url("Syncopate-Bold.ttf");
+}
+
+body {
+	margin:0;
+	padding:0;
+	background-image:url(img/bg.jpg);
+	background-color: #e38533;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	min-height:100%;
+	font-size:150%;
+	font-family: "Syncopate Bold", "Arial Black", Gadget, sans-serif;
+	text-transform:uppercase;
+	padding-top:10px;
+}
+
+.inner {
+	display:block;
+	position: relative;
+	margin:auto;
+	max-width:1000px;
+}
+
+body, .white, .primary-color,
+.band .band-description {
+	color:white;
+}
+
+.secondary-color, .red,
+.band .band-name,
+h2.section-header,
+section h4 {
+	color:#96121c;
+}
+
+.black, h1 {
+	color: black;
+}
+
+h1, h2, h3, h4 {
+	margin:0;
+	padding:5px 0;	
+}
+
+h1, h2 {
+	text-align:left;
+}
+
+header #date {
+	font-size:200%;
+}
+
+h1 {
+	font-size: 300%;
+}
+
+h2 {
+	font-size: 200%;
+}
+
+h3 {
+	font-size: 100%;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+	color:#96121c;
+	font-size: 100%;
+	text-decoration:underline;
+}
+
+.section-header {
+	margin-top:40px;
+}
+
+section {
+	margin-top:20px;
+}
+
+time {
+	font-weight:bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* BANDS */
+
+.band {
+	-background-color:#fada03;
+	-border:solid 1px #ec1670;
+	-border-radius:10px;
+	margin:40px 0 10px 0;
+	padding:10px;
+	display:flex;
+	text-align:left;
+	flex-direction:row;
+} 
+
+.band .band-name {
+	margin:0;
+	font-weight:bold;
+}
+
+.band img {
+	width:150px;
+	height:100px;
+	margin-right:10px;
+	margin-left:5px;
+}
+
+.band .band-section,
+.band img {
+	display:inline-block;
+	border-radius: 5px;
+}
+
+.band .band-section {
+	padding:0px 10px 10px 10px;
+} 
+
+.band .band-description {
+	display:block;	
+} 
+
+.bands .right-aligned {
+	text-align:right;
+}
+
+.bands .right-aligned {
+	flex-direction:row-reverse;
+}
+
+.bands .right-aligned img {
+	margin-left:10px;
+	margin-right:5px;
+}
+
+#bottom {		
+	margin-top: 1rem;
+	padding-top: 28%;
+	padding-bottom: 3.875%;
+	background-image:url(img/drawing.png);
+	background-color: transparent;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	text-align: center;
+}
+
+#bottom a,
+#bottom a:visited,
+#bottom a:hover,
+#bottom a:active {
+	color:white;
+	font-size: 80%;
+	text-decoration:none;
+	display: block;
+	--padding-bottom: 50px;	
+}
+
+/* FOOTER */
+
+footer {
+	font-size: 80%;
+	text-align:center;				
+	--margin-top:20px;
+	border-top:solid 3px black;
+	background-color: white;
+	color: black;
+}
+
+footer img.sponsors {
+	width: 100%;
+}
