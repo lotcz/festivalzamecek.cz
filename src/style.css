@@ -85,6 +85,10 @@ section {
 	margin-top:20px;
 }
 
+.align-right {
+	text-align: right;
+}
+
 /* HEADER */
 
 header a,
