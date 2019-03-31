@@ -1,27 +1,37 @@
 <!doctype html>
 <html lang="cs">
 
-    <head>
-        <meta charset="utf-8">
+  <head>
+      <meta charset="utf-8">
 
-        <title>Zámeček 2019</title>
-        <meta name="description" content="Multižánrový hudební festival konaný ve Středočeském muzeu v Roztokách u Prahy." />
-		<meta name="keywords" content="festival,hudební festival,Středočeské muzeum,Roztoky u Prahy,Roztoky" />
-        <meta name="author" content="Karel Zavadil">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+      <title>Zámeček 2019</title>
+      <meta name="description" content="Multižánrový hudební festival konaný ve Středočeském muzeu v Roztokách u Prahy." />
+	    <meta name="keywords" content="festival,hudební festival,Středočeské muzeum,Roztoky u Prahy,Roztoky" />
+      <meta name="author" content="Karel Zavadil">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
-		<link rel="stylesheet" href="style.css?v=2019">
-		<link rel="stylesheet" media="screen and (max-width: 1000px)" href="style-small.css?v=2019.1" />
-		
-	</head>
+  		<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+  		<link rel="stylesheet" href="style.css?v=2019.2">
+  		<link rel="stylesheet" media="screen and (max-width: 1000px)" href="style-small.css?v=2019.2" />
 
-    <body>
-		
+      <script>
+        function generateEmailLink(data, id) {
+          var el = document.getElementById(id);
+          var addr = data.join('@');
+          el.href = 'mailto:' + addr;
+          el.textContent = addr;
+          el.title = addr;
+        }
+      </script>
+
+  </head>
+
+  <body>
+
 		<div id="wrapper">
-		
+
 			<div class="inner">
-			      
+
 				<header>
 					<h2 class="red">FESTIVAL</h2>
 					<h1>ZÁMEČEK 2019</h1>
@@ -44,102 +54,104 @@
 						Budeme začínat už jednu hodinu po poledni – slunce bude krásně svítit, tráva se bude zelenat, párky budou teplé a únětické pivo studené. Jste srdečně zváni.
 					</p>
 				</section>
-				
-				<!--		
+
 				<h2 class="section-header">Program</h2>
-				
-				
+
 				<section id="program">
-									
+
 					<h4>Hlavní scéna - pod stromy</h4>
-					
+
 					<ul>
-						<li>
-							<time>12:00</time>
-							Taneční vystoupení ZŠ roztoky
-						</li>
 						<li>
 							<time>13:00</time>
-							Swingující marionety
+							<span class="band-name">Mladí talenti</span>
 						</li>
 						<li>
-							<time>14:15</time>
-							Second Band
+							<time>14:00</time>
+							<span class="band-name">The Beautifuls</span><span class="band-genre">rockabilly</span>
 						</li>
-						<li>
-							<time>15:45</time>
-							Callhouse Theory Trio + Voices
-						</li>
-						<li>
-							<time>17:30</time>
-							Nedloubej se v nose
-						</li>
-						<li>
-							<time>19:00</time>
-							Timudej
-						</li>
-						<li>
-							<time>21:00</time>
-							Romba
-						</li>
-						<li>
-							<time>22:30</time>
-							Mikkim & Dave Trumpeteer
-						</li>
-					</ul>
-					
-					<h4>Druhá scéna - tvrz</h4>
-					
-					<ul>
-						<li>
-							<time>13:50</time>
-							Roztocký komorní orchestr
-						</li>
-						<li>
-							<time>15:15</time>
-							Divadlo Kvítko
-						</li>
-						<li>
-							<time>16:45</time>
-							Divadlo Fígl
-						</li>
-					</ul>
-					
-					<h4>Vodní Příkop</h4>
-					
-					<ul>
 						<li>
 							<time>16:00</time>
-							Taekwondo
+							<span class="band-name">Lenka Dusilová</span><span class="band-genre">sólo koncert</span>
 						</li>
 						<li>
-							<time>20:30</time>
-							Jóga smíchu
-						</li>						
+							<time>18:00</time>
+							<span class="band-name">Terne Čhave</span><span class="band-genre">rom'n'roll</span>
+						</li>
+						<li>
+							<time>20:00</time>
+							<span class="band-name">Green Småtroll</span><span class="band-genre">ska-jazz</span>
+						</li>
+						<li>
+							<time>22:00</time>
+							<span class="band-name">Cirkus Brothers</span><span class="band-genre">disco balkan</span>
+						</li>
 					</ul>
-							
+
+          <h4>Druhá scéna - nádvoří</h4>
+
+          <ul>
+						<li>
+							<time>15:15</time>
+							<span class="band-name">Taekwondo</span><span class="band-genre">exhibice</span>
+						</li>
+						<li>
+							<time>19:30</time>
+							<span class="band-name">David Zahradník</span><span class="band-genre">jóga smíchu</span>
+						</li>
+						<li>
+							<time>21:15</time>
+							<div class="band-details">
+                <span class="band-name">Papis Nyass a Mohamed Camara</span><span class="band-genre">bubeníci</span>
+              </div>
+						</li>
+					</ul>
+
+					<h4>Divadelní scéna - tvrz</h4>
+
+					<ul>
+            <li>
+							<time>13:30</time>
+							<span class="band-name">Kvítko</span><span class="band-genre">loutkové představení</span>
+						</li>
+						<li>
+							<time>15:30</time>
+							<span class="band-name">Fígl</span><span class="band-genre">Čaroděj ze země Oz</span>
+						</li>
+            <li>
+							<time>17:15</time>
+              <div class="band-details">
+							   <span class="band-name">Sex Culomets</span><span class="band-genre">Poslední cesta Zikmunda a Hanzelky do Afriky</span>
+              </div>
+						</li>
+					</ul>
+
 					<h4>Doprovodný program</h4>
-					
-					<p>
-						Adrenalin park, slackline, workshop animace, Deskové hry, Výtvarná dílna, dobrovolní hasiči, šermíři, šachový workshop, pletení košíků
-					</p>					
-					
+
+					<ul>
+            <li>
+						  Adrenalin park, slackline, workshop animace, deskové hry, výtvarná dílna, dobrovolní hasiči, šermíři, šachový workshop
+            </li>
+					</ul>
+
 				</section>
-				-->
+
 				<h2 class="section-header">Účinkující</h2>
-				
+
 				<section id="artists" class="bands">
-					
+
 					<div class="band left-aligned">
 						<img src="img/lenka-thumb.jpg" />
 						<div class="band-section">
 							<span class="band-name">Lenka Dusilová</span>
 							<span class="band-description">
-								Šestinásobná držitelka výročních hudebních cen Anděl, výtečná zpěvačka a charismatická osobnost. Lenka se stala ikonou odvážného, novátorského popu, která však neztrácí většinové publikum, jež si za léta svého působení vybudovala. V samostatných sólových vystoupeních experimentuje s loop machine, stylovou otevřeností, hráčskou erudicí a rozšířenými nezaměnitelnými vokálními technikami. Na Zámečku vystoupí sólo.
+								Šestinásobná držitelka výročních hudebních cen Anděl, výtečná zpěvačka a charismatická osobnost.
+                <p>Lenka se stala ikonou odvážného, novátorského popu, která však neztrácí většinové publikum, jež si za léta svého působení vybudovala. V samostatných sólových vystoupeních experimentuje s loop machine, stylovou otevřeností, hráčskou erudicí a rozšířenými nezaměnitelnými vokálními technikami.</p>
+                <p>Na Zámečku vystoupí sólo.</p>
 							</span>
-						</div>					
+						</div>
 					</div>
-										
+
 					<div class="band right-aligned">
 						<img src="img/brothers-thumb.jpg" />
 						<div class="band-section">
@@ -147,9 +159,9 @@
 							<span class="band-description">
 								S neuvěřitelnou energií zahraný disko-balkán, který kombinuje balkánskou dechovku, diskotékový beat, laciný pop a špinavý house.
 							</span>
-						</div>					
+						</div>
 					</div>
-					
+
 					<div class="band left-aligned">
 						<img src="img/chave-thumb.jpg" />
 						<div class="band-section">
@@ -157,9 +169,9 @@
 							<span class="band-description">
 								Pravá cikánská kapela, která ráda kombinuje styly romského folkloru, funky a world music. Sama kapela pro svou hudbu užívá souhrný název rom'n'roll.
 							</span>
-						</div>					
+						</div>
 					</div>
-					
+
 					<div class="band right-aligned">
 						<img src="img/smatroll-thumb.jpg" />
 						<div class="band-section">
@@ -167,9 +179,9 @@
 							<span class="band-description">
 								Kapela, která už šestnáctým rokem hraje jamajské ska, ovšem jako jedna z mála podobných kapel v Česku se pohybuje spíš v jazzových polohách tohoto žánru.
 							</span>
-						</div>					
+						</div>
 					</div>
-					
+
 					<div class="band left-aligned">
 						<img src="img/beautifuls-thumb.jpg" />
 						<div class="band-section">
@@ -177,9 +189,9 @@
 							<span class="band-description">
 								Živelná show a rozrůstající se repertoár vlastních písní proložený občasným vhodným coverem nachází publikum napříč generacemi. Žánrově rockabilly a rock'n'roll, i když místy se nezapřou ani punkové a psychobilly kořeny.
 							</span>
-						</div>					
+						</div>
 					</div>
-					
+
 					<div class="band right-aligned">
 						<img src="img/duo-thumb.jpg" />
 						<div class="band-section">
@@ -187,44 +199,74 @@
 							<span class="band-description">
 								Duo bubeníků pocházejících z Afriky. Papis a Mohamed vás roztančí pravými západoafrickými rytmy.
 							</span>
-						</div>					
+						</div>
 					</div>
-										
-					<div class="band left-aligned">
-						<img src="img/david-thumb.jpg" />
+
+          <div class="band left-aligned">
+						<img src="img/culomets-thumb.jpg" />
 						<div class="band-section">
-							<span class="band-name">David Zahradník</span>
-							<span class="band-description">Joga smíchu. Pravidelné cvičení jógy smíchu pomáhá uchovat si pozitivní duševní přístup, takže se lépe vyrovnáme s negativními situacemi.</span>
-						</div>					
+							<span class="band-name">Sex Culomets</span>
+							<span class="band-description">
+                Punkové divadlo z Litoměřic. Na festivalu Zámeček představí vlastní divadelní hru ve stylu road movie - Poslední cesta Zikmunda a Hanzelky do Afriky.
+                <p>Slavní cestovatelé se vydávají ve svém inovovaném voze Tatra T87 na dobrodružnou cestu do Afriky, kde chtějí osobně darovat místní rodině kozu a pomoci jí tak k lepšímu živobytí (té rodině a zřejmě i koze).</p>
+              </span>
+						</div>
 					</div>
-					
+
+          <div class="band right-aligned">
+						<img src="img/figl-thumb.jpg" />
+						<div class="band-section">
+							<span class="band-name">Fígl</span>
+							<span class="band-description">Divadlo pro děti s pohádkou Čaroděj ze země Oz.</span>
+						</div>
+					</div>
+
+					<div class="band left-aligned">
+            <img src="img/kvitko-thumb.jpg" />
+						<div class="band-section">
+							<span class="band-name">Divadlo Kvítko</span>
+							<span class="band-description">Spolek roztockých loutkařů</span>
+						</div>
+					</div>
+
 					<div class="band right-aligned">
 						<img src="img/taekwondo-thumb.jpg" />
 						<div class="band-section">
 							<span class="band-name">KWANG MYONG</span>
 							<span class="band-description">Škola korejského bojového umění Taekwondo ITF působící v Roztokách u Prahy.</span>
-						</div>					
+						</div>
 					</div>
-					
-					<div class="band left-aligned">
-						<img src="img/figl-thumb.jpg" />
+
+          <div class="band left-aligned">
+						<img src="img/david-thumb.jpg" />
 						<div class="band-section">
-							<span class="band-name">Fígl</span>
-							<span class="band-description">Divadlo pro děti s pohádkou Čaroděj ze země Oz.</span>
-						</div>					
+							<span class="band-name">David Zahradník</span>
+							<span class="band-description">Joga smíchu. Pravidelné cvičení jógy smíchu pomáhá uchovat si pozitivní duševní přístup, takže se lépe vyrovnáme s negativními situacemi.</span>
+						</div>
 					</div>
-					
-					<div class="band right-aligned">
+
+          <div class="band right-aligned">
 						<div class="band-section">
-							<span class="band-name">Divadlo Kvítko</span>
-							<span class="band-description">Spolek roztockých loutkařů</span>
-						</div>					
+							<span class="band-name">Postav hrad! - workshop animace</span>
+							<span class="band-description">
+                Průchozí animační dílna pro děti od 3 let. Přijďte si vyzkoušet, jak čarovat pomocí animace.
+              </span>
+						</div>
 					</div>
-					
+
+          <div class="band left-aligned">
+            <img src="img/kajetan-thumb.jpg" />
+            <div class="band-section">
+              <span class="band-name">Kajetán Písařovic</span>
+              <span class="band-description">Průvodcem festivalu Zámeček bude herec a moderátor Kajetán Písařovic.
+              </span>
+            </div>
+          </div>
+
 				</section>
-				
+
 				<h2 class="section-header">O festivalu</h2>
-				
+
 				<section id="about-us" class="about-us">
 					<p>
 						Festival Zámeček je multižánrový hudební festival, který se koná v areálu zámeckého parku Středočeského muzea v Roztokách už od roku 2011.
@@ -233,25 +275,86 @@
 						Podívejte se na fotky z minulých ročníků v naší <a href="http://galerie.festivalzamecek.cz">fotogalerii</a>.
 					</p>
 				</section>
-				
+
+        <h2 class="section-header">KONTAKT</h2>
+
+				<section id="contact">
+          <h3>ředitel festivalu</h3>
+          <div class="name">Aleš Novák</div>
+          <div class="contact">
+            <a id="aljossa">Pro zobrazení e-mailové adresy zapněte javascript.</a>
+    				<script>
+    					generateEmailLink(['aljossa', 'centrum.cz'], 'aljossa');
+    				</script>
+          </div>
+
+          <h3>dramaturgie</h3>
+
+          <div class="place-2-cols">
+            <div class="col">
+              <div class="name">Karel kropáček</div>
+              <div class="contact">
+                <a id="krop">Pro zobrazení e-mailové adresy zapněte javascript.</a>
+        				<script>
+        					generateEmailLink(['k.kropacek', 'seznam.cz'], 'krop');
+        				</script>
+                604 183 155
+              </div>
+            </div>
+            <div class="col">
+              <div class="name">Veronika Valdová</div>
+              <div class="contact">
+                <a id="vv">Pro zobrazení e-mailové adresy zapněte javascript.</a>
+        				<script>
+        					generateEmailLink(['veve.badji', 'seznam.cz'], 'vv');
+        				</script>
+                608 923 960
+              </div>
+            </div>
+          </div>
+
+          <h3>stánkový prodej</h3>
+
+          <div class="place-2-cols">
+            <div class="col">
+              <div class="name">Michal Špaček</div>
+              <div class="contact">
+                <a id="spacek">Pro zobrazení e-mailové adresy zapněte javascript.</a>
+        				<script>
+        					generateEmailLink(['spacek', 'roztoky.cz'], 'spacek');
+        				</script>
+              </div>
+            </div>
+            <div class="col">
+              <div class="name">Tereza Náhlovská</div>
+              <div class="contact">
+                <a id="nahl">Pro zobrazení e-mailové adresy zapněte javascript.</a>
+        				<script>
+        					generateEmailLink(['nahlovska', 'roztoky.cz'], 'nahl');
+        				</script>
+              </div>
+            </div>
+          </div>
+				</section>
+
 			</div>
-			
+
 			<div id="bottom">
 				<a href="mailto:info@festivalzamecek.cz">info@festivalzamecek.cz</a>
 			</div>
-				
+
 			<footer>
 				<div class="inner">
 					<p>
 						Pod záštitou města Roztoky, Středočeského kraje a Letiště Praha a.s. pořádá RR z.s. a Středočeské Muzeum.
-					</p>					
+					</p>
 					<img class="sponsors" src="img/sponsors.jpg" alt="sponzoři" />
 					<div>
 						<a href="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner" title="Kudyznudy.cz - tipy na výlet"> <img src="https://www.kudyznudy.cz/KzN/media/Onas/bannery/logo_kudyznudy.gif" width="150"  height="64" border="0" alt="Kudyznudy.cz - tipy na výlet"> </a>
 					</div>
-				</div>				
+				</div>
 			</footer>
-			
+
 		</div>
 	</body>
 </html>

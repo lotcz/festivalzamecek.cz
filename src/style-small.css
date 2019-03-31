@@ -22,18 +22,51 @@ h3 {
 	font-size: 100%;
 }
 
+/* PROGRAM */
+#program ul li {
+	display:block;
+}
+
+#program time {
+	display: block;
+	width: auto;
+}
+
+#program .band-details {
+	display: block;
+}
+
+#program .band-name {
+	display: block;
+}
+
+#program .band-genre {
+	display: block;
+	margin-left: 0;
+}
+
 /* BANDS */
 
 .band {
 	margin:20px 0 2px 0;
 	padding:0px;
 	display:block;
-} 	
+}
 
 .band .band-section {
 	padding:0;
 }
 
-.band img {	
+.band img {
 	margin:0;
+}
+
+/* KONTAKT */
+
+.place-2-cols {
+	display: block;
+}
+
+.place-2-cols .col {
+	display: block;
 }
