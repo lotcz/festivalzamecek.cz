@@ -9,14 +9,20 @@ body {
 	background-image:url(img/bg.jpg);
 	background-color: #e38533;
 	background-size: cover;
+	-webkit-background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
+	-webkit-background-attachment: scroll;
 	min-height:100%;
 	font-size:150%;
 	font-family: "Syncopate Bold", "Arial Black", Gadget, sans-serif;
 	text-transform:uppercase;
 	padding-top:10px;
+}
+
+p {
+	line-height: 125%;
 }
 
 .inner {
@@ -74,7 +80,11 @@ a:visited,
 a:hover,
 a:active {
 	color:#96121c;
-	text-decoration:none;
+	text-decoration:underline;
+}
+
+a:hover {
+	color: pink;
 }
 
 .section-header {
@@ -87,15 +97,6 @@ section {
 
 .align-right {
 	text-align: right;
-}
-
-/* HEADER */
-
-header a,
-header a:visited,
-header a:hover,
-header a:active {
-	text-decoration:underline;
 }
 
 /* PROGRAM */
@@ -130,6 +131,10 @@ header a:active {
 	margin-left: 1ch;
 }
 
+ul.with-paragraph {
+	margin:0;
+}
+
 /* BANDS */
 
 .band {
@@ -142,7 +147,7 @@ header a:active {
 
 .band .band-name {
 	display: inline-block;
-	margin:0 0 10px 0;
+	margin:0;
 	font-weight:bold;
 }
 
