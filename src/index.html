@@ -11,7 +11,7 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
 
   		<link rel="shortcut icon" type="image/png" href="/favicon.ico?v=2019.4" />
-  		<link rel="stylesheet" href="style.css?v=2019.6" />
+  		<link rel="stylesheet" href="style.css?v=2019.7" />
   		<link rel="stylesheet" media="screen and (max-width: 1000px)" href="style-small.css?v=2019.5" />
 
       <script>
@@ -150,6 +150,25 @@
 							</p>
             </li>
 					</ul>
+
+				</section>
+
+				<h2 class="section-header">Mapa festivalu</h2>
+
+				<section id="mapka">
+
+					<img id="map_preview" src="img/mapka.jpg" alt="mapka" />
+					<div id="map_view">
+						<div id="map_view_wrapper">
+							<img src="img/mapka.jpg" alt="mapka" />
+						</div>
+					</div>
+					<script>
+						const preview = document.getElementById('map_preview');
+						const view = document.getElementById('map_view');
+						preview.addEventListener('click', function() {view.style.display = 'block'});
+						view.addEventListener('click', function() {view.style.display = 'none'});
+					</script>
 
 				</section>
 
