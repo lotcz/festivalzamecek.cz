@@ -1,0 +1,14 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	color: white;
+	background-color: white;
+}
+
+body {
+	background-image: url(poster-resized.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
