@@ -21,6 +21,14 @@ body {
 	padding-top:10px;
 }
 
+#wrapper {
+	background-image:url(img/drawing.png);
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
 p {
 	line-height: 125%;
 }
@@ -32,17 +40,27 @@ p {
 	max-width:1000px;
 }
 
-body, .white, .primary-color,
-.band .band-description {
-	color:white;
+header h2, header h1 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
-.secondary-color, .red,
+.invisible {
+	display: none;
+}
+
+body, .white, .primary-color,
+.band .band-description {
+	color:#ffeed3;
+}
+
+.secondary-color,
 .band-name,
 h2.section-header,
 #contact h3,
 section h4 {
-	color:#96121c;
+	color: white;
 }
 
 .black, h1,
@@ -79,12 +97,8 @@ a,
 a:visited,
 a:hover,
 a:active {
-	color:#96121c;
+	color:white;
 	text-decoration:underline;
-}
-
-a:hover {
-	color: pink;
 }
 
 .section-header {
@@ -152,10 +166,15 @@ ul.with-paragraph {
 }
 
 .band img {
-	width:150px;
-	height:100px;
 	margin-right:10px;
 	margin-left:5px;
+	width:150px;
+	height:100px;
+}
+
+.band-img {
+	width:165px;
+	height:100px;
 }
 
 .band .band-section,
@@ -189,11 +208,6 @@ ul.with-paragraph {
 	margin-top: 1rem;
 	padding-top: 28%;
 	padding-bottom: 3.875%;
-	background-image:url(img/drawing.png);
-	background-color: transparent;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center bottom;
 	text-align: center;
 }
 

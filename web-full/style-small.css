@@ -57,8 +57,17 @@ h3 {
 	padding:0;
 }
 
+.band .band-name {
+	margin-top: 5px;
+}
+
 .band img {
 	margin:0;
+}
+
+.band.right-aligned .band-img {
+	float: right;
+	clear: both;
 }
 
 /* KONTAKT */
