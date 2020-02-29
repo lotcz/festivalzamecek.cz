@@ -1,0 +1,2 @@
+- United Flavour, nové album Here to Stay
+- Vintage Wine, recenze desky http://www.rockandall.cz/recenze/vintage-wine-dryghtyn/?fbclid=IwAR3Ca3moVdHlV4zIVCfSrhRvgHEpWEcrdp7OyzZ8xAttV7jBWRkUljYZ14c

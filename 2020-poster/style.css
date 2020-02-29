@@ -4,9 +4,13 @@ html, body {
 	height: 100%;
 	color: white;
 	background-color: white;
+	text-align: center;
 }
 
-body {
+#content {
+	margin: 0;
+	padding: 0;
+	height: 100%;
 	background-image: url(poster-resized.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
