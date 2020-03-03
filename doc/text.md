@@ -13,3 +13,24 @@ Písmeno X v názvu letošního ročníku odkazuje na fakt, že festival Zámeč
 Stejně jako už devětkrát předtím můžete očekávat kvalitní hudbu různých žánrů po celý den, divadelní představení, program pro děti, jídlo, pití, slunce, úsměvy milých lidí a výborné pivo z Únětic.
 
 Budeme začínat už jednu hodinu po poledni, tak přijďte pobejt, jste srdečně zváni.
+
+Hudba
+
+    United Flavour
+    Mário Bihári a Bachtale Apsa
+    Tiny Beat
+    Vasilův Rubáš
+    Vintage Wine
+
+Divadlo
+
+    Sex Culomets
+    Fígl
+
+Doprovodný program
+
+    adrenalin park
+    deskové hry
+    šachový workshop
+    jóga smíchu
+    workshop animace
