@@ -206,7 +206,7 @@ ul.with-paragraph {
 
 #bottom {
 	margin-top: 1rem;
-	padding-top: 28%;
+	padding-top: 22%;
 	padding-bottom: 3.875%;
 	text-align: center;
 }
@@ -300,7 +300,7 @@ footer {
 	font-size: 80%;
 	text-align:center;
 	--margin-top:20px;
-	border-top:solid 3px black;
+	border-top:solid 1px black;
 	background-color: white;
 	color: black;
 }
