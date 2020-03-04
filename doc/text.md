@@ -26,6 +26,7 @@ Divadlo
 
     Sex Culomets
     Fígl
+		Kvítko
 
 Doprovodný program
 
@@ -34,3 +35,6 @@ Doprovodný program
     šachový workshop
     jóga smíchu
     workshop animace
+		dobrovolní hasiči
+		pletení košíků
+		slackline
