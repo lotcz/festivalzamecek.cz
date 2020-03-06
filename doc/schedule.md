@@ -30,7 +30,10 @@ Fígl
 Svátek Práce, 1. máj
 jóga smíchu - foto z minulého ročníku, teaser
 
-4.5.2020
+3.5.2020
+Erik - žonglérské vystoupení, foto
+
+5.5.2020
 dobrovolní hasiči - foto z minulého ročníku, teaser
 
 7.5.2020
