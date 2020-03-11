@@ -12,7 +12,7 @@ Vasilův Rubáš
 Mário Bihári a Bachtale Apsa
 
 1.4.2020
-Tiny Beat
+Tiny Beat -  se dostal do 16 tky nejlepších beatboxerů světa a je teď top v Čechách
 
 8.4.2020
 Sex Culomets

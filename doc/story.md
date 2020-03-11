@@ -1,0 +1,4 @@
+- povoděň
+- Fadžitulikystulán v Klecanech
+- Gadžo bez playerů
+- 
