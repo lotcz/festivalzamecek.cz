@@ -1,26 +1,12 @@
-# Historie festivalu Zámeček
 
-## 2011
-
-Prezidentem byl Václav Klaus, Česká televize ještě vysílala analogově, platí se ještě červenou papírovou padesátikorunou, Jiří Kájínek byl ještě ve vězení a marně podával žádosti na obnovení procesu. Média plnily zprávy o havárii v elektrátně Fukušima, 2. května byl zabit Usáma bin Ládin, počítačová hra Minecraft ještě neexistovala, Amy Winehouse byla ještě naživu, zemřela až ten rok 23. července, v únoru byla představena důchodová reforma - zavedení tzv. dvoupilířového systému
-
-Musím udělat plakát, David Král to komentuje slovy, že by nalákal na akci tak možná jeho babičku, ale musíme pracovat s tím, co máme. Pódium je dole v příkopu.
-
-Máme nafukovací hrad od realitní kanceláře. Čajovna pod stromy
-
-Moderuje David Lomos.
-
-Kwang Myong, dobrovolní hasiči, žonglér Erik;
-
-Happy Aquarium. Broken Glass Extet - Marina. Schrödingerova kočka, Gloom - Vilém Šmol, Reckless Riders - Václav, Blabuburo, Christmas Brass Band, Desperate Turkeys, kde z legrace uvádíme žánr emo/country
-
-sponzoruje vedle města Roztoky Kavka print a restaurace Ajmovka
-
-Přišla Alešova babička, možná ji nalákal můj plakát.
-
+<div style="float:right;margin-left:20px"><div><img src="2011-erik.jpg" style="width:100%" /></div><small><i>Žonglér Erik.</i></small></div>
 ## 2012
 
+Na žádost paní ředitelky muzea, které se zdálo, že název festivalu implikuje, jako by zámeček jindy nežil, jsme název změnili na "festival Zámeček 2012". Samozřejmě s tím, že každý rok číslo o jedna zvýšíme.
+
 ## 2013
+
+- povoděň
 
 ## 2014
 
@@ -63,7 +49,7 @@ Mikkim
 
 ## 2020
 
-- povoděň
+
 - Fadžitulikystulán v Klecanech
 - Gadžo bez playerů
 -
