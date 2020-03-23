@@ -1,19 +1,24 @@
 
-<div style="float:right;margin-left:20px"><div><img src="2011-erik.jpg" style="width:100%" /></div><small><i>Žonglér Erik.</i></small></div>
-## 2012
+<div style="float:right;margin-left:20px"><div><img src="2011-erik.jpg" style="width:250px" /></div><small><i>Žonglér Erik.</i></small></div>
 
-Na žádost paní ředitelky muzea, které se zdálo, že název festivalu implikuje, jako by zámeček jindy nežil, jsme název změnili na "festival Zámeček 2012". Samozřejmě s tím, že každý rok číslo o jedna zvýšíme.
-
-## 2013
-
+## 2013 - třetí ročník
+- Karel K a Pepa
+- máme název vrátit zpět
 - povoděň
+- Gadžo bez playerů
+- Voda nás nezlomí
 
 ## 2014
+
+- Veve
+Plakát jsem dotáhl k dokonalosti a tak už mě nikdy plakát dělat nenechali
+všichni mají svoje místo - Dan odpadky a sbírání vajglů
 
 ## 2015
 
 Voices (vokální skupina), Voila! - shanson/jazz ,BBQ - smyčcový nářez, The Desperate - indie/rock, Zabelov group - world music, Circus problém - balkanská dechovka, Švihadlo - reggae, Blabuburo - Africké rytmy</p>
 
+Michal knihovník
 
 ## 2016
 
@@ -28,6 +33,8 @@ První sobota v červnu, tedy 4. 6. 2016 Festival je koncipován jako rodinný
 				Divadlo Fígl přijede s pohádkou Pinocchio, Dům dětí a mládeže – Stanice techniků se představí lego robotikou a modelářskou dílnou. Zkušení hráči nabídnou bubenický workshop. Unikátní bude podívaná na taekwondo a slackline exhibici, chvíle odpočinku bude možné strávit výtvarným tvořením a lidovými řemesly, festival navštíví i skupina šermířů.
 
 ## 2017
+
+Peso se zranil
 
 ## 2018
 Mikkim
@@ -47,9 +54,11 @@ Mikkim
 
 ## 2019
 
+Koza a Sex Culomets
+
 ## 2020
 
 
-- Fadžitulikystulán v Klecanech
-- Gadžo bez playerů
+
+
 -
