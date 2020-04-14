@@ -1,0 +1,10 @@
+.history .image {
+	float:none;
+	margin-right:0px;
+	width:auto;
+}
+
+.history .image.right {
+	float:none;
+	margin-left:0px;
+}
