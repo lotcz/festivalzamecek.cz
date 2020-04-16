@@ -54,7 +54,8 @@ header h2, header h1 {
 }
 
 body, .white, .primary-color,
-.band .band-description {
+.band .band-description,
+hr {
 	color:#ffeed3;
 }
 
