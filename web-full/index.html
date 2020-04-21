@@ -1,67 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="cs">
+	<head>
+		<meta charset="utf-8" />
 
-  <head>
-      <meta charset="utf-8" />
+		<title>Zámeček X</title>
+		<meta
+			name="description"
+			content="Pohodový multižánrový festival konaný každoročně ve Středočeském muzeu v Roztokách u Prahy."
+		/>
+		<meta
+			name="keywords"
+			content="hudba,festival,multižánrový festival,hudební festival,Středočeské muzeum,Roztoky u Prahy,Roztoky"
+		/>
+		<meta name="author" content="Karel Zavadil" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"
+		/>
 
-      <title>Zámeček X</title>
-      <meta name="description" content="Pohodový multižánrový festival konaný každoročně ve Středočeském muzeu v Roztokách u Prahy." />
-	    <meta name="keywords" content="hudba,festival,multižánrový festival,hudební festival,Středočeské muzeum,Roztoky u Prahy,Roztoky" />
-      <meta name="author" content="Karel Zavadil" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+		<link rel="shortcut icon" type="image/png" href="/favicon.ico?v=2020.2" />
+		<link rel="stylesheet" href="style.css?v=2020.2" />
+		<link
+			rel="stylesheet"
+			media="screen and (max-width: 1000px)"
+			href="style-small.css?v=2020.2"
+		/>
 
-  		<link rel="shortcut icon" type="image/png" href="/favicon.ico?v=2020.2" />
-  		<link rel="stylesheet" href="style.css?v=2020.2" />
-  		<link rel="stylesheet" media="screen and (max-width: 1000px)" href="style-small.css?v=2020.2" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134988982-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'UA-134988982-2');
+		</script>
 
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134988982-2"></script>
-			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
-			  gtag('config', 'UA-134988982-2');
-			</script>
+		<script>
+			function generateEmailLink(data, id) {
+				var el = document.getElementById(id);
+				var addr = data.join('@');
+				el.href = 'mailto:' + addr;
+				el.textContent = addr;
+				el.title = addr;
+			}
+		</script>
+	</head>
 
-      <script>
-        function generateEmailLink(data, id) {
-          var el = document.getElementById(id);
-          var addr = data.join('@');
-          el.href = 'mailto:' + addr;
-          el.textContent = addr;
-          el.title = addr;
-        }
-      </script>
-
-  </head>
-
-  <body>
-
+	<body>
 		<div id="wrapper">
-
 			<div class="inner">
-
 				<header>
 					<h2 class="primary-color">FESTIVAL</h2>
-					<h1><span class="invisible">ZÁMEČEK X</span><img style="width:100%" src="img/title.png" alt="ZÁMEČEK X" /></h1>
+					<h1>
+						<span class="invisible">ZÁMEČEK X</span
+						><img style="width:100%" src="img/title.png" alt="ZÁMEČEK X" />
+					</h1>
 				</header>
 
 				<h2 class="section-header">Festival je letos zrušen!</h2>
 
 				<section id="about-us" class="history cancelled">
 					<p>
-						S lítostí oznamujeme, že festival Zámeček letos neproběhne z důvodu opatření vlády proti šíření nákazy COVID-19.
-						Písmeno X v názvu letošního ročníku bohužel nakonec znamená <q>zrušeno</q>.
+						S lítostí oznamujeme, že festival Zámeček letos neproběhne z důvodu opatření
+						vlády proti šíření nákazy COVID-19. Písmeno X v názvu letošního ročníku
+						bohužel nakonec znamená <q>zrušeno</q>.
 					</p>
 					<p>
-						Festival určitě uspořádáme v příštím roce a tuto ztrátu si vynahradíme. Těšíme se na Vás!
+						Festival určitě uspořádáme v příštím roce a tuto ztrátu si vynahradíme.
+						Těšíme se na Vás!
 					</p>
 					<p class="align-right">
 						s láskou, Vaše RR
 					</p>
-					<hr/>
+					<hr />
 					<p>
-						Pokud nechcete propásnout žádnou novinku o tom, co se chystá, sledujte <a href="https://www.facebook.com/FestivalZamecek/" target="_blank">naši stránku na Facebooku</a>.
+						Pokud nechcete propásnout žádnou novinku o tom, co se chystá, sledujte
+						<a href="https://www.facebook.com/FestivalZamecek/" target="_blank"
+							>naši stránku na Facebooku</a
+						>.
 					</p>
 				</section>
 
@@ -69,87 +87,102 @@
 
 				<section id="about-us" class="about-us">
 					<p>
-						Festival Zámeček je multižánrový hudební festival, který se koná v areálu zámeckého parku Středočeského muzea v Roztokách už od roku 2011.
+						Festival Zámeček je multižánrový hudební festival, který se koná v areálu
+						zámeckého parku Středočeského muzea v Roztokách už od roku 2011.
 					</p>
 					<p>
-						Celý příběh festivalu si můžete přečíst v naší <a href="/historie">historii festivalu</a>.
+						Celý příběh festivalu si můžete přečíst v naší
+						<a href="/historie">historii festivalu</a>.
 					</p>
 					<p>
-						Na fotky z minulých ročníků se můžete podívat v naší <a href="http://galerie.festivalzamecek.cz">fotogalerii</a>.
+						Na fotky z minulých ročníků se můžete podívat v naší
+						<a href="http://galerie.festivalzamecek.cz">fotogalerii</a>.
 					</p>
 				</section>
 
 				<h2 class="section-header">KONTAKT</h2>
 
 				<section id="contact">
-
 					<h3>ředitel festivalu</h3>
 
 					<div class="name">Aleš Novák</div>
-          <div class="contact">
-            <a id="aljossa">Pro zobrazení e-mailové adresy zapněte javascript.</a>
-    				<script>
-    					generateEmailLink(['aljossa', 'centrum.cz'], 'aljossa');
-    				</script>
-          </div>
+					<div class="contact">
+						<a id="aljossa">Pro zobrazení e-mailové adresy zapněte javascript.</a>
+						<script>
+							generateEmailLink(['aljossa', 'centrum.cz'], 'aljossa');
+						</script>
+					</div>
 
-          <h3>dramaturgie a booking kapel</h3>
+					<h3>dramaturgie a booking kapel</h3>
 
-          <div class="place-2-cols">
-            <div class="col">
-              <div class="name">Karel kropáček</div>
-              <div class="contact">
-                <a id="krop">Pro zobrazení e-mailové adresy zapněte javascript.</a>
-        				<script>
-        					generateEmailLink(['k.kropacek', 'seznam.cz'], 'krop');
-        				</script>
-                604 183 155
-              </div>
-            </div>
-            <div class="col">
-              <div class="name">Veronika Valdová</div>
-              <div class="contact">
-                <a id="vv">Pro zobrazení e-mailové adresy zapněte javascript.</a>
-        				<script>
-        					generateEmailLink(['veve.badji', 'seznam.cz'], 'vv');
-        				</script>
-                608 923 960
-              </div>
-            </div>
-          </div>
+					<div class="place-2-cols">
+						<div class="col">
+							<div class="name">Karel kropáček</div>
+							<div class="contact">
+								<a id="krop">Pro zobrazení e-mailové adresy zapněte javascript.</a>
+								<script>
+									generateEmailLink(['k.kropacek', 'seznam.cz'], 'krop');
+								</script>
+								604 183 155
+							</div>
+						</div>
+						<div class="col">
+							<div class="name">Veronika Valdová</div>
+							<div class="contact">
+								<a id="vv">Pro zobrazení e-mailové adresy zapněte javascript.</a>
+								<script>
+									generateEmailLink(['veve.badji', 'seznam.cz'], 'vv');
+								</script>
+								608 923 960
+							</div>
+						</div>
+					</div>
 
-          <h3>stánkový prodej</h3>
+					<h3>stánkový prodej</h3>
 
-          <div class="name">Tereza Náhlovská</div>
-          <div class="contact">
-            <a id="nahl">Pro zobrazení e-mailové adresy zapněte javascript.</a>
-    				<script>
-    					generateEmailLink(['nahlovska', 'roztoky.cz'], 'nahl');
-    				</script>
-          </div>
-
+					<div class="name">Tereza Náhlovská</div>
+					<div class="contact">
+						<a id="nahl">Pro zobrazení e-mailové adresy zapněte javascript.</a>
+						<script>
+							generateEmailLink(['nahlovska', 'roztoky.cz'], 'nahl');
+						</script>
+					</div>
 				</section>
-
 			</div>
 
 			<div id="bottom">
 				<a href="mailto:info@festivalzamecek.cz">info@festivalzamecek.cz</a>
 			</div>
-
 		</div>
 
 		<footer>
 			<div class="inner">
 				<p>
-					Pod záštitou města Roztoky<!--, Středočeského kraje a Letiště Praha a.s.--> pořádá RR z.s. a Středočeské Muzeum.
+					Pod záštitou města Roztoky<!--, Středočeského kraje a Letiště Praha a.s.-->
+					pořádá RR z.s. a Středočeské Muzeum.
 				</p>
 				<img class="sponsors" src="img/sponsors.jpg?v=2" alt="sponzoři" />
 				<div>
-					<a href="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner" title="Kudyznudy.cz - tipy na výlet"> <img src="https://www.kudyznudy.cz/getmedia/beecd6e8-708b-421a-add8-92568ca7b1b5/logo-kudyznudy.gif.aspx" width="150"  height="64" border="0" alt="Kudyznudy.cz - tipy na výlet"> </a>
-					<a href="https://www.informuji.cz"><img src="https://www.informuji.cz/img/logo1_small.png" alt="Informuji.cz = Akce, Kultura a Výlety v ČR" style="width:150px;height:42px;margin:9px" /></a>
+					<a
+						href="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner"
+						title="Kudyznudy.cz - tipy na výlet"
+					>
+						<img
+							src="https://www.kudyznudy.cz/getmedia/beecd6e8-708b-421a-add8-92568ca7b1b5/logo-kudyznudy.gif.aspx"
+							width="150"
+							height="64"
+							border="0"
+							alt="Kudyznudy.cz - tipy na výlet"
+						/>
+					</a>
+					<a href="https://www.informuji.cz"
+						><img
+							src="https://www.informuji.cz/img/logo1_small.png"
+							alt="Informuji.cz = Akce, Kultura a Výlety v ČR"
+							style="width:150px;height:42px;margin:9px"
+					/></a>
 				</div>
 			</div>
 		</footer>
-
 	</body>
 </html>
