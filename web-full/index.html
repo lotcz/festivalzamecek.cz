@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Zámeček X</title>
+		<title>Letní MiniZámeček 8.8.2020</title>
 		<meta
 			name="description"
 			content="Pohodový multižánrový festival konaný každoročně ve Středočeském muzeu v Roztokách u Prahy."
@@ -19,7 +19,7 @@
 		/>
 
 		<link rel="shortcut icon" type="image/png" href="/favicon.ico?v=2020.2" />
-		<link rel="stylesheet" href="style.css?v=2020.2" />
+		<link rel="stylesheet" href="style.css?v=2020-mini.1" />
 		<link
 			rel="stylesheet"
 			media="screen and (max-width: 1000px)"
@@ -45,6 +45,85 @@
 				el.textContent = addr;
 				el.title = addr;
 			}
+
+			// left: 37, up: 38, right: 39, down: 40,
+			// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+			var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+			function preventDefault(e) {
+				e.preventDefault();
+			}
+
+			function preventDefaultForScrollKeys(e) {
+				if (keys[e.keyCode]) {
+					preventDefault(e);
+					return false;
+				}
+			}
+
+			// modern Chrome requires { passive: false } when adding event
+			var supportsPassive = false;
+			try {
+				window.addEventListener(
+					'test',
+					null,
+					Object.defineProperty({}, 'passive', {
+						get: function() {
+							supportsPassive = true;
+						},
+					}),
+				);
+			} catch (e) {}
+
+			var wheelOpt = supportsPassive ? {passive: false} : false;
+			var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+			// call this to Disable
+			function disableScroll() {
+				window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+				window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+				window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+				window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+			}
+
+			// call this to Enable
+			function enableScroll() {
+				window.removeEventListener('DOMMouseScroll', preventDefault, false);
+				window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+				window.removeEventListener('touchmove', preventDefault, wheelOpt);
+				window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+			}
+
+			function createElement(parent, tag, cssClass) {
+				var el = document.createElement(tag);
+				el.className = cssClass;
+				parent.appendChild(el);
+				return el;
+			}
+
+			function showImage(preview) {
+				const view = createElement(document.body, 'div', 'image-view');
+				const wrapper = createElement(view, 'div', 'image-view-wrapper');
+				const img = createElement(wrapper, 'img', '');
+				img.src = preview.dataset.src;
+				var closeFunction = function() {
+					enableScroll();
+					view.parentNode.removeChild(view);
+				};
+				window.addEventListener('keydown', closeFunction);
+				view.addEventListener('click', closeFunction);
+				disableScroll();
+			}
+
+			document.addEventListener('DOMContentLoaded', function(event) {
+				var previews = document.getElementsByClassName('image-preview');
+				for (var i = 0, max = previews.length; i < max; i++) {
+					let preview = previews[i];
+					preview.addEventListener('click', function() {
+						showImage(preview);
+					});
+				}
+			});
 		</script>
 	</head>
 
@@ -52,28 +131,175 @@
 		<div id="wrapper">
 			<div class="inner">
 				<header>
-					<h2 class="primary-color">FESTIVAL</h2>
 					<h1>
-						<span class="invisible">ZÁMEČEK X</span
-						><img style="width:100%" src="img/title.png" alt="ZÁMEČEK X" />
+						<span class="text-large">L</span>etní
+						<span class="text-large">M</span>ini<span class="text-large">Z</span>ámeček
 					</h1>
+					<h2 class="white">8.8.2020</h2>
+					<h2>Středočeské muzeum</h2>
 				</header>
 
-				<h2 class="section-header">Festival je letos zrušen!</h2>
-
-				<section id="about-us" class="history cancelled">
+				<section>
 					<p>
-						S lítostí oznamujeme, že festival Zámeček letos neproběhne z důvodu opatření
-						vlády proti šíření nákazy COVID-19. Písmeno X v názvu letošního ročníku
-						bohužel nakonec znamená <q>zrušeno</q>.
+						Zámeček letos nakonec bude. Jen bude letní a mini.
 					</p>
 					<p>
-						Festival určitě uspořádáme v příštím roce a tuto ztrátu si vynahradíme.
 						Těšíme se na Vás!
 					</p>
 					<p class="align-right">
 						s láskou, Vaše RR
 					</p>
+
+					<h2 class="section-header">Účinkující</h2>
+					<section id="artists" class="bands">
+						<div class="band left-aligned">
+							<div class="band-img">
+								<img src="img/thumb-czardashians.jpg" />
+							</div>
+							<div class="band-section">
+								<div class="band-name">Czardashians</div>
+								<div class="band-description">
+									<p>
+										balkan<span class="text-large">SKA</span>, cigan<span
+											class="text-large"
+											>SKA</span
+										>, slovan<span class="text-large">SKA</span> - to je rozjetá
+										svižná kapela, která se původně jmenovala Romba, ale kvůli
+										záměnám jména s jedním latinsko-americkým tancem a jedním
+										akčním hrdinou si změnila název na Czardashians.
+									</p>
+									<p>
+										V Roztokách na Zámečku vystoupili v roce 2016 a vrací se
+										znovu pod novým názvem, který doufáme nebude zaměňován se
+										jménem jedné modelky.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="band right-aligned">
+							<div class="band-img">
+								<img src="img/thumb-muffin.jpg" />
+							</div>
+							<div class="band-section">
+								<div class="band-name">Simple Muffin</div>
+								<div class="band-description">
+									<p>
+										Pro studenty, hospodský, kuchaře a zahradníky umí hrát
+										každej. Proto Simple Muffin zaslíbili kapelu lidem z kanclů.
+										Zasloužej si to a jsou populární hudbou opomíjený.
+									</p>
+									<p>
+										Hrajou taneční muziku, funk, pop, čardáše a šansóny.
+										Společným jmenovatelem je autorská taneční řežba, se kterou
+										boří kancly a sály.
+									</p>
+									<p>
+										Na Zámečku hráli v roce 2014, byli skvělí, a proto jsme
+										rádi, že zahrajou znovu!
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="band left-aligned">
+							<div class="band-img">
+								<img src="img/thumb-koberec.jpg" />
+							</div>
+							<div class="band-section">
+								<div class="band-name">Létající koberec</div>
+								<div class="band-description">
+									<p>
+										Transovní bubnování a tanec, extatické rytmy a energetická
+										masáž. To je kapela Létající koberec.
+									</p>
+									<p>
+										Na Zámečku vystoupili již v roce 2014 a jsme moc rádi, že se
+										nyní vracejí.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="band right-aligned">
+							<div class="band-img">
+								<img src="img/thumb-kvitko.jpg" />
+							</div>
+							<div class="band-section">
+								<div class="band-name">Divadýlko Kvítko</div>
+								<div class="band-description">
+									<p>Spolek roztockých loutkařů.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="band left-aligned">
+							<div class="band-img">
+								<img src="img/thumb-yoga.jpg" />
+							</div>
+							<div class="band-section">
+								<div class="band-name">David Zahradník</div>
+								<div class="band-description">
+									<p>
+										Joga smíchu. Pravidelné cvičení jógy smíchu pomáhá uchovat
+										si pozitivní duševní přístup, takže se lépe vyrovnáme s
+										negativními situacemi.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<h2 class="section-header">Program</h2>
+					<section id="program">
+						<ul>
+							<li>
+								<time>16:00</time>
+								<span class="band-name">Divadýlko Kvítko</span>
+								<span class="band-genre">pohádka O Koblížkovi</span>
+							</li>
+							<li>
+								<time>16:30</time>
+								<span class="band-name">Létající koberec</span>
+								<span class="band-genre">rytmy a bubny</span>
+							</li>
+							<li>
+								<time>18:00</time>
+								<span class="band-name">Rychlolemták</span>
+								<span class="band-genre">soutěž v pití piva</span>
+							</li>
+							<li>
+								<time>18:30</time>
+								<span class="band-name">Simple Muffin</span>
+								<span class="band-genre">funky, disko a šansony</span>
+							</li>
+							<li>
+								<time>20:00</time>
+								<span class="band-name">Jóga smíchu</span>
+								<span class="band-genre">
+									David Zahradník
+								</span>
+							</li>
+							<li>
+								<time>20:30</time>
+								<span class="band-name">Czardashians<br />(ex Romba)</span>
+								<span class="band-genre">čardáše, SKA a tango</span>
+							</li>
+						</ul>
+					</section>
+
+					<div
+						class="image align-center image-preview"
+						data-src="https://galerie.festivalzamecek.cz/i.php?/upload/2020/07/25/20200725142628-013d8da2-xx.jpg"
+					>
+						<div>
+							<img
+								src="https://galerie.festivalzamecek.cz/_data/i/upload/2020/07/25/20200725142628-013d8da2-me.jpg"
+							/>
+						</div>
+						<small>Plakát festivalu Letní MiniZámeček.</small>
+					</div>
+
 					<hr />
 					<p>
 						Pokud nechcete propásnout žádnou novinku o tom, co se chystá, sledujte

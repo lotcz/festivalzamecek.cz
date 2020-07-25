@@ -3,11 +3,15 @@ body {
 }
 
 .inner {
-	padding:5px;
+	padding: 15px;
+}
+
+header {
+	padding: 0;
 }
 
 header #date {
-	font-size:150%;
+	font-size: 150%;
 }
 
 h1 {
@@ -23,8 +27,12 @@ h3 {
 }
 
 /* PROGRAM */
+#program ul {
+	padding-left: 0;
+}
+
 #program ul li {
-	display:block;
+	display: block;
 }
 
 #program time {
@@ -48,13 +56,13 @@ h3 {
 /* BANDS */
 
 .band {
-	margin:20px 0 2px 0;
-	padding:0px;
-	display:block;
+	margin: 20px 0 2px 0;
+	padding: 0px;
+	display: block;
 }
 
 .band .band-section {
-	padding:0;
+	padding: 0;
 }
 
 .band .band-name {
@@ -62,7 +70,7 @@ h3 {
 }
 
 .band img {
-	margin:0;
+	margin: 0;
 }
 
 .band.right-aligned .band-img {

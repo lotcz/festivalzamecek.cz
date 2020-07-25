@@ -1,12 +1,12 @@
 @font-face {
-	font-family: "Syncopate Bold";
-	src: url("Syncopate-Bold.ttf");
+	font-family: 'Syncopate Bold';
+	src: url('Syncopate-Bold.ttf');
 }
 
 body {
-	margin:0;
-	padding:0;
-	background-image:url(img/bg.jpg);
+	margin: 0;
+	padding: 0;
+	background-image: url(img/bg.jpg);
 	background-color: #bc3004;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -14,16 +14,16 @@ body {
 	background-position: center center;
 	background-attachment: fixed;
 	-webkit-background-attachment: scroll;
-	min-height:100%;
-	font-size:150%;
-	font-family: "Syncopate Bold", "Arial Black", Gadget, sans-serif;
-	text-transform:uppercase;
+	min-height: 100%;
+	font-size: 150%;
+	font-family: 'Syncopate Bold', 'Arial Black', Gadget, sans-serif;
+	text-transform: uppercase;
 }
 
 #wrapper {
-	margin:0;
-	padding:0;
-	background-image:url(img/drawing.png);
+	margin: 0;
+	padding: 0;
+	background-image: url(img/drawing.png);
 	background-color: transparent;
 	background-size: contain;
 	-webkit-background-size: contain;
@@ -36,30 +36,35 @@ p {
 }
 
 .inner {
-	padding-top:10px;
-	display:block;
+	padding-top: 10px;
+	display: block;
 	position: relative;
-	margin:auto;
-	max-width:1000px;
+	margin: auto;
+	max-width: 1000px;
 }
 
-header h2, header h1 {
+header {
+	padding: 4rem;
+}
+
+header h2,
+header h1 {
 	text-align: center;
-	margin: 0;
-	padding: 0;
 }
 
 .invisible {
 	display: none;
 }
 
-body, .white, .primary-color,
+body,
+.primary-color,
 .band .band-description,
 hr {
-	color:#ffeed3;
+	color: #ffeed3;
 }
 
 .secondary-color,
+.white,
 .band-name,
 h2.section-header,
 #contact h3,
@@ -67,22 +72,30 @@ section h4 {
 	color: white;
 }
 
-.black, h1,
+.black,
 #program time {
 	color: black;
 }
 
-h1, h2, h3, h4 {
-	margin:0;
-	padding:5px 0;
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	padding: 5px 0;
 }
 
-h1, h2 {
-	text-align:left;
+h1,
+h2 {
+	text-align: left;
 }
 
 header #date {
-	font-size:200%;
+	font-size: 200%;
+}
+
+.text-large {
+	font-size: 150%;
 }
 
 h1 {
@@ -101,20 +114,24 @@ a,
 a:visited,
 a:hover,
 a:active {
-	color:white;
-	text-decoration:underline;
+	color: white;
+	text-decoration: underline;
 }
 
 .section-header {
-	margin-top:40px;
+	margin-top: 40px;
 }
 
 section {
-	margin-top:20px;
+	margin-top: 20px;
 }
 
 .align-right {
 	text-align: right;
+}
+
+.align-center {
+	text-align: center;
 }
 
 /* PROGRAM */
@@ -124,11 +141,11 @@ section {
 }
 
 #program ul li {
-	display:flex;
+	display: flex;
 	flex-direction: row;
 	align-items: baseline;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #program time {
@@ -150,62 +167,62 @@ section {
 }
 
 ul.with-paragraph {
-	margin:0;
+	margin: 0;
 }
 
 /* BANDS */
 
 .band {
-	margin:40px 0 10px 0;
-	padding:10px;
-	display:flex;
-	text-align:left;
-	flex-direction:row;
+	margin: 40px 0 10px 0;
+	padding: 10px;
+	display: flex;
+	text-align: left;
+	flex-direction: row;
 }
 
 .band .band-name {
 	display: inline-block;
-	margin:0;
-	font-weight:bold;
+	margin: 0;
+	font-weight: bold;
 }
 
 .band img {
-	margin-right:10px;
-	margin-left:5px;
-	width:150px;
-	height:100px;
+	margin-right: 10px;
+	margin-left: 5px;
+	width: 150px;
+	height: 100px;
 }
 
 .band-img {
-	width:165px;
-	height:100px;
+	width: 165px;
+	height: 100px;
 }
 
 .band .band-section,
 .band img {
-	display:inline-block;
+	display: inline-block;
 	border-radius: 5px;
 }
 
 .band .band-section {
-	padding:0px 10px 10px 10px;
+	padding: 0px 10px 10px 10px;
 }
 
 .band .band-description {
-	display:block;
+	display: block;
 }
 
 .bands .right-aligned {
-	text-align:right;
+	text-align: right;
 }
 
 .bands .right-aligned {
-	flex-direction:row-reverse;
+	flex-direction: row-reverse;
 }
 
 .bands .right-aligned img {
-	margin-left:10px;
-	margin-right:5px;
+	margin-left: 10px;
+	margin-right: 5px;
 }
 
 #bottom {
@@ -219,9 +236,9 @@ ul.with-paragraph {
 #bottom a:visited,
 #bottom a:hover,
 #bottom a:active {
-	color:white;
+	color: white;
 	font-size: 80%;
-	text-decoration:none;
+	text-decoration: none;
 	display: block;
 	--padding-bottom: 50px;
 }
@@ -237,6 +254,11 @@ ul.with-paragraph {
 
 .image-preview {
 	cursor: zoom-in;
+	max-width: 100%;
+}
+
+.image-preview img {
+	max-width: 100%;
 }
 
 .image-view {
@@ -303,9 +325,9 @@ ul.with-paragraph {
 
 footer {
 	font-size: 80%;
-	text-align:center;
-	--margin-top:20px;
-	border-top:solid 1px black;
+	text-align: center;
+	--margin-top: 20px;
+	border-top: solid 1px black;
 	background-color: white;
 	color: black;
 }
