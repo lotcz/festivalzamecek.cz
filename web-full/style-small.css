@@ -63,6 +63,8 @@ h3 {
 
 .band .band-section {
 	padding: 0;
+	display: block;
+	clear: both;
 }
 
 .band .band-name {
