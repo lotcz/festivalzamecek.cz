@@ -2,6 +2,10 @@ body {
 	font-size: 100%;
 }
 
+#wrapper {
+	background-size: contain;
+}
+
 .inner {
 	padding: 15px;
 }

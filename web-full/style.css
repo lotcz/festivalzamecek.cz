@@ -25,8 +25,7 @@ body {
 	padding: 0;
 	background-image: url(img/drawing.png);
 	background-color: transparent;
-	background-size: contain;
-	-webkit-background-size: contain;
+	background-size: auto;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 }
@@ -43,18 +42,41 @@ p {
 	max-width: 1000px;
 }
 
+header {
+	text-align: center;
+}
+
+header .pretext,
+header .announce {
+	color: #de682a;
+}
+
+header .pretext {
+	line-height: 125%;
+	font-size: 90%;
+}
+
+header .announce {
+	font-size: 200%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+header .announce-big {
+	font-size: 300%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
 header h2,
 header h1 {
 	width: 100%;
+	text-align: center;
 }
 
 header img {
 	max-width: 100%;
-}
-
-header .opening,
-header .opening h2 {
-	text-align: center;
+	margin:auto;
 }
 
 .invisible {
@@ -123,6 +145,7 @@ h2 {
 
 h3 {
 	font-size: 100%;
+	
 }
 
 a,
@@ -328,8 +351,7 @@ ul.with-paragraph {
 #contact .contact a:visited,
 #contact .contact a:hover {
 	display: block;
-	color: black;
-	text-decoration: none;
+	color: white;
 }
 
 #contact h3,
