@@ -64,6 +64,7 @@ header .opening h2 {
 body,
 .primary-color,
 .band .band-description,
+#program time,
 hr {
 	color: #ffeed3;
 }
@@ -82,8 +83,8 @@ section h4 {
 	color: white;
 }
 
-.black,
-#program time {
+.black
+{
 	color: black;
 }
 
@@ -103,7 +104,6 @@ h2 {
 hr, h2 {
 	margin-top: 50px;
 }
-
 
 header #date {
 	font-size: 200%;
