@@ -1,0 +1,30 @@
+## 2013 - Velká voda
+
+Nejčastější slovo, které zaznívalo během příprav třetího ročníku bylo <q>profesionalizace</q>. Dostali jsme pocit, že po úspěšném uspořádání hned dvou festivalů, se dostáváme na jasnou cestu k tomu stát se profesionálními pořadateli. Vedení Středočeského muzea bylo s festivalem zatím spokojeno, pouze nám vzkázali, že původní název se jim líbil víc a abychom jej změnili nazpět. To jsme samozřejmě zavrhli s tím, že měnit pořád dokola název festivalu kvůli vedení muzea by nebylo profesionální.
+
+Toho roku nám do týmu přibyla významná posila - moderátor Rádia 1 a také můj jmenovec - Karel. Jako správní profesionálové jsme chtěli náš tým rozšířit a zodpovědnost za jednotlivé agendy rozdělit. Když přišel Karel na první schůzku s námi, trochu se pozastavil nad tím, že si všechno děláme sami na koleně, ale uklidnili jsme ho, že to je jen dočasně, už se přeci profesionalizujeme. Karel spolu s Veronikou od toho roku začali dělat dramaturgii festivalu, tedy především vybírat a zvát kapely.
+
+Díky našemu novému dramaturgickému týmu jsme na festivalu začali mít i kapely a vystupující mimo okruh našich kamarádů. Ten rok jsme konečně měli na plakátu pořádné jméno, takzvanou "hvězdu", jak se říká v šoubyznysu. Byl to herec a písničkář Jiří Schmitzer. Dále speciální projekt Balkan Mela, za kterým stáli Mário Bihári a DJ Gadjo, jazzoví Soliloqui Ensemble a kapela Hm... Na Happy Aquarium a další kapelky našich kamarádů se dostalo taky, ale na to, že mezi vystupujícími je už i někdo jiný, jsme byli patřičně pyšní.
+
+Akustické duo Kieslowski nám předem poslalo dlouhý seznam jejich požadavků na občerstvení, který zahrnoval položky jako například čerstvé ovoce, chlebíčky, červené víno (jakostní), bílé víno (s přívlastkem) a kaviár. Naše profesionalizace bude tedy zřejmě asi muset obnášet i bohatší občerstvení pro kapely, protože zatím jsme jim ve skromném zázemí nabízeli pouze pivo a obložené bagety. Karel jim zavolal a oni naštěstí souhlasili, že pivo a bagety budou stačit. Profesionalizace cateringu se bude konat až příště.
+
+Doprovodný program jsme poskládali podobně jako v předchozích letech, jen bylo všechno větší a lepší. K žonglujícímu Erikovi přibyla i fireshow. Dětská divadla byla už dvě. Nově jsme také měli stolní fotbálek nebo třeba modely vláčků a putovní českou ZOO, která se skládala především z koz a králíků. V pátek večer bylo všechno připravené na další báječný ročník našeho skvělého festivalu a šli jsme spát natěšeni na náš další velkolepý úspěch.
+
+Už od rána ale bylo jasné, že něco není v pořádku - bylo zataženo a předpověď počasí vůbec nevypadala dobře. Hrozil déšť. Pohledy na meteorologický radar a optimistická prohlášení ve stylu <q>to se nám vyhne</q> nepomohly. Hned po obědě se spustil liják jako blázen a pak už pršelo víceméně vytrvale až do noci. To byl konec všeho. Propadli jsme beznaději, všechny přípravy byly k ničemu - teď nám to zhatil déšť a nic s tím nenaděláme. Měl to být nejlepší festival, jaký jsme kdy uspořádali. Měl to být milník na cestě k naší profesionalizaci. A místo toho déšť, bláto a prázdná pokladna.
+
+Jenže i přes nepřízeň počasí se lidé začali pomalu trousit. Návštěvníků nebylo mnoho, ale stejně mnohem víc, než bychom v takovém počasí očekávali. Tak jsme udělali to, co nám jde ze všeho nejlíp - začali jsme improvizovat a snažili jsme se vystačit si s tím, co máme. Před hlavní scénou jsme natáhli igelitovou plachtu, aby chránila před deštěm alespoň lidi v prvních dvou řadách. Pokladnu u vstupu jsme umístili pod malý stan, divadelní představení jsme z nádvoří a louky přesunuli také pod střechu. Exhibice taekwonda se bohužel musela zrušit - kopy z výskokem na mokré trávě dělat nechtěli. Putovní ZOO se také rozhodla, že za těchto podmínek bude raději putovat někam jinam, a během odpoledne jsme všechny kozy a králíky evakuovali do bezpečí. Většina stánkařů, snad jen kromě stánku s pivem, také vzala během dne roha.
+
+Většina z nás nebyla na takové počasí připravena. Tak moc jsme věřili, že se náš festival opět povede, že jsme si nikdo nevzal pláštěnku ani oblečení do deště. Já jsem vytáhl své mexické pončo a s úlevou jsem zjistil, že je nepromokavé. Dan někde schrastil pláštěnku, ale protože mu pořád vlhly konce nohavic, oblepil si je stříbrnou lepenkou a říkal tomu <q>model Robokop</q>. Karel přišel jen v teplákách a sandálech, a tak si vyrobil pláštěnku z igelitového pytle na odpadky tak, že v něm vytvořil otvory na hlavu a ruce. V té době se zrovna rozváděl se svou manželkou a tak se nevyhnul našim neustálým vtipům a narážkám. <q>Podívejte se: ta kráva ho vo všechno vobrala a von teď chodí jenom v pytli na odpadky.</q> Karel se vždy jen velmi nuceně a nepřirozeně usmál, povzdechnul si, a pak se smutně podíval do země. Bojím se, že naše nehorázné vtipy byly mnohem blíže pravdě, než bychom si kdy mysleli.
+
+Plachta u hlavní scény se celý den pořád znovu a znovu nebezpečně plnila vodou a hrozilo, že se pod takovou tíhou zhroutí. Proto bylo nutné ji každou chvíli vylít, aby nedošlo k neštěstí v podobě neočekávaného uvolnění velkého množství vody na tanečníky pod plachtou. Vylévání plachty velmi odborně prováděli místní dobrovolní hasiči s pomocí koštěte, kterým vždy museli plachtu zespoda nadzvednout, aby se voda vylila. To museli dělat pravidelně ve zhruba desetiminutových intervalech až do chvíle, než někdo dostal geniální nápad vyrobit improvizovaný dřevěný sloupek a plachtu podepřít natrvalo.
+
+Přes všechnu nepřízeň počasí festival probíhal a navíc jsme si to vlastně užívali. Krizová situace nás vybičovala k těm nejlepším výkonům. Smáli jsme se jeden druhému, jak nám teče voda po tvářích a máme mokro v botách, ale makali jsme jako lodní šrouby, aby festival mohl běžet. Byli jsme promoklí a zmrzlí, zdrcení tou strašnou porážkou, že nebude nádherný a skvělý festival Zámeček plný Slunce a pohody na zelené trávě a s obrovskou návštěvností. Ale přes to všechno jsme byli myslím velmi šťastní. Byli jsme totiž spolu a dělali jsme něco, o čem jsme byli přesvědčeni, že dává smysl - dělali jsme přeci náš vlastní festival.
+
+
+
+
+
+- Schmizter nechce přijet
+- Gadžo bez playerů
+- povoděň
+- Voda nás nezlomí
