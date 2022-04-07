@@ -145,7 +145,7 @@ h2 {
 
 h3 {
 	font-size: 100%;
-	
+
 }
 
 a,
@@ -193,7 +193,13 @@ section {
 
 #program .band-details {
 	flex: 1;
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+#program .band-details .band-genre {
+	margin-left: 0;
 }
 
 #program .band-name {
