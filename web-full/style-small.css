@@ -60,28 +60,80 @@ h3 {
 /* BANDS */
 
 .band {
-	margin: 20px 0 2px 0;
-	padding: 0px;
+	margin: 20px 0 40px 0;
+	padding: 0 0 20px 0;
 	display: block;
+}
+
+.band .social {
+	margin-left: 10px;
+}
+
+.band .social a {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.band .social a:hover {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.band .band-img {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.band:last-child {
+	margin: 20px 0 0 0;
 }
 
 .band .band-section {
 	padding: 0;
 	display: block;
 	clear: both;
+	margin-left: 10px;
 }
 
 .band .band-name {
-	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+
+.band > .band-name {
+	display: inline-block;
+}
+
+.band .band-section .band-name {
+	display: none;
 }
 
 .band img {
 	margin: 0;
 }
 
-.band.right-aligned .band-img {
-	float: right;
-	clear: both;
+.bands .band:nth-child(odd) .band-img {
+	margin-left: 10px;
+}
+
+.bands .band:nth-child(even) .band-name,
+.bands .band:nth-child(even) .band-description,
+.bands .band:nth-child(even) .band-img {
+	margin-right: 10px;
+	flex-direction: row-reverse;
+}
+
+.bands .band:nth-child(even) .band-img {
+	text-align: right;
+}
+
+.bands .band:nth-child(even) .band-img .social {
+	margin-right: 10px;
+}
+
+.bands .band:nth-child(even) > .band-name {
+	display: block;
 }
 
 /* KONTAKT */

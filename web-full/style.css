@@ -189,6 +189,7 @@ section {
 #program time {
 	display: inline-block;
 	width: 5ch;
+	margin-bottom: 5px;
 }
 
 #program .band-details {
@@ -222,6 +223,11 @@ ul.with-paragraph {
 	display: flex;
 	text-align: left;
 	flex-direction: row;
+	border-bottom: solid 1px #ffeed3;
+}
+
+.band:last-child {
+	border-bottom: 0;
 }
 
 .band .band-name {
@@ -230,15 +236,14 @@ ul.with-paragraph {
 	font-weight: bold;
 }
 
-.band img {
-	margin-right: 10px;
-	margin-left: 5px;
-	width: 150px;
-	height: 100px;
+.band > .band-name {
+	display: none;
 }
 
-.band-img {
-	width: 165px;
+.band img {
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 150px;
 	height: 100px;
 }
 
@@ -256,17 +261,52 @@ ul.with-paragraph {
 	display: block;
 }
 
-.bands .right-aligned {
+.bands .band:nth-child(even) {
 	text-align: right;
-}
-
-.bands .right-aligned {
 	flex-direction: row-reverse;
 }
 
-.bands .right-aligned img {
-	margin-left: 10px;
-	margin-right: 5px;
+.band .social {
+	display: flex;
+	flex-direction: row;
+}
+
+.band .social a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	text-decoration: none;
+	font-size: 0;
+	line-height: 0;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #de682a;
+	transition: padding 0.5s, margin 0.5s;
+	border-radius: 50%;
+	box-shadow: 0 0 8px 4px #de682a;
+}
+
+.band .social a:hover {
+	padding: 5px;
+	margin: 0;
+}
+
+.band .social .yt {
+	background-image: url('img/yt.svg');
+}
+
+.band .social .fb {
+	background-image: url('img/fb.svg');
+}
+
+.band .social .ig {
+	background-image: url('img/ig.svg');
+}
+
+.band .social .web {
+	background-image: url('img/web.svg');
 }
 
 #bottom {
