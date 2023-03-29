@@ -25,8 +25,7 @@ body {
 	padding: 0;
 	background-image: url(img/drawing.png);
 	background-color: transparent;
-	background-size: contain;
-	-webkit-background-size: contain;
+	background-size: auto;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 }
@@ -43,18 +42,41 @@ p {
 	max-width: 1000px;
 }
 
+header {
+	text-align: center;
+}
+
+header .pretext,
+header .announce {
+	color: #de682a;
+}
+
+header .pretext {
+	line-height: 125%;
+	font-size: 90%;
+}
+
+header .announce {
+	font-size: 200%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+header .announce-big {
+	font-size: 300%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
 header h2,
 header h1 {
 	width: 100%;
+	text-align: center;
 }
 
 header img {
 	max-width: 100%;
-}
-
-header .opening,
-header .opening h2 {
-	text-align: center;
+	margin:auto;
 }
 
 .invisible {
@@ -123,6 +145,7 @@ h2 {
 
 h3 {
 	font-size: 100%;
+
 }
 
 a,
@@ -166,11 +189,18 @@ section {
 #program time {
 	display: inline-block;
 	width: 5ch;
+	margin-bottom: 5px;
 }
 
 #program .band-details {
 	flex: 1;
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+#program .band-details .band-genre {
+	margin-left: 0;
 }
 
 #program .band-name {
@@ -193,6 +223,11 @@ ul.with-paragraph {
 	display: flex;
 	text-align: left;
 	flex-direction: row;
+	border-bottom: solid 1px #ffeed3;
+}
+
+.band:last-child {
+	border-bottom: 0;
 }
 
 .band .band-name {
@@ -201,15 +236,14 @@ ul.with-paragraph {
 	font-weight: bold;
 }
 
-.band img {
-	margin-right: 10px;
-	margin-left: 5px;
-	width: 150px;
-	height: 100px;
+.band > .band-name {
+	display: none;
 }
 
-.band-img {
-	width: 165px;
+.band img {
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 150px;
 	height: 100px;
 }
 
@@ -227,17 +261,52 @@ ul.with-paragraph {
 	display: block;
 }
 
-.bands .right-aligned {
+.bands .band:nth-child(even) {
 	text-align: right;
-}
-
-.bands .right-aligned {
 	flex-direction: row-reverse;
 }
 
-.bands .right-aligned img {
-	margin-left: 10px;
-	margin-right: 5px;
+.band .social {
+	display: flex;
+	flex-direction: row;
+}
+
+.band .social a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	text-decoration: none;
+	font-size: 0;
+	line-height: 0;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #de682a;
+	transition: padding 0.5s, margin 0.5s;
+	border-radius: 50%;
+	box-shadow: 0 0 8px 4px #de682a;
+}
+
+.band .social a:hover {
+	padding: 5px;
+	margin: 0;
+}
+
+.band .social .yt {
+	background-image: url('img/yt.svg');
+}
+
+.band .social .fb {
+	background-image: url('img/fb.svg');
+}
+
+.band .social .ig {
+	background-image: url('img/ig.svg');
+}
+
+.band .social .web {
+	background-image: url('img/web.svg');
 }
 
 #bottom {
@@ -328,8 +397,7 @@ ul.with-paragraph {
 #contact .contact a:visited,
 #contact .contact a:hover {
 	display: block;
-	color: black;
-	text-decoration: none;
+	color: white;
 }
 
 #contact h3,
