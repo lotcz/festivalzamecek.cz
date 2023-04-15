@@ -348,6 +348,9 @@ ul.with-paragraph {
 
 .image-view {
 	background-color: white;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -356,21 +359,6 @@ ul.with-paragraph {
 	bottom: 0;
 	position: fixed;
 	cursor: zoom-out;
-}
-
-.image-view-wrapper {
-	position: relative;
-	margin: auto;
-	top: 50%;
-	left: 50%;
-	height: 100%;
-}
-
-.image-view img {
-	position: relative;
-	margin: auto;
-	transform: translate(-50%, -50%);
-	height: 100%;
 }
 
 /* CONTACT */
