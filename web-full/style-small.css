@@ -1,5 +1,5 @@
 body {
-	font-size: 100%;
+	font-size: 120%;
 }
 
 #wrapper {
@@ -7,15 +7,28 @@ body {
 }
 
 .inner {
-	padding: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 header {
 	padding: 0;
 }
 
-header #date {
+#pretext-spacer {
+	padding-top: 1rem;
+}
+
+header .announce {
 	font-size: 150%;
+}
+
+header .announce-big {
+	font-size: 150%;
+}
+
+header .pretext {
+	font-size: 80%;
 }
 
 h1 {
@@ -138,10 +151,20 @@ h3 {
 
 /* KONTAKT */
 
+.contact {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 .place-2-cols {
 	display: block;
 }
 
 .place-2-cols .col {
 	display: block;
+}
+
+#bottom {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }

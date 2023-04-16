@@ -10,7 +10,7 @@
 		/>
 		<meta
 			name="keywords"
-			content="hudba,festival,multižánrový festival,hudební festival,Středočeské muzeum,Roztoky u Prahy,Roztoky"
+			content="festival,Zámeček,hudba,multižánrový,hudební,Středočeské muzeum,Roztoky u Prahy,Roztoky"
 		/>
 		<meta name="author" content="Karel Zavadil" />
 		<meta
@@ -18,13 +18,10 @@
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"
 		/>
 
-		<link rel="shortcut icon" type="image/png" href="/favicon.ico" />
-		<link rel="stylesheet" href="style.css?v=2023.0" />
-		<link
-			rel="stylesheet"
-			media="screen and (max-width: 1000px)"
-			href="style-small.css?v=2023.0"
-		/>
+		<link rel="shortcut icon" type="image/png" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css?v=2023.5" />
+		<link rel="stylesheet" media="screen and (max-width: 1000px)" href="style-small.css?v=2023.5" />
+		<script src="script.js?v=2023.5" defer></script>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134988982-2"></script>
@@ -36,124 +33,353 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-134988982-2');
 		</script>
-
-		<script>
-			function generateEmailLink(data, id) {
-				var el = document.getElementById(id);
-				var addr = data.join('@');
-				el.href = 'mailto:' + addr;
-				el.textContent = addr;
-				el.title = addr;
-			}
-
-			// left: 37, up: 38, right: 39, down: 40,
-			// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-			var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-			function preventDefault(e) {
-				e.preventDefault();
-			}
-
-			function preventDefaultForScrollKeys(e) {
-				if (keys[e.keyCode]) {
-					preventDefault(e);
-					return false;
-				}
-			}
-
-			// modern Chrome requires { passive: false } when adding event
-			var supportsPassive = false;
-			try {
-				window.addEventListener(
-					'test',
-					null,
-					Object.defineProperty({}, 'passive', {
-						get: function() {
-							supportsPassive = true;
-						},
-					}),
-				);
-			} catch (e) {}
-
-			var wheelOpt = supportsPassive ? {passive: false} : false;
-			var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
-
-			// call this to Disable
-			function disableScroll() {
-				window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-				window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-				window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-				window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-			}
-
-			// call this to Enable
-			function enableScroll() {
-				window.removeEventListener('DOMMouseScroll', preventDefault, false);
-				window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
-				window.removeEventListener('touchmove', preventDefault, wheelOpt);
-				window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
-			}
-
-			function createElement(parent, tag, cssClass) {
-				var el = document.createElement(tag);
-				el.className = cssClass;
-				parent.appendChild(el);
-				return el;
-			}
-
-			var imageView = null;
-
-			function closeImage() {
-				imageView.parentNode.removeChild(imageView);
-				imageView = null;
-				enableScroll();
-			};
-
-			function showImage(preview) {
-				imageView = createElement(document.body, 'div', 'image-view');
-				const src = preview.dataset.src;
-				imageView.style.backgroundImage = `url('${src}')`;
-				imageView.addEventListener('click', closeImage);
-				disableScroll();
-			}
-
-			window.addEventListener('keydown', () => {
-				if (imageView) closeImage();
-			});
-
-			document.addEventListener('DOMContentLoaded', function(event) {
-				var previews = document.getElementsByClassName('image-preview');
-				for (var i = 0, max = previews.length; i < max; i++) {
-					let preview = previews[i];
-					preview.addEventListener('click', function() {
-						showImage(preview);
-					});
-				}
-			});
-		</script>
 	</head>
 
 	<body>
-		<h1 class="invisible">Festival Zámeček</h1>
+
 		<div id="wrapper">
 			<div class="inner">
 				<header>
-					<div class="pretext">
-						Pod záštitou Středočeského kraje a města Roztoky pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy
+					<div id="pretext-spacer">
+						<div class="pretext">
+							Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum
+						</div>
+						<div class="announce">
+							13. ročník festivalu
+						</div>
 					</div>
-					<div class="announce">
-						FESTIVAL
+					<div id="title-spacer">
+						<div>
+							<h1 class="invisible">ZÁMEČEK</h1>
+						</div>
 					</div>
-					<img src="img/title.png"/>
 					<div class="announce-big">
-						13.5.2023
+						13.5.2023 od 13:30 hodin
 					</div>
-					<div>
-						VE STŘEDOČESKÉM MUZEU V ROZTOKÁCH U PRAHY
+					<div class="pretext">
+						ve Středočeském muzeu v Roztokách u Prahy
 					</div>
 				</header>
 
-				<hr />
+				<h2 class="section-header">Program</h2>
+
+				<section id="program">
+
+					<h4>Hlavní scéna</h4>
+
+					<ul>
+						<li>
+							<time>14:00</time>
+							<span class="band-name">Rozálie</span>
+						</li>
+						<li>
+							<time>16:00</time>
+							<span class="band-name">-123 min.</span>
+						</li>
+						<li>
+							<time>18:00</time>
+							<span class="band-name">Sly Rabbits</span>
+						</li>
+						<li>
+							<time>20:00</time>
+							<span class="band-name">Bert & Friends</span>
+						</li>
+						<li>
+							<time>22:00</time>
+							<span class="band-name">Le Čhavendar</span>
+						</li>
+					</ul>
+
+					<h4>Divadelní scéna</h4>
+
+					<ul>
+						<li>
+							<time>13:30</time>
+							<span class="band-name">Malé Kvítko</span>
+							<span class="band-genre">O Krtkovi</span>
+						</li>
+						<li>
+							<time>15:00</time>
+							<div class="band-details">
+								<span class="band-name">Divadélko Kvitko</span>
+								<span class="band-genre">Budulínek</span>
+							</div>
+						</li>
+						<li>
+							<time>17:00</time>
+							<div class="band-details">
+								<span class="band-name">Divadlo paní Ptákové</span>
+								<span class="band-genre">Pipi Dlouhá punčocha</span>
+							</div>
+						</li>
+					</ul>
+
+					<h4>Doprovodný program </h4>
+
+					<ul>
+						<li>
+							<time>15:30</time>
+							<span class="band-name">KWANG MYONG</span>
+							<span class="band-genre">taekwondo</span>
+						</li>
+						<li>
+							<time>19:20</time>
+							<span class="band-name">Jóga smíchu</span>
+						</li>
+						<li>
+							<div>17:00 - 18:00</div>
+							<div>19:00 - 20:00</div>
+							<div>21:00 - 22:00</div>
+							<span class="band-name">DJ Jarda Dušek</span>
+						</li>
+					</ul>
+
+				</section>
+
+				<h2 class="section-header">Účinkující</h2>
+				<section id="artists" class="bands">
+
+					<div class="band">
+						<div class="band-name">Rozálie</div>
+						<div class="band-img">
+							<img src="img/thumb-rozalie.jpg" />
+							<div class="social">
+								<a class="yt" href="https://www.youtube.com/@RozalieOfficial" target="_blank" title="YouTube">&nbsp;</a>
+							</div>
+						</div>
+						<div class="band-section">
+							<div class="band-name">Rozálie</div>
+							<div class="band-description">
+								<p>
+									Charismatická zpěvačka, akordeonistka, herečka a tanečnice kombinuje svým nezaměnitelným syrovým projevem a úsměvnou slovní ironií dryáčnický šanson s cynickou romantikou.
+								</p>
+								<p>
+									Svým uhrančivým půvabem a přesvědčivostí si získává stále širší okruh zpočátku spíše klubových a divadelních příznivců.
+								</p>
+								<p>
+									Její <q>kousavé</q> životní příběhy v čistě autorských písních, nacházejí silnou odezvu napříč spektrem publika a rezonují v dnešním vyumělkovaném světě tolik vyhledávanou upřímností a realitou života.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="band">
+						<div class="band-name">minus 123 minut</div>
+						<div class="band-img">
+							<img src="img/thumb-123.jpg" />
+							<div class="social">
+								<a class="yt" href="https://www.youtube.com/@minus123minut9" target="_blank" title="YouTube">&nbsp;</a>
+							</div>
+						</div>
+						<div class="band-section">
+							<div class="band-name">minus 123 minut</div>
+							<div class="band-description">
+								<p>
+									Síla kapely spočívá především v živých energických koncertech, které jsou z velké části tvořeny improvizací. Propojují žánry jako soul, groove, jazz, funky či world music.
+								</p>
+								<p>
+									Na minutovský pelmel se moc dobře tančí, ale protože jde o vyjimečné muzikanty, dobře se na jejich hráčské umění, které hraničí s genialitou, dívá.
+								</p>
+								<p>
+									Jsou oceněni z dřívějších let hudební cenou Anděl.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="band">
+						<div class="band-name">Sly Rabbits</div>
+						<div class="band-img">
+							<img src="img/thumb-sly-rabbits.jpg" />
+							<div class="social">
+								<a class="yt" href="https://www.youtube.com/@SlyRabbits" target="_blank" title="YouTube">&nbsp;</a>
+							</div>
+						</div>
+						<div class="band-section">
+							<div class="band-name">Sly Rabbits</div>
+							<div class="band-description">
+								<p>
+									Devítičlenná formace v čele s exotickou zpěvačkou Magdalenou Joao, původem z africké Angoly.
+								</p>
+								<p>
+									Přední pražská funková skupina má za sebou dvě studiová alba, ze kterých naživo představí to nejlepší.
+									Sly Rabbits disponují vynikající údernou rytmikou, ostrou dechovou sekcí a charismatickým vokálem.
+								</p>
+								<p>
+									Vždy ve svém koncertním setu přihodí i funkovou klasiku z repertoáru Jamese Browna nebo Michaela Jacksona.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="band">
+						<div class="band-name">Bert & Friends</div>
+						<div class="band-img">
+							<img src="img/thumb-bert-n-friends.jpg" />
+							<div class="social">
+								<a class="yt" href="https://www.youtube.com/@BertandFriends" target="_blank" title="YouTube">&nbsp;</a>
+							</div>
+						</div>
+						<div class="band-section">
+							<div class="band-name">Bert & Friends</div>
+							<div class="band-description">
+								<p>
+									Jedna z mála kapel u nás, která umí skloubit chytlavé a retro melodie a zvláštní nadsázku (ne však nutně humor!) s opravdovou hudební sofistikovaností.
+									To celé zabaleno v dobré náladě, jako by Karel Svoboda potkal Davida Lynche.
+								</p>
+								<p>
+									Proto je univerzálně uznávaná i mezi muzikanty jako něco neotřelého a nového. Na kontě tak má cenu Anděl za nejlepší videoklip a nominaci za Objev roku, cenu Apollo za Inovaci v hudbě nebo cenu Žebřík za Objev roku.
+								</p>
+								<p>
+									Kapela vychází z alternativy, nicméně mainstreamový potenciál a appeal kapely je veliký, což dokazují stále častější vystoupení na velkých a prestižních akcích.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="band">
+						<div class="band-name">Le Čhavendar</div>
+						<div class="band-img">
+							<img src="img/thumb-chavendar.jpg" />
+							<div class="social">
+								<a class="yt" href="https://www.youtube.com/@lechavendarband" target="_blank" title="YouTube">&nbsp;</a>
+							</div>
+						</div>
+						<div class="band-section">
+							<div class="band-name">Le Čhavendar</div>
+							<div class="band-description">
+								<p>
+									Název znamená v romštině <q>od chlapců</q>. Kapela pochází z Rokycan. Na první desce s nimi spolupracovala Ida Kelarová. Po té přišla řada koncertů u nás a pak i v zahraničí a na festivalech.
+								</p>
+								<p>
+									Hudba vychází z folkloru obohaceného o jazz, latinu a flamenco a texty jsou o přátelství, lásce a hudbě.</p>
+								<p>
+									Loni byli pozváni na festival Prague Pride, kde svým energickým koncertem roztančili Letnou.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<h2 class="section-header">Doprovodný program</h2>
+				<section class="bands">
+					<div class="band">
+						<div class="band-name">Kwang Myong</div>
+						<div class="band-img">
+							<img src="img/thumb-taekwondo.jpg" />
+							<div class="social">
+								<a class="yt" href="https://www.youtube.com/channel/UCOBhT-1FQ2m77LRJqaBoIqA" target="_blank" title="YouTube">&nbsp;</a>
+								<a class="fb" href="https://www.facebook.com/groups/230576223635824" target="_blank" title="Facebook">&nbsp;</a>
+								<a class="ig" href="https://www.instagram.com/kwangmyong_itf/?hl=en" target="_blank" title="Instagram">&nbsp;</a>
+								<a class="web" href="https://kwangmyong.cz" target="_blank" title="WWW">&nbsp;</a>
+							</div>
+						</div>
+						<div class="band-section">
+							<div class="band-name">Kwang Myong</div>
+							<div class="band-description">
+								<p>
+									Roztocký oddíl Taekwondo předvede jak štípat dříví pomocí kopů s výskokem a jiné užitečné dovednosti.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="band">
+						<div class="band-name">David Zahradník</div>
+						<div class="band-img">
+							<img src="img/thumb-yoga.jpg" />
+							<div class="social">
+								<a class="web" href="https://www.jogasmichu.cz/member/david-zahradnik" target="_blank" title="WWW">&nbsp;</a>
+							</div>
+						</div>
+						<div class="band-section">
+							<div class="band-name">David Zahradník</div>
+							<div class="band-description">
+								<p>
+									Jóga smíchu protáhne vaši duši i bránici. Pomáhá proti stresu a špatné náladě.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="band">
+						<div class="band-name">Divadlo paní Ptákové</div>
+						<div class="band-img">
+							<img src="img/thumb-pani-ptakova.jpg?v=2" />
+							<div class="social">
+								<a class="fb" href="https://www.facebook.com/profile.php?id=100076604944873" target="_blank" title="Facebook">&nbsp;</a>
+							</div>
+						</div>
+						<div class="band-section">
+							<div class="band-name">Divadlo paní Ptákové</div>
+							<div class="band-description">
+								<p>
+									Barevný svět Pipi Dlouhé punčochy je plný dobrodružství, kamarádství, sladkostí a srandiček.
+								</p>
+								<p>
+									Ale pozor, vše není tak jednoduché, jak se může zdát. Bude se Pipi muset přestěhovat z Vily Vilekuly do dětského domova?
+								</p>
+								<p>
+									To a ještě více se dozvíte v loutkové pohádce pro děti od 3 let, pro dospělé také.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="band">
+						<div class="band-name">Divadélko Kvítko</div>
+						<div class="band-img">
+							<img src="img/thumb-kvitko.jpg?v=2 " />
+							<div class="social">
+								<a class="web" href="http://www.divadelkokvitko.cz" target="_blank" title="WWW">&nbsp;</a>
+							</div>
+						</div>
+						<div class="band-section">
+							<div class="band-name">Divadélko Kvítko</div>
+							<div class="band-description">
+								<p>
+									Roztocké loutkové divadlo Kvítko se představí hned dvěma soubory. Malé Kvítko, to hrají děti, sehraje pohádku O Krtkovi a dospělácké Divadélko Kvítko zahraje Budulínka.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="band">
+						<div class="band-name">Tvoříme pískem</div>
+						<div class="band-img">
+							<img src="img/thumb-pisek.jpg" />
+							<div class="social">
+								<a class="web" href="https://www.tvorime-piskem.cz/" target="_blank" title="WWW">&nbsp;</a>
+							</div>
+						</div>
+						<div class="band-section">
+							<div class="band-name">Tvoříme pískem</div>
+							<div class="band-description">
+								<p>
+									Na letošním ročníku festivalu si mohou děti s rodiči vytvořit krásné barevné mandaly v dílničce <q>Tvoříme pískem</q>.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="band">
+						<div class="band-name">A další ...</div>
+						<div class="band-img">
+							<img src="img/thumb-other.jpg" />
+						</div>
+						<div class="band-section">
+							<div class="band-name">A další ...</div>
+							<div class="band-description">
+								<p>
+									Adrenalin park, slackline, závody RC modelů, šachový klub Caissa Roztoky, deskové hry, pletení košíků.
+								</p>
+								<p>
+									Při slunečném dni nebude chybět osvěžení od dobrovolných hasičů.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
 
 				<h2 class="section-header">Plakát</h2>
 				<section>
@@ -181,30 +407,32 @@
 
 					<p>Dramaturgie, booking kapel a stánkový prodej:</p>
 
-					<div id="contact" class="place-2-cols">
+					<div class="contact place-2-cols">
 						<div class="col">
 							<div class="name">Karel kropáček</div>
-							<div class="contact">
-								604 183 155
+							<div>
+								603 425 428
 							</div>
-							<div class="contact">
-								<a id="krop">Pro zobrazení e-mailové adresy zapněte javascript.</a>
-								<script>
-									generateEmailLink(['k.kropacek', 'seznam.cz'], 'krop');
-								</script>
+							<div>
+								<a href="mailto:k.kropacek@seznam.cz" target="_blank">k.kropacek@seznam.cz</a>
 							</div>
 						</div>
 						<div class="col">
 							<div class="name">Veronika Valdová</div>
-							<div class="contact">
+							<div>
 								608 923 960
 							</div>
-							<div class="contact">
-								<a id="vv">Pro zobrazení e-mailové adresy zapněte javascript.</a>
-								<script>
-									generateEmailLink(['veve.badji', 'seznam.cz'], 'vv');
-								</script>
+							<div>
+								<a href="mailto:veve.badji@seznam.cz" target="_blank">veve.badji@seznam.cz</a>
 							</div>
+						</div>
+					</div>
+
+					<div class="contact">
+						<p>Naše dvorní fotografka:</p>
+						<div class="name">Adéla Vosičková</div>
+						<div>
+							<a href="https://adelavosickova.cz" target="_blank">www.adelavosickova.cz</a>
 						</div>
 					</div>
 
@@ -231,8 +459,7 @@
 		<footer>
 			<div class="inner">
 				<p>
-					Pod záštitou města Roztoky
-					pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy.
+					Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy
 				</p>
 				<img class="sponsors" src="img/sponsors.jpg?v=2023" alt="sponzoři" />
 				<div>

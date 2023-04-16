@@ -3,11 +3,21 @@
 	src: url('Syncopate-Bold.ttf');
 }
 
+:root {
+	--blue: #052c49;
+	--red: #a93100;
+	--beige: #fcdec1;
+	--orange: #ed9664;
+
+	--header-space: 200px;
+	--title-space: 270px;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url(img/bg.jpg);
-	background-color: #bc3004;
+	background-image: url('img/bg.jpg?v=2');
+	background-color: var(--beige);
 	background-size: cover;
 	-webkit-background-size: cover;
 	background-repeat: no-repeat;
@@ -23,11 +33,27 @@ body {
 #wrapper {
 	margin: 0;
 	padding: 0;
-	background-image: url(img/drawing.png);
+	background-image: url('img/drawing.png?v=2');
 	background-color: transparent;
 	background-size: auto;
 	background-repeat: no-repeat;
-	background-position: center bottom;
+	background-position: center var(--header-space);
+}
+
+#pretext-spacer {
+	height: var(--header-space);
+	padding-top: 2rem;
+}
+
+#title-spacer {
+	max-width: 100%;
+	box-sizing: border-box;
+	resize: horizontal;
+}
+
+#title-spacer div {
+	width: 100%;
+	padding-bottom: 25%;
 }
 
 p {
@@ -35,7 +61,6 @@ p {
 }
 
 .inner {
-	padding-top: 10px;
 	display: block;
 	position: relative;
 	margin: auto;
@@ -46,63 +71,68 @@ header {
 	text-align: center;
 }
 
+/* RED TEXT */
 header .pretext,
+header .announce-big,
+.band-name,
+h2.section-header,
+#contact h3,
+section h4 {
+	color: var(--red);
+}
+
+/* BLUE TEXT */
+#wrapper,
 header .announce {
-	color: #de682a;
+	color: var(--blue);
+}
+
+/* SIMPLE SHADOWS */
+#wrapper,
+header .pretext,
+.bands .band-name {
+	text-shadow: -1px 1px 1px var(--beige), 1px 1px 1px var(--beige), 1px -1px 1px var(--beige), -1px -1px 1px var(--beige);
+}
+
+/* COMPOUND SHADOWS */
+h2,
+#program .band-name,
+header .announce,
+header .announce-big {
+	text-shadow: -2px -2px 1px var(--beige), 2px 2px 1px var(--orange);
 }
 
 header .pretext {
 	line-height: 125%;
-	font-size: 90%;
+	font-size: 100%;
 }
 
 header .announce {
 	font-size: 200%;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-top: 2rem;
 }
 
 header .announce-big {
-	font-size: 300%;
+	font-size: 200%;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-}
-
-header h2,
-header h1 {
-	width: 100%;
-	text-align: center;
-}
-
-header img {
-	max-width: 100%;
-	margin:auto;
 }
 
 .invisible {
 	display: none;
 }
 
-body,
-.primary-color,
-.band .band-description,
-#program time,
-hr {
-	color: #ffeed3;
+/* LINKS */
+a,
+a:visited,
+a:active {
+	color: var(--red);
+	text-decoration: none;
 }
 
-hr {
-	border: solid 1px #ffeed3;
-	margin-bottom: 50px;
-}
-
-.secondary-color,
-.white,
-.band-name,
-h2.section-header,
-#contact h3,
-section h4 {
-	color: white;
+a:hover {
+	color: var(--orange);
+	text-decoration: none;
 }
 
 .black
@@ -146,14 +176,6 @@ h2 {
 h3 {
 	font-size: 100%;
 
-}
-
-a,
-a:visited,
-a:hover,
-a:active {
-	color: white;
-	text-decoration: underline;
 }
 
 .section-header {
@@ -223,11 +245,6 @@ ul.with-paragraph {
 	display: flex;
 	text-align: left;
 	flex-direction: row;
-	border-bottom: solid 1px #ffeed3;
-}
-
-.band:last-child {
-	border-bottom: 0;
 }
 
 .band .band-name {
@@ -269,6 +286,7 @@ ul.with-paragraph {
 .band .social {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .band .social a {
@@ -282,10 +300,10 @@ ul.with-paragraph {
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-color: #de682a;
+	background-color: var(--beige);
 	transition: padding 0.5s, margin 0.5s;
 	border-radius: 50%;
-	box-shadow: 0 0 8px 4px #de682a;
+	box-shadow: 0 0 8px 4px var(--beige);
 }
 
 .band .social a:hover {
@@ -310,21 +328,9 @@ ul.with-paragraph {
 }
 
 #bottom {
-	margin-top: 1rem;
-	padding-top: 22%;
-	padding-bottom: 3.875%;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 	text-align: center;
-}
-
-#bottom a,
-#bottom a:visited,
-#bottom a:hover,
-#bottom a:active {
-	color: white;
-	font-size: 80%;
-	text-decoration: none;
-	display: block;
-	--padding-bottom: 50px;
 }
 
 /* MAPKA */
@@ -372,25 +378,17 @@ ul.with-paragraph {
 	flex: 1;
 }
 
-#contact {
+.contact {
 	text-align: center;
 }
 
-#contact .name {
-	font-size: 125%;
-}
-
-#contact .contact a,
-#contact .contact a:active,
-#contact .contact a:visited,
-#contact .contact a:hover {
-	display: block;
-	color: white;
-}
-
-#contact h3,
-#contact .name {
+.contact .col {
 	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.contact .name {
+	font-size: 125%;
 }
 
 /* FOOTER */
@@ -400,6 +398,7 @@ footer {
 	text-align: center;
 	background-color: white;
 	color: black;
+	padding-top: 1rem;
 }
 
 footer img.sponsors {
