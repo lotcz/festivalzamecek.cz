@@ -1,1 +1,0 @@
-- kniha Historie festivalu Zámeček
