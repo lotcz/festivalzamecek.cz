@@ -1,11 +1,40 @@
 // PARALLAX
-var viewHeight = 600;
-var parallaxImageHeight = 800;
+const PARALLAX = {
+	element: null
+};
 
-function parallaxInit() {
+function parallaxUpdate() {
+	if (PARALLAX.element === null) {
+		PARALLAX.element = document.getElementById('wrapper');
+		// Parallax wrapper not found!
+		if (PARALLAX.element === null) {
+			return;
+		}
+	}
 
+	const scrollTop = window.scrollY;
+	const viewHeight = window.innerHeight;
+	const contentHeight = document.body.offsetHeight;
+
+	// Parallax disabled in mobile view.
+	if (window.innerWidth < 1000) {
+		PARALLAX.element.style.backgroundPositionY = undefined;
+		return;
+	}
+
+	const scrollMax = contentHeight - viewHeight;
+	const scrollProgress = scrollMax > 0 ? scrollTop / scrollMax : 0;
+
+	PARALLAX.element.style.backgroundPositionY = `${scrollProgress * 100}%`;
 }
 
+document.addEventListener('DOMContentLoaded', function(event) {
+	parallaxUpdate();
+});
+
+document.addEventListener('scroll', function(event) {
+	parallaxUpdate();
+});
 
 // IMAGES
 
