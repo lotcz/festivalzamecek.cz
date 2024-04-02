@@ -115,9 +115,9 @@ header .announce-location {
 a,
 a:visited,
 a:active {
-	color: var(--white);
+	color: var(--pink);
 	text-decoration: none;
-	text-shadow: 2px 2px 2px var(--red);
+	text-shadow: 2px 2px 2px var(--white);
 }
 
 a:hover {
