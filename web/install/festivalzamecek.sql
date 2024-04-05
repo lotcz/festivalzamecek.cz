@@ -1,42 +1,51 @@
-DROP TABLE IF EXISTS `cosmetic_service_category`;
+DROP TABLE IF EXISTS `festival_sponsor`;
 
-CREATE TABLE `cosmetic_service_category` (
-  `cosmetic_service_category_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `cosmetic_service_category_name` varchar(255) NOT NULL,
-  `cosmetic_service_category_sorting_weight` INT not null default 0,
-  `cosmetic_service_category_is_in_pricelist` BOOLEAN NOT NULL DEFAULT true,
-  `cosmetic_service_category_is_in_calendar` BOOLEAN NOT NULL DEFAULT true,
-  `cosmetic_service_category_is_in_offers` BOOLEAN NOT NULL DEFAULT true,
+CREATE TABLE `festival_sponsor` (
+    `festival_sponsor_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `festival_sponsor_active` BOOLEAN NOT NULL DEFAULT true,
+    `festival_sponsor_name` VARCHAR(255) NOT NULL,
+    `festival_sponsor_image` VARCHAR(255) NULL,
+    `festival_sponsor_link` VARCHAR(255) NULL,
+    `festival_sponsor_sorting_weight` INT not null default 0,
 
-  PRIMARY KEY (`cosmetic_service_category_id`)
+    PRIMARY KEY (`festival_sponsor_id`),
+    INDEX `festival_sponsor_active_ix` (`festival_sponsor_active` ASC),
+    UNIQUE INDEX `festival_sponsor_name_uq` (`festival_sponsor_name` ASC)
 ) ENGINE=InnoDB;
 
-DROP TABLE IF EXISTS `cosmetic_service`;
+CREATE TABLE `festival_stage` (
+    `festival_stage_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `festival_stage_active` BOOLEAN NOT NULL DEFAULT true,
+    `festival_stage_name` VARCHAR(255) NOT NULL,
+    `festival_stage_sorting_weight` INT not null default 0,
 
-CREATE TABLE `cosmetic_service` (
-  `cosmetic_service_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `cosmetic_service_cosmetic_service_category_id` INT UNSIGNED NOT NULL,
-  `cosmetic_service_name` varchar(255) NOT NULL,
-  `cosmetic_service_image` VARCHAR(255) NULL,
-  `cosmetic_service_description` text NULL,
-  `cosmetic_service_sorting_weight` INT not null default 0,
-  `cosmetic_service_price` DECIMAL(10,2) UNSIGNED,
-  `cosmetic_service_duration_minutes` INT UNSIGNED,
-  `cosmetic_service_is_in_pricelist` BOOLEAN NOT NULL DEFAULT true,
-  `cosmetic_service_is_in_calendar` BOOLEAN NOT NULL DEFAULT true,
-  `cosmetic_service_is_in_offers` BOOLEAN NOT NULL DEFAULT true,
-
-  PRIMARY KEY (`cosmetic_service_id`),
-  CONSTRAINT `cosmetic_service_category_fk`
-		FOREIGN KEY (`cosmetic_service_cosmetic_service_category_id`)
-		REFERENCES `cosmetic_service_category` (`cosmetic_service_category_id`),
-	UNIQUE INDEX `cosmetic_service_name_unique` (`cosmetic_service_name` ASC)
+    PRIMARY KEY (`festival_stage_id`),
+    INDEX `festival_stage_active_ix` (`festival_stage_active` ASC),
+    UNIQUE INDEX `festival_stage_name_uq` (`festival_stage_name` ASC)
 ) ENGINE=InnoDB;
 
+DROP TABLE IF EXISTS `festival_artist`;
 
-DROP VIEW IF EXISTS `viewCosmeticServices`;
+CREATE TABLE `festival_artist` (
+    `festival_artist_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `festival_artist_stage_id` INT UNSIGNED NOT NULL,
+    `festival_artist_active` BOOLEAN NOT NULL DEFAULT true,
+    `festival_artist_name` VARCHAR(255) NOT NULL,
+    `festival_artist_image` VARCHAR(255) NULL,
+    `festival_artist_description` text NULL,
+    `festival_artist_link_youtube` VARCHAR(255) NULL,
+    `festival_artist_link_instagram` VARCHAR(255) NULL,
+    `festival_artist_link_facebook` VARCHAR(255) NULL,
+    `festival_artist_link_web` VARCHAR(255) NULL,
+    `festival_artist_show_in_program` BOOLEAN NOT NULL DEFAULT true,
+    `festival_artist_show_in_details` BOOLEAN NOT NULL DEFAULT true,
+    `festival_artist_show_in_other` BOOLEAN NOT NULL DEFAULT false,
+    `festival_artist_sorting_weight` INT not null default 0,
 
-CREATE VIEW viewCosmeticServices AS
-	SELECT *
-	FROM cosmetic_service s
-	LEFT OUTER JOIN cosmetic_service_category c ON (c.cosmetic_service_category_id = s.cosmetic_service_cosmetic_service_category_id);
+    PRIMARY KEY (`festival_artist_id`),
+    CONSTRAINT `festival_artist_stage_fk`
+        FOREIGN KEY (`festival_artist_stage_id`)
+        REFERENCES `festival_stage` (`festival_stage_id`),
+    INDEX `festival_artist_stage_ix` (`festival_artist_active`, `festival_artist_stage_id` ASC),
+    UNIQUE INDEX `festival_artist_name_uq` (`festival_artist_name` ASC)
+) ENGINE=InnoDB;
