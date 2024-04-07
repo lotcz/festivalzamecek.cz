@@ -64,6 +64,7 @@ footer p {
 }
 
 .white-text,
+.primary-text,
 h3, #wrapper p,
 #program time,
 #program .band-genre {
@@ -299,19 +300,19 @@ ul.with-paragraph {
 }
 
 .band .social .yt {
-	background-image: url('img/yt.svg');
+	background-image: url('img/icons/yt.svg');
 }
 
 .band .social .fb {
-	background-image: url('img/fb.svg');
+	background-image: url('img/icons/fb.svg');
 }
 
 .band .social .ig {
-	background-image: url('img/ig.svg');
+	background-image: url('img/icons/ig.svg');
 }
 
 .band .social .web {
-	background-image: url('img/web.png');
+	background-image: url('img/icons/web.png');
 }
 
 #bottom {

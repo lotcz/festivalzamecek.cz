@@ -41,7 +41,7 @@
 
 									?>
 										<li>
-											<time>14:00</time>
+											<time><?=$artist->val('festival_artist_program_time')?></time>
 											<span class="band-name"><?=$artist->val('festival_artist_name')?></span>
 
 											<?php
@@ -76,7 +76,29 @@
 									$this->z->images->renderImage($artist->val('festival_artist_image'), 'thumb');
 								?>
 								<div class="social">
-									<a class="yt" href="https://www.youtube.com/@RozalieOfficial" target="_blank" title="YouTube">&nbsp;</a>
+                                    <?php
+										if (!empty($artist->val('festival_artist_link_youtube'))) {
+											?>
+												<a class="yt" href="<?=$artist->val('festival_artist_link_youtube')?>" target="_blank" title="YouTube">&nbsp;</a>
+											<?php
+										}
+										if (!empty($artist->val('festival_artist_link_instagram'))) {
+											?>
+												<a class="ig" href="<?=$artist->val('festival_artist_link_instagram')?>" target="_blank" title="Instagram">&nbsp;</a>
+											<?php
+										}
+										if (!empty($artist->val('festival_artist_link_facebook'))) {
+											?>
+												<a class="fb" href="<?=$artist->val('festival_artist_link_facebook')?>" target="_blank" title="Facebook">&nbsp;</a>
+											<?php
+										}
+										if (!empty($artist->val('festival_artist_link_web'))) {
+											?>
+												<a class="web" href="<?=$artist->val('festival_artist_link_web')?>" target="_blank" title="Web">&nbsp;</a>
+											<?php
+										}
+                                    ?>
+
 								</div>
 							</div>
 							<div class="band-section">
@@ -100,7 +122,7 @@
 				<div>
 					<img src="https://galerie.festivalzamecek.cz/i.php?/upload/2024/04/02/20240402224906-b1010c65-sm.jpg" />
 				</div>
-				<small>Plakát festivalu pro letošní rok</small>
+				<div class="primary-text">Plakát festivalu pro letošní rok</div>
 			</div>
 		</section>
 
@@ -119,7 +141,7 @@
 			<div class="contact place-2-cols">
 				<div class="col">
 					<div class="name">Karel kropáček</div>
-					<div>
+					<div class="primary-text">
 						603 425 428
 					</div>
 					<div>
@@ -128,7 +150,7 @@
 				</div>
 				<div class="col">
 					<div class="name">Veronika Valdová</div>
-					<div>
+					<div class="primary-text">
 						608 923 960
 					</div>
 					<div>
@@ -151,7 +173,7 @@
 		<section id="about-us" class="about-us">
 			<p>
 				Festival Zámeček je multižánrový hudební festival, který se koná v areálu
-				zámeckého parku Středočeského muzea v Roztokách už od roku 2011.
+				zámeckého parku Středočeského muzea v Roztokách již od roku 2011.
 			</p>
 			<p>
 				Na fotky z minulých ročníků se můžete podívat v naší
