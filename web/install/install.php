@@ -16,4 +16,4 @@
 	$db_name = $options['db_name'] ?? null;
 
 	$z->core->installAllModules($db_login, $db_password, $db_name);
-	$z->db->executeFile(__DIR__ . '/festivalzamecek.sql', $db_login, $db_password, $db_name);
+	$z->db->executeFile(__DIR__ . '/festival.sql', $db_login, $db_password, $db_name);

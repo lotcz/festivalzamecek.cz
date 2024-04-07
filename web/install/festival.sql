@@ -37,10 +37,12 @@ CREATE TABLE `festival_artist` (
     `festival_artist_link_instagram` VARCHAR(255) NULL,
     `festival_artist_link_facebook` VARCHAR(255) NULL,
     `festival_artist_link_web` VARCHAR(255) NULL,
+    `festival_artist_program_time` VARCHAR(255) NULL,
     `festival_artist_show_in_program` BOOLEAN NOT NULL DEFAULT true,
     `festival_artist_show_in_details` BOOLEAN NOT NULL DEFAULT true,
     `festival_artist_show_in_other` BOOLEAN NOT NULL DEFAULT false,
     `festival_artist_sorting_weight` INT not null default 0,
+    `festival_artist_program_sorting_weight` INT not null default 0,
 
     PRIMARY KEY (`festival_artist_id`),
     CONSTRAINT `festival_artist_stage_fk`
@@ -49,3 +51,10 @@ CREATE TABLE `festival_artist` (
     INDEX `festival_artist_stage_ix` (`festival_artist_active`, `festival_artist_stage_id` ASC),
     UNIQUE INDEX `festival_artist_name_uq` (`festival_artist_name` ASC)
 ) ENGINE=InnoDB;
+
+DROP VIEW IF EXISTS `viewFestivalArtists`;
+
+CREATE VIEW viewFestivalArtists AS
+SELECT *
+FROM festival_artist fa
+LEFT OUTER JOIN festival_stage fs ON (fa.festival_artist_stage_id = fs.festival_stage_id);

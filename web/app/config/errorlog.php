@@ -2,6 +2,6 @@
 
 	return [
 
-		'error_log_path' => 'c:\\develop\\kosmetika-terka.cz\\zengine.log'
+		'error_log_path' => 'c:\\develop\\festivalzamecek.cz\\zengine.log'
 
 	];

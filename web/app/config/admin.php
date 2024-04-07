@@ -3,12 +3,13 @@
 	return [
 
 		/* show standard admin menu */
-		'show_default_menu' => false,
+		'show_default_menu' => true,
 
 		/* custom app admin menu */
 		'custom_menu' => [
-			['admin/cosmetic-service-categories', 'Kategorie'],
-			['admin/cosmetic-services', 'Služby'],
+			['admin/festival-stages', 'Scény'],
+			['admin/festival-artists', 'Vystupující'],
+			['admin/festival-sponsors', 'Sponzoři'],
 		],
 
 	];

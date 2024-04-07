@@ -12,15 +12,15 @@
 
 		// modules that are enabled by default
 		// available modules in zEngine/src/app/modules or current app/modules folders
-		'default_modules' => ['resources', 'cookies', 'messages', 'analytics', 'i18n', 'alias', 'auth', 'admin', 'gallery'],
+		'default_modules' => ['resources', 'cookies', 'messages', 'analytics', 'i18n', 'alias', 'auth', 'admin', 'images', 'festival'],
 
 		// modules that are not enabled by default, but need to be installed
-		'also_install_modules' => ['forms', 'tinymce', 'emails', 'newsletter', 'files'],
+		'also_install_modules' => ['forms', 'tinymce', 'emails'],
 
 		'site_title' => 'Zámeček 2024',
-		'site_description' => 'Profesionální kosmetické služby v centru Prahy. Kosmetické ošetření pleti a nehtů, manikůra i pedikůra, galvanická žehlička. Osobní přístup a přátelská atmosféra.',
+		'site_description' => 'Pohodový multižánrový festival konaný každoročně ve Středočeském muzeu v Roztokách u Prahy.',
 		'site_author' => 'Karel Zavadil',
-		'site_keywords' => 'terka,Tereza Houšková,kosmetika,nehty,nehtové studio,kosmetické služby,ošetření pleti,galvanická žehlička,masáž očí,casmara,skyendor',
+		'site_keywords' => 'festival,Zámeček,hudba,multižánrový,hudební,Středočeské muzeum,Roztoky u Prahy,Roztoky',
 
 		// will be used to create all link urls, no trailing slash
 		'base_url' => 'http://festivalzamecek.loc',
@@ -35,8 +35,6 @@
 		// type - link_css/print_css/link_less/link_js/inline_js/favicon
 		// placement - head/default/bottom
 		'includes' => [
-			['https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js', 'link_js', 'bottom'],
-			['https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css', 'link_css', 'head'],
 			['style.css', 'link_css', 'head'],
 			['style-small.css', 'link_css', 'head'],
 			['script.js', 'link_js', 'head']
