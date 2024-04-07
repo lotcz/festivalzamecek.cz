@@ -1,162 +1,164 @@
-body {
-	font-size: 100%;
-}
+@media (max-width: 1000px) {
 
-#wrapper {
-	background-size: contain;
-}
+	body {
+		font-size: 100%;
+	}
 
-.inner {
-	padding-left: 15px;
-	padding-right: 15px;
-}
+	#wrapper {
+		background-size: contain;
+	}
 
-header {
-	padding: 0;
-}
+	.inner {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
-#pretext-spacer {
-	padding-top: 1rem;
-}
+	header {
+		padding: 0;
+	}
 
-header .pretext {
-	font-size: 80%;
-}
+	#pretext-spacer {
+		padding-top: 1rem;
+	}
 
-h1 {
-	font-size: 200%;
-}
+	header .pretext {
+		font-size: 80%;
+	}
 
-h2 {
-	font-size: 150%;
-}
+	h1 {
+		font-size: 200%;
+	}
 
-h3 {
-	font-size: 100%;
-}
+	h2 {
+		font-size: 150%;
+	}
 
-/* PROGRAM */
-#program ul {
-	padding-left: 0;
-}
+	h3 {
+		font-size: 100%;
+	}
 
-#program ul li {
-	display: block;
-}
+	/* PROGRAM */
+	#program ul {
+		padding-left: 0;
+	}
 
-#program time {
-	display: block;
-	width: auto;
-}
+	#program ul li {
+		display: block;
+	}
 
-#program .band-details {
-	display: block;
-}
+	#program time {
+		display: block;
+		width: auto;
+	}
 
-#program .band-name {
-	display: block;
-}
+	#program .band-details {
+		display: block;
+	}
 
-#program .band-genre {
-	display: block;
-	margin-left: 0;
-}
+	#program .band-name {
+		display: block;
+	}
 
-/* BANDS */
+	#program .band-genre {
+		display: block;
+		margin-left: 0;
+	}
 
-.band {
-	margin: 0;
-	padding: 0 0 20px 0;
-	display: block;
-}
+	/* BANDS */
+	.band {
+		margin: 0;
+		padding: 0 0 20px 0;
+		display: block;
+	}
 
-.band .social {
-	margin-left: 10px;
-}
+	.band .social {
+		margin-left: 10px;
+	}
 
-.band .social a {
-	padding-left: 5px;
-	padding-right: 5px;
-}
+	.band .social a {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 
-.band .social a:hover {
-	padding-left: 10px;
-	padding-right: 10px;
-}
+	.band .social a:hover {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
-.band .band-img {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-}
+	.band .band-img {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
 
-.band:last-child {
-	margin: 20px 0 0 0;
-}
+	.band:last-child {
+		margin: 20px 0 0 0;
+	}
 
-.band .band-section {
-	padding: 0;
-	display: block;
-	clear: both;
-	margin-left: 10px;
-}
+	.band .band-section {
+		padding: 0;
+		display: block;
+		clear: both;
+		margin-left: 10px;
+	}
 
-.band .band-name {
-	margin-bottom: 15px;
-	margin-left: 10px;
-}
+	.band .band-name {
+		margin-bottom: 15px;
+		margin-left: 10px;
+	}
 
-.band > .band-name {
-	display: inline-block;
-}
+	.band > .band-name {
+		display: inline-block;
+	}
 
-.band .band-section .band-name {
-	display: none;
-}
+	.band .band-section .band-name {
+		display: none;
+	}
 
-.band img {
-	margin: 0;
-}
+	.band img {
+		margin: 0;
+	}
 
-.bands .band:nth-child(odd) .band-img {
-	margin-left: 10px;
-}
+	.bands .band:nth-child(odd) .band-img {
+		margin-left: 10px;
+	}
 
-.bands .band:nth-child(even) .band-name,
-.bands .band:nth-child(even) .band-description,
-.bands .band:nth-child(even) .band-img {
-	margin-right: 10px;
-	flex-direction: row-reverse;
-}
+	.bands .band:nth-child(even) .band-name,
+	.bands .band:nth-child(even) .band-description,
+	.bands .band:nth-child(even) .band-img {
+		margin-right: 10px;
+		flex-direction: row-reverse;
+	}
 
-.bands .band:nth-child(even) .band-img {
-	text-align: right;
-}
+	.bands .band:nth-child(even) .band-img {
+		text-align: right;
+	}
 
-.bands .band:nth-child(even) .band-img .social {
-	margin-right: 10px;
-}
+	.bands .band:nth-child(even) .band-img .social {
+		margin-right: 10px;
+	}
 
-.bands .band:nth-child(even) > .band-name {
-	display: block;
-}
+	.bands .band:nth-child(even) > .band-name {
+		display: block;
+	}
 
-/* KONTAKT */
+	/* KONTAKT */
+	.contact {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 
-.contact {
-	margin-top: 0;
-	margin-bottom: 0;
-}
+	.place-2-cols {
+		display: block;
+	}
 
-.place-2-cols {
-	display: block;
-}
+	.place-2-cols .col {
+		display: block;
+	}
 
-.place-2-cols .col {
-	display: block;
-}
+	#bottom {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
 
-#bottom {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
 }
