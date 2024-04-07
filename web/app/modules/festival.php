@@ -6,15 +6,31 @@
 
 	class festivalModule extends zModule {
 
-		public function loadPricelist() {
-			return $this->groupCosmeticServices(
-				$pricelist = CosmeticServiceModel::select(
-					$this->z->db,
-					'viewCosmeticServices',
-					'cosmetic_service_category_is_in_pricelist = 1 and cosmetic_service_is_in_pricelist = 1',
-					'cosmetic_service_category_sorting_weight, cosmetic_service_category_name, cosmetic_service_sorting_weight, cosmetic_service_name'
-				)
-			);
+		public function loadActiveStages() {
+			return FestivalStageModel::select(
+                $this->z->db,
+                'festival_stage',
+                'festival_stage_active = 1',
+                'festival_stage_sorting_weight asc'
+            );
 		}
+
+        public function loadActiveArtists() {
+            return FestivalArtistModel::select(
+                $this->z->db,
+                'viewFestivalArtists',
+                'festival_artist_active = 1',
+                'festival_artist_sorting_weight asc'
+            );
+        }
+
+        public function loadActiveSponsors() {
+            return FestivalSponsorModel::select(
+                $this->z->db,
+                'festival_sponsor',
+                'festival_sponsor_active = 1',
+                'festival_sponsor_sorting_weight asc'
+            );
+        }
 
 	}

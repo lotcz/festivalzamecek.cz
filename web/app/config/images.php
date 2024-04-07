@@ -12,16 +12,15 @@
 		// available formats for image resizing
 		'formats' => [
 			'mini' => ['width' => 75, 'height' => 50 ],
-			'thumb' => ['width' => 160, 'height' => 140 ],
-			'view' => ['width' => 1200, 'height' => 800 ],
-			'wide' => ['width' => 490, 'height' => 200 ]
+			'thumb' => ['width' => 150, 'height' => 100, 'mode' => 'crop'],
+			'view' => ['width' => 1200, 'height' => 800 ]
 		],
 
 		// absolute path to disk where all images are stored, include trailing slash
-		'images_disk_path' => 'C:\\develop\\kosmetika-terka.cz\\public\\uploaded_images\\',
+		'images_disk_path' => 'C:\\develop\\festivalzamecek.cz\\web\\public\\uploaded_images\\',
 
 		// base url for images src, no trailing slash
-		'images_url' => 'http://kosmetika.loc/uploaded_images',
+		'images_url' => 'http://festivalzamecek.loc/uploaded_images',
 
 		'no_image' => 'no-image.jpg',
 

@@ -17,6 +17,11 @@
                 'value' => 1
             ],
             [
+                'name' => 'festival_artist_secondary_name',
+                'label' => 'Žánr nebo název představení',
+                'type' => 'text'
+            ],
+            [
                 'name' => 'festival_artist_stage_id',
                 'label' => 'Scéna',
                 'type' => 'select',

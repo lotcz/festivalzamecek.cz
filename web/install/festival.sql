@@ -31,6 +31,7 @@ CREATE TABLE `festival_artist` (
     `festival_artist_stage_id` INT UNSIGNED NOT NULL,
     `festival_artist_active` BOOLEAN NOT NULL DEFAULT true,
     `festival_artist_name` VARCHAR(255) NOT NULL,
+    `festival_artist_secondary_name` VARCHAR(255) NOT NULL,
     `festival_artist_image` VARCHAR(255) NULL,
     `festival_artist_description` text NULL,
     `festival_artist_link_youtube` VARCHAR(255) NULL,

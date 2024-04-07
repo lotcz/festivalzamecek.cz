@@ -10,7 +10,7 @@
 			</div>
 
 			<div class="title-image">
-				<h1 class="invisible">ZÁMEČEK</h1>
+				<h1 class="invisible"><?=$this->getFullPageTitle()?></h1>
 				<img src="img/title.png"/>
 			</div>
 
@@ -25,328 +25,73 @@
 
 		<h2 class="section-header">Program</h2>
 
-		<p>Program letošního ročníku uveřejníme již brzy.</p>
-		<!--
-                        <section id="program">
+		<section id="program">
 
-                            <h3>Hlavní scéna</h3>
+			<?php
+				foreach ($stages as $stage) {
+					?>
+						<h3><?=$stage->val('festival_stage_name')?></h3>
 
-                            <ul>
-                                <li>
-                                    <time>14:00</time>
-                                    <span class="band-name">Rozálie</span>
-                                </li>
-                                <li>
-                                    <time>16:00</time>
-                                    <span class="band-name">-123 min.</span>
-                                </li>
-                                <li>
-                                    <time>18:00</time>
-                                    <span class="band-name">Sly Rabbits</span>
-                                </li>
-                                <li>
-                                    <time>20:00</time>
-                                    <span class="band-name">Bert & Friends</span>
-                                </li>
-                                <li>
-                                    <time>22:00</time>
-                                    <span class="band-name">Le Čhavendar</span>
-                                </li>
-                            </ul>
+						<ul>
+                            <?php
+								foreach ($artists_program as $artist) {
+									if (!($artist->ival('festival_artist_stage_id') == $stage->ival('festival_stage_id'))) {
+										continue;
+                                    }
 
-                            <h3>Divadelní scéna</h3>
+									?>
+										<li>
+											<time>14:00</time>
+											<span class="band-name"><?=$artist->val('festival_artist_name')?></span>
 
-                            <ul>
-                                <li>
-                                    <time>13:30</time>
-                                    <span class="band-name">Malé Kvítko</span>
-                                    <span class="band-genre">O Krtkovi</span>
-                                </li>
-                                <li>
-                                    <time>15:00</time>
-                                    <div class="band-details">
-                                        <span class="band-name">Divadélko Kvítko</span>
-                                        <span class="band-genre">Budulínek</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <time>17:00</time>
-                                    <div class="band-details">
-                                        <span class="band-name">Tomáš Podrazil & Studio Damúza</span>
-                                        <span class="band-genre">Fimfárum</span>
-                                    </div>
-                                </li>
-                            </ul>
+											<?php
+												if (!empty($artist->val('festival_artist_secondary_name'))) {
+													?>
+														<span class="band-genre"><?=$artist->val('festival_artist_secondary_name')?></span>
+													<?php
+												}
+											?>
+										</li>
+									<?php
+								}
+							?>
+						</ul>
+					<?php
+				}
+			?>
 
-                            <h3>Doprovodný program </h3>
+		</section>
 
-                            <ul>
-                                <li>
-                                    <time>15:30</time>
-                                    <span class="band-name">KWANG MYONG</span>
-                                    <span class="band-genre">taekwondo</span>
-                                </li>
-                                <li>
-                                    <time>19:20</time>
-                                    <span class="band-name">Jóga smíchu</span>
-                                </li>
-                                <li>
-                                    <time>17:00 - 18:00</time>
-                                    <time>19:00 - 20:00</time>
-                                    <time>21:00 - 22:00</time>
-                                    <span class="band-name">DJ Jarda Dušek</span>
-                                </li>
-                            </ul>
+		<h2 class="section-header">Účinkující</h2>
 
-                        </section>
+		<section id="artists" class="bands">
 
-                        <h2 class="section-header">Účinkující</h2>
+			<?php
+				foreach ($artists as $artist) {
+					?>
+						<div class="band">
+							<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
+							<div class="band-img">
+								<?php
+									$this->z->images->renderImage($artist->val('festival_artist_image'), 'thumb');
+								?>
+								<div class="social">
+									<a class="yt" href="https://www.youtube.com/@RozalieOfficial" target="_blank" title="YouTube">&nbsp;</a>
+								</div>
+							</div>
+							<div class="band-section">
+								<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
+								<div class="band-description">
+									<?=$artist->val('festival_artist_description')?>
+								</div>
+							</div>
+						</div>
+					<?php
+				}
+			?>
 
-                        <section id="artists" class="bands">
+		</section>
 
-                            <div class="band">
-                                <div class="band-name">Rozálie</div>
-                                <div class="band-img">
-                                    <img src="img/thumb-rozalie.jpg" />
-                                    <div class="social">
-                                        <a class="yt" href="https://www.youtube.com/@RozalieOfficial" target="_blank" title="YouTube">&nbsp;</a>
-                                    </div>
-                                </div>
-                                <div class="band-section">
-                                    <div class="band-name">Rozálie</div>
-                                    <div class="band-description">
-                                        <p>
-                                            Charismatická zpěvačka, akordeonistka, herečka a tanečnice kombinuje svým nezaměnitelným syrovým projevem a úsměvnou slovní ironií dryáčnický šanson s cynickou romantikou.
-                                        </p>
-                                        <p>
-                                            Svým uhrančivým půvabem a přesvědčivostí si získává stále širší okruh zpočátku spíše klubových a divadelních příznivců.
-                                        </p>
-                                        <p>
-                                            Její <q>kousavé</q> životní příběhy v čistě autorských písních, nacházejí silnou odezvu napříč spektrem publika a rezonují v dnešním vyumělkovaném světě tolik vyhledávanou upřímností a realitou života.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="band">
-                                <div class="band-name">minus 123 minut</div>
-                                <div class="band-img">
-                                    <img src="img/thumb-123.jpg" />
-                                    <div class="social">
-                                        <a class="yt" href="https://www.youtube.com/@minus123minut9" target="_blank" title="YouTube">&nbsp;</a>
-                                    </div>
-                                </div>
-                                <div class="band-section">
-                                    <div class="band-name">minus 123 minut</div>
-                                    <div class="band-description">
-                                        <p>
-                                            Síla kapely spočívá především v živých energických koncertech, které jsou z velké části tvořeny improvizací. Propojují žánry jako soul, groove, jazz, funky či world music.
-                                        </p>
-                                        <p>
-                                            Na minutovský pelmel se moc dobře tančí, ale protože jde o vyjimečné muzikanty, dobře se na jejich hráčské umění, které hraničí s genialitou, dívá.
-                                        </p>
-                                        <p>
-                                            Jsou oceněni z dřívějších let hudební cenou Anděl.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="band">
-                                <div class="band-name">Sly Rabbits</div>
-                                <div class="band-img">
-                                    <img src="img/thumb-sly-rabbits.jpg" />
-                                    <div class="social">
-                                        <a class="yt" href="https://www.youtube.com/@SlyRabbits" target="_blank" title="YouTube">&nbsp;</a>
-                                    </div>
-                                </div>
-                                <div class="band-section">
-                                    <div class="band-name">Sly Rabbits</div>
-                                    <div class="band-description">
-                                        <p>
-                                            Devítičlenná formace v čele s exotickou zpěvačkou Magdalenou Joao, původem z africké Angoly.
-                                        </p>
-                                        <p>
-                                            Přední pražská funková skupina má za sebou dvě studiová alba, ze kterých naživo představí to nejlepší.
-                                            Sly Rabbits disponují vynikající údernou rytmikou, ostrou dechovou sekcí a charismatickým vokálem.
-                                        </p>
-                                        <p>
-                                            Vždy ve svém koncertním setu přihodí i funkovou klasiku z repertoáru Jamese Browna nebo Michaela Jacksona.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="band">
-                                <div class="band-name">Bert & Friends</div>
-                                <div class="band-img">
-                                    <img src="img/thumb-bert-n-friends.jpg" />
-                                    <div class="social">
-                                        <a class="yt" href="https://www.youtube.com/@BertandFriends" target="_blank" title="YouTube">&nbsp;</a>
-                                    </div>
-                                </div>
-                                <div class="band-section">
-                                    <div class="band-name">Bert & Friends</div>
-                                    <div class="band-description">
-                                        <p>
-                                            Jedna z mála kapel u nás, která umí skloubit chytlavé a retro melodie a zvláštní nadsázku (ne však nutně humor!) s opravdovou hudební sofistikovaností.
-                                            To celé zabaleno v dobré náladě, jako by Karel Svoboda potkal Davida Lynche.
-                                        </p>
-                                        <p>
-                                            Proto je univerzálně uznávaná i mezi muzikanty jako něco neotřelého a nového. Na kontě tak má cenu Anděl za nejlepší videoklip a nominaci za Objev roku, cenu Apollo za Inovaci v hudbě nebo cenu Žebřík za Objev roku.
-                                        </p>
-                                        <p>
-                                            Kapela vychází z alternativy, nicméně mainstreamový potenciál a appeal kapely je veliký, což dokazují stále častější vystoupení na velkých a prestižních akcích.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="band">
-                                <div class="band-name">Le Čhavendar</div>
-                                <div class="band-img">
-                                    <img src="img/thumb-chavendar.jpg" />
-                                    <div class="social">
-                                        <a class="yt" href="https://www.youtube.com/@lechavendarband" target="_blank" title="YouTube">&nbsp;</a>
-                                    </div>
-                                </div>
-                                <div class="band-section">
-                                    <div class="band-name">Le Čhavendar</div>
-                                    <div class="band-description">
-                                        <p>
-                                            Název znamená v romštině <q>od chlapců</q>. Kapela pochází z Rokycan. Na první desce s nimi spolupracovala Ida Kelarová. Po té přišla řada koncertů u nás a pak i v zahraničí a na festivalech.
-                                        </p>
-                                        <p>
-                                            Hudba vychází z folkloru obohaceného o jazz, latinu a flamenco a texty jsou o přátelství, lásce a hudbě.</p>
-                                        <p>
-                                            Loni byli pozváni na festival Prague Pride, kde svým energickým koncertem roztančili Letnou.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <h2 class="section-header">Doprovodný program</h2>
-
-                        <section class="bands">
-                            <div class="band">
-                                <div class="band-name">Kwang Myong</div>
-                                <div class="band-img">
-                                    <img src="img/thumb-taekwondo.jpg" />
-                                    <div class="social">
-                                        <a class="yt" href="https://www.youtube.com/channel/UCOBhT-1FQ2m77LRJqaBoIqA" target="_blank" title="YouTube">&nbsp;</a>
-                                        <a class="fb" href="https://www.facebook.com/groups/230576223635824" target="_blank" title="Facebook">&nbsp;</a>
-                                        <a class="ig" href="https://www.instagram.com/kwangmyong_itf/?hl=en" target="_blank" title="Instagram">&nbsp;</a>
-                                        <a class="web" href="https://kwangmyong.cz" target="_blank" title="WWW">&nbsp;</a>
-                                    </div>
-                                </div>
-                                <div class="band-section">
-                                    <div class="band-name">Kwang Myong</div>
-                                    <div class="band-description">
-                                        <p>
-                                            Roztocký oddíl Taekwondo předvede jak štípat dříví pomocí kopů s výskokem a jiné užitečné dovednosti.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="band">
-                                <div class="band-name">David Zahradník</div>
-                                <div class="band-img">
-                                    <img src="img/thumb-yoga.jpg" />
-                                    <div class="social">
-                                        <a class="web" href="https://www.jogasmichu.cz/member/david-zahradnik" target="_blank" title="WWW">&nbsp;</a>
-                                    </div>
-                                </div>
-                                <div class="band-section">
-                                    <div class="band-name">David Zahradník</div>
-                                    <div class="band-description">
-                                        <p>
-                                            Jóga smíchu protáhne vaši duši i bránici. Pomáhá proti stresu a špatné náladě.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="band">
-                                <div class="band-name">Tomáš Podrazil & Studio Damúza: Fimfárum</div>
-                                <div class="band-img">
-                                    <img src="img/thumb-fimfarum.jpg?v=1" />
-                                    <div class="social">
-                                        <a class="fb" href="https://www.facebook.com/profile.php?id=100076604944873" target="_blank" title="Facebook">&nbsp;</a>
-                                    </div>
-                                </div>
-                                <div class="band-section">
-                                    <div class="band-name">Tomáš Podrazil & Studio Damúza: Fimfárum</div>
-                                    <div class="band-description">
-                                        <p>
-                                            Loutková pohádka pro celou rodinu na motivy slavné knihy J. Wericha.
-                                        </p>
-                                        <p>
-                                            Těšit se můžete na malinkatého Palečka a Sněhového žrouta, Čertovské Fimfárum a jednu pohádku do třetice , jak už tomu v pohádkách bývá.
-                                        </p>
-                                        <p>
-                                            Pro děti od 3 let a jejich rodiče. Délka představení: 40 minut
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="band">
-                                <div class="band-name">Divadélko Kvítko</div>
-                                <div class="band-img">
-                                    <img src="img/thumb-kvitko.jpg?v=2 " />
-                                    <div class="social">
-                                        <a class="web" href="http://www.divadelkokvitko.cz" target="_blank" title="WWW">&nbsp;</a>
-                                    </div>
-                                </div>
-                                <div class="band-section">
-                                    <div class="band-name">Divadélko Kvítko</div>
-                                    <div class="band-description">
-                                        <p>
-                                            Roztocké loutkové divadlo Kvítko se představí hned dvěma soubory. Malé Kvítko, to hrají děti, sehraje pohádku O Krtkovi a dospělácké Divadélko Kvítko zahraje Budulínka.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="band">
-                                <div class="band-name">Tvoříme pískem</div>
-                                <div class="band-img">
-                                    <img src="img/thumb-pisek.jpg" />
-                                    <div class="social">
-                                        <a class="web" href="https://www.tvorime-piskem.cz/" target="_blank" title="WWW">&nbsp;</a>
-                                    </div>
-                                </div>
-                                <div class="band-section">
-                                    <div class="band-name">Tvoříme pískem</div>
-                                    <div class="band-description">
-                                        <p>
-                                            Na letošním ročníku festivalu si mohou děti s rodiči vytvořit krásné barevné mandaly v dílničce <q>Tvoříme pískem</q>.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="band">
-                                <div class="band-name">A další ...</div>
-                                <div class="band-img">
-                                    <img src="img/thumb-other.jpg" />
-                                </div>
-                                <div class="band-section">
-                                    <div class="band-name">A další ...</div>
-                                    <div class="band-description">
-                                        <p>
-                                            Adrenalin park, slackline, závody RC modelů, šachový klub Caissa Roztoky, deskové hry, pletení košíků.
-                                        </p>
-                                        <p>
-                                            Při slunečném dni nebude chybět osvěžení od dobrovolných hasičů.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-        -->
 		<h2 class="section-header">Plakát</h2>
 		<section>
 			<div
@@ -357,12 +102,10 @@
 				</div>
 				<small>Plakát festivalu pro letošní rok</small>
 			</div>
-
 		</section>
 
 		<h2 class="section-header">Kontakt</h2>
 		<section>
-
 			<p>
 				Napište nám na <a href="mailto:info@festivalzamecek.cz">info@festivalzamecek.cz</a>.
 			</p>
@@ -428,7 +171,7 @@
 		<p>
 			Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy
 		</p>
-		<img class="sponsors" src="img/sponsors.jpg?v=2023" alt="sponzoři" />
+		<img class="sponsors" src="img/sponsors_2024.jpg" alt="sponzoři" />
 		<div>
 			<a
 				href="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner"
@@ -436,10 +179,8 @@
 				target="_blank"
 			>
 				<img
-					src="https://www.kudyznudy.cz/getmedia/beecd6e8-708b-421a-add8-92568ca7b1b5/logo-kudyznudy.gif.aspx"
-					width="150"
-					height="64"
-					border="0"
+					src="https://s3.amazonaws.com/pro.brandkit.io/accounts/visitczechrepublic/asset_files/904402/prev_preview."
+					style="width:125px;height:30px;margin:15px"
 					alt="Kudyznudy.cz - tipy na výlet"
 				/>
 			</a>
