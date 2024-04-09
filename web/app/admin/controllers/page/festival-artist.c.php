@@ -2,6 +2,21 @@
 
     $this->z->enableModule('tinymce');
 
+    $onAfterUpdate = function($z, $form, $data, $oldData) {
+        if ($oldData->val('festival_artist_image') !== $data->val('festival_artist_image')) {
+            $this->z->images->deleteImage($oldData->val('festival_artist_image'));
+        }
+    };
+
+    $onBeforeDelete = function($z, $form, $id) {
+        $artist = new FestivalArtistModel($z->db, $id);
+        $form->image_path = $artist->val('festival_artist_image');
+    };
+
+    $onAfterDelete = function($z, $form, $id) {
+        $this->z->images->deleteImage($form->image_path);
+    };
+
 	$this->renderAdminForm(
 		'FestivalArtistModel',
 		[
@@ -102,8 +117,8 @@
 				'value' => 0
 			]
 		],
-		null, //before update
-		null, //after update
-		null, //before delete
-		null //after delete
+		null,
+		$onAfterUpdate,
+		$onBeforeDelete,
+		$onAfterDelete
 	);

@@ -20,7 +20,7 @@
                 $this->z->db,
                 'viewFestivalArtists',
                 'festival_artist_active = 1',
-                'festival_artist_sorting_weight asc'
+                'festival_artist_program_sorting_weight asc, festival_artist_program_time asc'
             );
         }
 

@@ -17,12 +17,26 @@
 		padding: 0;
 	}
 
-	#pretext-spacer {
+	header .pretext {
 		padding-top: 1rem;
+		font-size: 80%;
 	}
 
-	header .pretext {
-		font-size: 80%;
+	header .announce {
+		margin-top: 1rem;
+		font-size: 100%;
+	}
+
+	header .title-image {
+		margin-top: 1rem;
+	}
+
+	.section-header {
+		margin-top: 20px;
+	}
+
+	header .announce-location {
+		margin-bottom: 0;
 	}
 
 	h1 {
@@ -39,7 +53,8 @@
 
 	/* PROGRAM */
 	#program ul {
-		padding-left: 0;
+		padding: 0;
+		margin: 0;
 	}
 
 	#program ul li {

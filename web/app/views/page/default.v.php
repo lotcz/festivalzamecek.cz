@@ -67,7 +67,7 @@
 		<section id="artists" class="bands">
 
 			<?php
-				foreach ($artists as $artist) {
+				foreach ($artists_details as $artist) {
 					?>
 						<div class="band">
 							<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
@@ -199,35 +199,29 @@
 				href="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner"
 				title="Kudyznudy.cz - tipy na výlet"
 				target="_blank"
-			>
-				<img
-					src="https://s3.amazonaws.com/pro.brandkit.io/accounts/visitczechrepublic/asset_files/904402/prev_preview."
-					style="width:125px;height:30px;margin:15px"
-					alt="Kudyznudy.cz - tipy na výlet"
-				/>
-			</a>
+			><img
+				src="https://s3.amazonaws.com/pro.brandkit.io/accounts/visitczechrepublic/asset_files/904402/prev_preview."
+				style="width:125px;height:30px;margin:15px"
+				alt="Kudyznudy.cz - tipy na výlet"
+			/></a>
 			<a
 				href="https://festivaly.eu"
 				title="FESTIVALY.EU"
 				target="_blank"
-			>
-				<img
-					src="https://fstvls.s3.amazonaws.com/static/festivaly.png"
-					alt="FESTIVALY.EU"
-					style="width:76px;height:51px;margin:9px"
-				/>
-			</a>
+			><img
+				src="https://fstvls.s3.amazonaws.com/static/festivaly.png"
+				alt="FESTIVALY.EU"
+				style="width:76px;height:51px;margin:9px"
+			/></a>
 			<a
 				href="https://www.informuji.cz"
 				title="Informuji.cz = Akce, Kultura a Výlety v ČR"
 				target="_blank"
-			>
-				<img
-					src="https://www.informuji.cz/img/logo1_small.png"
-					alt="Informuji.cz = Akce, Kultura a Výlety v ČR"
-					style="width:150px;height:42px;margin:9px"
-				/>
-			</a>
+			><img
+				src="https://www.informuji.cz/img/logo1_small.png"
+				alt="Informuji.cz = Akce, Kultura a Výlety v ČR"
+				style="width:150px;height:42px;margin:9px"
+			/></a>
 		</div>
 	</div>
 </footer>
