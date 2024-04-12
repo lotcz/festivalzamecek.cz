@@ -26,93 +26,105 @@
 		<h2 class="section-header">Program</h2>
 
 		<section id="program">
-
 			<?php
-				foreach ($stages as $stage) {
+				if (empty($artists_program)) {
 					?>
-						<h3><?=$stage->val('festival_stage_name')?></h3>
-
-						<ul>
-                            <?php
-								foreach ($artists_program as $artist) {
-									if (!($artist->ival('festival_artist_stage_id') == $stage->ival('festival_stage_id'))) {
-										continue;
-                                    }
-
-									?>
-										<li>
-											<time><?=$artist->val('festival_artist_program_time')?></time>
-											<span class="band-name"><?=$artist->val('festival_artist_name')?></span>
-
-											<?php
-												if (!empty($artist->val('festival_artist_secondary_name'))) {
-													?>
-														<span class="band-genre"><?=$artist->val('festival_artist_secondary_name')?></span>
-													<?php
-												}
-											?>
-										</li>
-									<?php
-								}
-							?>
-						</ul>
+						<p>Program letočního ročníku uveřejníme již brzy.</p>
 					<?php
-				}
-			?>
+				} else {
+					foreach ($stages as $stage) {
+						?>
+							<h3><?=$stage->val('festival_stage_name')?></h3>
 
-		</section>
-
-		<h2 class="section-header">Účinkující</h2>
-
-		<section id="artists" class="bands">
-
-			<?php
-				foreach ($artists_details as $artist) {
-					?>
-						<div class="band">
-							<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
-							<div class="band-img">
+							<ul>
 								<?php
-									$this->z->images->renderImage($artist->val('festival_artist_image'), 'thumb');
+									foreach ($artists_program as $artist) {
+										if (!($artist->ival('festival_artist_stage_id') == $stage->ival('festival_stage_id'))) {
+											continue;
+										}
+
+										?>
+											<li>
+												<time><?=$artist->val('festival_artist_program_time')?></time>
+												<span class="band-name"><?=$artist->val('festival_artist_name')?></span>
+
+												<?php
+													if (!empty($artist->val('festival_artist_secondary_name'))) {
+														?>
+															<span class="band-genre"><?=$artist->val('festival_artist_secondary_name')?></span>
+														<?php
+													}
+												?>
+											</li>
+										<?php
+									}
 								?>
-								<div class="social">
-                                    <?php
-										if (!empty($artist->val('festival_artist_link_youtube'))) {
-											?>
-												<a class="yt" href="<?=$artist->val('festival_artist_link_youtube')?>" target="_blank" title="YouTube">&nbsp;</a>
-											<?php
-										}
-										if (!empty($artist->val('festival_artist_link_instagram'))) {
-											?>
-												<a class="ig" href="<?=$artist->val('festival_artist_link_instagram')?>" target="_blank" title="Instagram">&nbsp;</a>
-											<?php
-										}
-										if (!empty($artist->val('festival_artist_link_facebook'))) {
-											?>
-												<a class="fb" href="<?=$artist->val('festival_artist_link_facebook')?>" target="_blank" title="Facebook">&nbsp;</a>
-											<?php
-										}
-										if (!empty($artist->val('festival_artist_link_web'))) {
-											?>
-												<a class="web" href="<?=$artist->val('festival_artist_link_web')?>" target="_blank" title="Web">&nbsp;</a>
-											<?php
-										}
-                                    ?>
-
-								</div>
-							</div>
-							<div class="band-section">
-								<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
-								<div class="band-description">
-									<?=$artist->val('festival_artist_description')?>
-								</div>
-							</div>
-						</div>
-					<?php
-				}
+							</ul>
+						<?php
+					}
+                }
 			?>
-
 		</section>
+
+		<?php
+
+			if (empty($artists_details)) {
+
+			} else {
+				?>
+					<h2 class="section-header">Účinkující</h2>
+					<section id="artists" class="bands">
+						<?php
+							foreach ($artists_details as $artist) {
+								?>
+									<div class="band">
+										<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
+										<div class="band-img">
+											<?php
+												$this->z->images->renderImage($artist->val('festival_artist_image'), 'thumb');
+											?>
+											<div class="social">
+												<?php
+													if (!empty($artist->val('festival_artist_link_youtube'))) {
+														?>
+															<a class="yt" href="<?=$artist->val('festival_artist_link_youtube')?>" target="_blank" title="YouTube">&nbsp;</a>
+														<?php
+													}
+													if (!empty($artist->val('festival_artist_link_instagram'))) {
+														?>
+															<a class="ig" href="<?=$artist->val('festival_artist_link_instagram')?>" target="_blank" title="Instagram">&nbsp;</a>
+														<?php
+													}
+													if (!empty($artist->val('festival_artist_link_facebook'))) {
+														?>
+															<a class="fb" href="<?=$artist->val('festival_artist_link_facebook')?>" target="_blank" title="Facebook">&nbsp;</a>
+														<?php
+													}
+													if (!empty($artist->val('festival_artist_link_web'))) {
+														?>
+															<a class="web" href="<?=$artist->val('festival_artist_link_web')?>" target="_blank" title="Web">&nbsp;</a>
+														<?php
+													}
+												?>
+
+											</div>
+										</div>
+										<div class="band-section">
+											<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
+											<div class="band-description">
+												<?=$artist->val('festival_artist_description')?>
+											</div>
+										</div>
+									</div>
+								<?php
+							}
+						?>
+					</section>
+				<?php
+			}
+
+		?>
+
 
 		<h2 class="section-header">Plakát</h2>
 		<section>

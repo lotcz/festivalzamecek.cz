@@ -4,9 +4,9 @@
 	$this->setData('stages', $this->z->festival->loadActiveStages());
 
     $all_artists = $this->z->festival->loadActiveArtists();
-    $artists_program = array_filter($all_artists, fn($a) => $a->val('festival_artist_show_in_program'));
+    $artists_program = array_filter($all_artists, function($a) { return $a->val('festival_artist_show_in_program');});
     $artists_details = zModel::sort(
-        array_filter($all_artists, fn($a) => $a->val('festival_artist_show_in_details')),
+        array_filter($all_artists, function($a) { return $a->val('festival_artist_show_in_details');}),
         'festival_artist_sorting_weight'
     );
 

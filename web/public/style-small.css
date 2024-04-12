@@ -13,6 +13,10 @@
 		padding-right: 15px;
 	}
 
+	.section-header {
+		margin-top: 20px;
+	}
+
 	header {
 		padding: 0;
 	}
@@ -24,19 +28,20 @@
 
 	header .announce {
 		margin-top: 1rem;
-		font-size: 100%;
+		font-size: 120%;
+	}
+
+	header .announce-date {
+		font-size: 120%;
 	}
 
 	header .title-image {
 		margin-top: 1rem;
 	}
 
-	.section-header {
-		margin-top: 20px;
-	}
-
 	header .announce-location {
 		margin-bottom: 0;
+		font-size: 120%;
 	}
 
 	h1 {

@@ -16,7 +16,7 @@
 	--text-shadow-offset: 2px;
 	--text-shadow-offset-negative: -2px;
 
-	--text-blur-small: 2px;
+	--text-blur-small: 1px;
 	--text-shadow-offset-small: 1px;
 	--text-shadow-offset-negative-small: -1px;
 }
@@ -76,29 +76,7 @@ h3, #wrapper p,
 #program time,
 #program .band-genre {
 	color: var(--white);
-	text-shadow:
-		var(--text-shadow-offset-small) 0 var(--text-blur-small) var(--blue),
-		0 var(--text-shadow-offset-small) var(--text-blur-small) var(--blue),
-		0 var(--text-shadow-offset-negative-small) var(--text-blur-small) var(--blue),
-		var(--text-shadow-offset-negative-small) 0 var(--text-blur-small) var(--blue),
-		var(--text-shadow-offset-negative-small) var(--text-shadow-offset-negative-small) var(--text-blur-small) var(--blue),
-		var(--text-shadow-offset-small) var(--text-shadow-offset-small) var(--text-blur-small) var(--blue),
-		var(--text-shadow-offset-negative-small) var(--text-shadow-offset-small) var(--text-blur-small) var(--blue),
-		var(--text-shadow-offset-small) var(--text-shadow-offset-negative-small) var(--text-blur-small) var(--blue);
-}
 
-.announce.white-text,
-.announce-date.white-text {
-	color: var(--white);
-	text-shadow:
-		var(--text-shadow-offset) 0 var(--text-blur) var(--blue),
-		0 var(--text-shadow-offset) var(--text-blur) var(--blue),
-		0 var(--text-shadow-offset-negative) var(--text-blur) var(--blue),
-		var(--text-shadow-offset-negative) 0 var(--text-blur) var(--blue),
-		var(--text-shadow-offset-negative) var(--text-shadow-offset-negative) var(--text-blur) var(--blue),
-		var(--text-shadow-offset) var(--text-shadow-offset) var(--text-blur) var(--blue),
-		var(--text-shadow-offset-negative) var(--text-shadow-offset) var(--text-blur) var(--blue),
-		var(--text-shadow-offset) var(--text-shadow-offset-negative) var(--text-blur) var(--blue);
 }
 
 .blue-text,
