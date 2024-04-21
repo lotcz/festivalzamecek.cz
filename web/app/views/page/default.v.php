@@ -29,7 +29,7 @@
 			<?php
 				if (empty($artists_program)) {
 					?>
-						<p>Program letočního ročníku uveřejníme již brzy.</p>
+						<p>Program letošního ročníku uveřejníme již brzy.</p>
 					<?php
 				} else {
 					foreach ($stages as $stage) {
@@ -46,15 +46,17 @@
 										?>
 											<li>
 												<time><?=$artist->val('festival_artist_program_time')?></time>
-												<span class="band-name"><?=$artist->val('festival_artist_name')?></span>
+												<div>
+													<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
 
-												<?php
-													if (!empty($artist->val('festival_artist_secondary_name'))) {
-														?>
-															<span class="band-genre"><?=$artist->val('festival_artist_secondary_name')?></span>
-														<?php
-													}
-												?>
+													<?php
+														if (!empty($artist->val('festival_artist_secondary_name'))) {
+															?>
+																<div class="band-genre"><?=$artist->val('festival_artist_secondary_name')?></div>
+															<?php
+														}
+													?>
+												</div>
 											</li>
 										<?php
 									}
@@ -68,14 +70,16 @@
 
 		<?php
 
-			if (empty($artists_details)) {
-
-			} else {
+			if (!empty($artists_details)) {
 				?>
 					<h2 class="section-header">Účinkující</h2>
 					<section id="artists" class="bands">
 						<?php
 							foreach ($artists_details as $artist) {
+								//($artist);
+								if (empty($artist)) {
+									continue;
+                                }
 								?>
 									<div class="band">
 										<div class="band-name"><?=$artist->val('festival_artist_name')?></div>

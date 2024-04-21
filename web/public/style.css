@@ -8,6 +8,7 @@
 	--black: #000000;
 	--blue: #0d1226;
 	--red: #d73a27;
+	--dark-red: #b51d13;
 	--beige: #e9c094;
 	--light-beige: #ffeed4;
 	--pink: #e07e5e;
@@ -24,8 +25,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url('img/bg.jpg?v=2024.0');
-	background-color: var(--beige);
+	/*background-image: url('img/bg.jpg?v=2024.0');*/
+	background-color: var(--dark-red);
 	background-size: cover;
 	-webkit-background-size: cover;
 	background-repeat: no-repeat;
