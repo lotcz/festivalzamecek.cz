@@ -34,7 +34,15 @@
 				} else {
 					foreach ($stages as $stage) {
 						?>
-							<h3><?=$stage->val('festival_stage_name')?></h3>
+							<h3>
+								<?php
+									echo $stage->val('festival_stage_name');
+									if (strlen($stage->val('festival_stage_place')) > 0) {
+										echo " - ";
+                                        echo $stage->val('festival_stage_place');
+                                    }
+								?>
+							</h3>
 
 							<ul>
 								<?php
@@ -45,17 +53,31 @@
 
 										?>
 											<li>
-												<time><?=$artist->val('festival_artist_program_time')?></time>
-												<div>
-													<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
-
-													<?php
-														if (!empty($artist->val('festival_artist_secondary_name'))) {
-															?>
-																<div class="band-genre"><?=$artist->val('festival_artist_secondary_name')?></div>
+												<div class="program-item" id="<?=z::slugify($artist->val('festival_artist_name'))?>-program">
+													<div class="program-time"><?=$artist->val('festival_artist_program_time')?></div>
+													<div class="program-name">
+														<div class="band-name">
 															<?php
-														}
-													?>
+																if ($artist->val('festival_artist_show_in_details')) {
+																	?>
+																		<a href="#<?=z::slugify($artist->val('festival_artist_name'))?>-detail">
+																			<?=$artist->val('festival_artist_name')?>
+																		</a>
+																	<?php
+                                                                } else {
+																	echo $artist->val('festival_artist_name');
+                                                                }
+															?>
+														</div>
+
+														<?php
+															if (!empty($artist->val('festival_artist_secondary_name'))) {
+																?>
+																	<div class="band-genre"><?=$artist->val('festival_artist_secondary_name')?></div>
+																<?php
+															}
+														?>
+													</div
 												</div>
 											</li>
 										<?php
@@ -76,13 +98,21 @@
 					<section id="artists" class="bands">
 						<?php
 							foreach ($artists_details as $artist) {
-								//($artist);
-								if (empty($artist)) {
-									continue;
-                                }
 								?>
-									<div class="band">
+									<div class="band" id="<?=z::slugify($artist->val('festival_artist_name'))?>-detail">
 										<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
+										<?php
+											if ($artist->val('festival_artist_show_in_program')) {
+												?>
+													<div class="band-program-link">
+														<a href="#<?=z::slugify($artist->val('festival_artist_name'))?>-program">
+                                                            <?=$artist->val('festival_artist_program_time')?>
+															<?=$artist->val('festival_stage_place')?>
+														</a>
+													</div>
+												<?php
+											}
+										?>
 										<div class="band-img">
 											<?php
 												$this->z->images->renderImage($artist->val('festival_artist_image'), 'thumb');
@@ -115,6 +145,20 @@
 										</div>
 										<div class="band-section">
 											<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
+												<?php
+													if ($artist->val('festival_artist_show_in_program')) {
+														?>
+															<div class="band-program-link">
+																<p>
+																	<a href="#<?=z::slugify($artist->val('festival_artist_name'))?>-program">
+                                                                        <?=$artist->val('festival_artist_program_time')?>
+																		<?=$artist->val('festival_stage_place')?>
+																	</a>
+																</p>
+															</div>
+														<?php
+													}
+												?>
 											<div class="band-description">
 												<?=$artist->val('festival_artist_description')?>
 											</div>

@@ -17,3 +17,4 @@
 
 	$z->core->installAllModules($db_login, $db_password, $db_name);
 	$z->db->executeFile(__DIR__ . '/festival.sql', $db_login, $db_password, $db_name);
+	$z->db->executeFile(__DIR__ . '/update/v1.15.sql', $db_login, $db_password, $db_name);

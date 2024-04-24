@@ -13,10 +13,6 @@
 		padding-right: 15px;
 	}
 
-	.section-header {
-		margin-top: 20px;
-	}
-
 	header {
 		padding: 0;
 	}
@@ -62,26 +58,9 @@
 		margin: 0;
 	}
 
-	#program ul li {
-		display: block;
-	}
-
-	#program time {
-		display: block;
-		width: auto;
-	}
-
-	#program .band-details {
-		display: block;
-	}
-
-	#program .band-name {
-		display: block;
-	}
-
-	#program .band-genre {
-		display: block;
-		margin-left: 0;
+	#program .program-time {
+		width: 5rem;
+		min-width: 5rem;
 	}
 
 	/* BANDS */
@@ -122,28 +101,31 @@
 		margin-left: 10px;
 	}
 
-	.band .band-name {
+	/* band trick */
+
+	.band .band-name,
+	.band > .band-program-link {
 		margin-bottom: 15px;
 		margin-left: 10px;
 	}
 
-	.band > .band-name {
+	.band > .band-name,
+	.band > .band-program-link {
 		display: inline-block;
 	}
 
-	.band .band-section .band-name {
+	.band .band-section .band-name,
+	.band .band-section .band-program-link {
 		display: none;
 	}
 
-	.band img {
-		margin: 0;
-	}
-
-	.bands .band:nth-child(odd) .band-img {
-		margin-left: 10px;
+	.bands .band:nth-child(even) > .band-name,
+	.bands .band:nth-child(even) > .band-program-link {
+		display: block;
 	}
 
 	.bands .band:nth-child(even) .band-name,
+	.bands .band:nth-child(even) .band-program-link,
 	.bands .band:nth-child(even) .band-description,
 	.bands .band:nth-child(even) .band-img {
 		margin-right: 10px;
@@ -158,8 +140,12 @@
 		margin-right: 10px;
 	}
 
-	.bands .band:nth-child(even) > .band-name {
-		display: block;
+	.band img {
+		margin: 0;
+	}
+
+	.bands .band:nth-child(odd) .band-img {
+		margin-left: 10px;
 	}
 
 	/* KONTAKT */

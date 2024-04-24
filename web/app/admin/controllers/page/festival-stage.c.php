@@ -8,6 +8,11 @@
 				'label' => 'Název',
 				'type' => 'text'
 			],
+            [
+                'name' => 'festival_stage_place',
+                'label' => 'Místo',
+                'type' => 'text'
+            ],
 			[
 				'name' => 'festival_stage_active',
 				'label' => 'Active',

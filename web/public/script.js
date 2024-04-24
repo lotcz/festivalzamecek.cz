@@ -18,7 +18,7 @@ function parallaxUpdate() {
 
 	// Parallax disabled in mobile view.
 	if (window.innerWidth < 1000) {
-		PARALLAX.element.style.backgroundPositionY = undefined;
+		PARALLAX.element.style.backgroundPositionY = "";
 		return;
 	}
 
@@ -33,6 +33,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
 });
 
 document.addEventListener('scroll', function(event) {
+	parallaxUpdate();
+});
+
+document.addEventListener('resize', function(event) {
 	parallaxUpdate();
 });
 

@@ -17,6 +17,10 @@
                 'label' => 'Name'
             ],
             [
+                'name' => 'festival_stage_place',
+                'label' => 'Place'
+            ],
+            [
                 'name' => 'festival_stage_active',
                 'label' => 'Active',
                 'type' => 'bool'
