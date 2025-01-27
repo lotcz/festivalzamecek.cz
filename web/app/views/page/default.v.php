@@ -6,7 +6,7 @@
 			</div>
 
 			<div class="announce white-text">
-				14. ročník festivalu
+				15. ročník festivalu
 			</div>
 
 			<div class="title-image">
@@ -15,7 +15,7 @@
 			</div>
 
 			<div class="announce-date white-text">
-				18.5.2024 od 13 hodin
+				17.5.2025 od 13 hodin
 			</div>
 
 			<div class="announce-location white-text">
@@ -88,6 +88,17 @@
 					}
                 }
 			?>
+		</section>
+
+		<h2 class="section-header">Vstupné</h2>
+
+		<section id="program">
+			<p>
+			Vstupné na festival je dobrovolné.
+			</p>
+			<p>
+				Budeme rádi, když nás podpoříte koupí památeční placky.
+			</p>
 		</section>
 
 		<?php

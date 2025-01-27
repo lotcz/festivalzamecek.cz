@@ -111,7 +111,7 @@
 
 	.band > .band-name,
 	.band > .band-program-link {
-		display: inline-block;
+		display: block;
 	}
 
 	.band .band-section .band-name,
