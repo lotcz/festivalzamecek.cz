@@ -8,7 +8,7 @@
 		'app_version' => 2.01,
 
 		// this is minimum required zEngine version
-		'minimum_z_version' => 20,
+		'minimum_z_version' => 17,
 
 		// modules that are enabled by default
 		// available modules in zEngine/src/app/modules or current app/modules folders
