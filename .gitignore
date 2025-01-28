@@ -1,3 +1,6 @@
+docker/log
+docker/mysql/data
+
 # IDEA
 .idea
 
