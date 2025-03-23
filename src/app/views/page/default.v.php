@@ -2,7 +2,7 @@
 	<div class="inner">
 		<header>
 			<div class="pretext white-text">
-				Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum
+				Pod záštitou města Roztoky pořádá RR z.s. a Středočeské muzeum
 			</div>
 
 			<div class="announce white-text">
@@ -184,7 +184,7 @@
 
 		?>
 
-
+<!--
 		<h2 class="section-header">Plakát</h2>
 		<section>
 			<div
@@ -196,7 +196,7 @@
 				<div class="primary-text">Plakát festivalu pro letošní rok</div>
 			</div>
 		</section>
-
+-->
 		<h2 class="section-header">Kontakt</h2>
 		<section>
 			<p>
@@ -240,7 +240,7 @@
 
 		</section>
 
-		<h2 class="section-header">Historie festivalu</h2>
+		<h2 class="section-header">O festivalu</h2>
 		<section id="about-us" class="about-us">
 			<p>
 				Festival Zámeček je multižánrový hudební festival, který se koná v areálu
@@ -250,6 +250,25 @@
 				Na fotky z minulých ročníků se můžete podívat v naší
 				<a href="http://galerie.festivalzamecek.cz">fotogalerii</a>.
 			</p>
+		</section>
+
+		<h2 class="section-header">Naše další projekty</h2>
+		<section id="promo">
+			<div class="promo-video">
+				<div>
+					<h4>Festival ticha</h4>
+				</div>
+				<div>
+					<div class="video-container">
+						<iframe
+							src="https://www.youtube-nocookie.com/embed/btuBgAyP-aU?si=Qns8DL4KPzq3TFv4"
+							title="Festival ticha"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="bottom">
@@ -262,7 +281,7 @@
 <footer>
 	<div class="inner">
 		<p>
-			Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy
+			Pod záštitou města Roztoky pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy
 		</p>
 		<img class="sponsors" src="img/sponsors_2024.jpg" alt="sponzoři" />
 		<div>
@@ -283,15 +302,6 @@
 				src="https://fstvls.s3.amazonaws.com/static/festivaly.png"
 				alt="FESTIVALY.EU"
 				style="width:76px;height:51px;margin:9px"
-			/></a>
-			<a
-				href="https://www.informuji.cz"
-				title="Informuji.cz = Akce, Kultura a Výlety v ČR"
-				target="_blank"
-			><img
-				src="https://www.informuji.cz/img/logo1_small.png"
-				alt="Informuji.cz = Akce, Kultura a Výlety v ČR"
-				style="width:150px;height:42px;margin:9px"
 			/></a>
 		</div>
 	</div>

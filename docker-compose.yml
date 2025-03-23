@@ -19,7 +19,7 @@ services:
       - ./src/public:/var/www/html
       - ./src/app:/var/www/app
       - ./src/install:/var/www/install
-      - c:\develop\zEngine\:/var/www/zEngine
+      - c:\develop\z\zEngine\:/var/www/zEngine
       - ./docker/log/apache/:/var/log/apache/
       - ./docker/log/php/:/var/log/php/
     extra_hosts:
@@ -36,7 +36,7 @@ services:
       - ./src/public:/var/www/html
       - ./src/app:/var/www/app
       - ./src/install:/var/www/install
-      - c:\develop\zEngine\src:/var/www/zEngine
+      - c:\develop\z\zEngine\src:/var/www/zEngine
       - ./docker/apache/docker.apache.conf:/usr/local/apache2/conf/httpd.conf
       - ./docker/log/apache/:/var/log/apache/
       - ./docker/log/php/:/var/log/php/

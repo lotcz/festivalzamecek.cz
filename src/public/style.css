@@ -218,8 +218,38 @@ section {
 	text-align: right;
 }
 
-.align-center {
+.text-center {
 	text-align: center;
+}
+
+/* PROMO */
+
+#promo {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+}
+
+.video-container {
+    position: relative;
+    width: 560px;
+	aspect-ratio: 16 / 9; 
+    overflow: hidden;
+	margin-top: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.promo-video {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 /* PROGRAM */

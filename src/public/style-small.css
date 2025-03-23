@@ -162,9 +162,20 @@
 		display: block;
 	}
 
+	/* PROMO */
+
+	#promo {
+		display: block;
+	}
+
+	.video-container {
+		width: auto;
+	}
+
 	#bottom {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 	}
+
 
 }
