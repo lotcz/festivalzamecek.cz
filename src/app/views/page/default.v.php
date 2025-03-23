@@ -1,12 +1,16 @@
 <div id="wrapper">
 	<div class="inner">
 		<header>
-			<div class="pretext white-text">
+			<p>
 				Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum
-			</div>
+			</p>
 
-			<div class="announce white-text">
-				15. ročník festivalu
+			<p>
+				15. ročník
+			</p>
+
+			<div class="announce secondary-text">
+				<small>festivalu</small>
 			</div>
 
 			<div class="title-image">
@@ -14,8 +18,11 @@
 				<img src="img/title.png"/>
 			</div>
 
-			<div class="announce-date white-text">
-				17.5.2025 od 13 hodin
+			<div class="announce">
+				17.5.2025
+				<small>
+					od 13 hodin
+				</small>
 			</div>
 
 			<div class="announce-location white-text">
@@ -259,16 +266,14 @@
 					<h4>Festival ticha</h4>
 				</div>
 				<div>
-					<div>
-						<p>
-							Tichý, klidný a hlavně tichý!
-						</p>
-					</div>
-					<div>
-						<p>
-							Náš festival měl odezvu i v solidních médiích:
-						</p>
-					</div>
+					<p>
+						Tichý, klidný a hlavně tichý!
+					</p>
+					<p>
+						Náš festival měl odezvu i v solidních médiích:
+					</p>
+				</div>
+				<div>
 					<div class="video-container">
 						<iframe
 							src="https://www.youtube-nocookie.com/embed/btuBgAyP-aU?si=Qns8DL4KPzq3TFv4"
@@ -288,8 +293,6 @@
 					<p>
 						Rozhodli jsme se konečně něco udělat s problémem, který málem zahubil středověký Londýn!
 					</p>
-				</div>
-				<div>
 					<p>
 						Náš dobrý úmysl se však stal terčem posměchu v roztockém bulváru:
 					</p>
@@ -314,8 +317,6 @@
 					<p>
 						Chtěli jsme pro zemřelé udělat něco víc, než jen jednou v roce zapálit svíčku.
 					</p>
-				</div>
-				<div>
 					<p>
 						Aleš Kudrna a jeho štáb s námi natočili reportáž do pořadu Záhady Aleše Kudrny:
 					</p>

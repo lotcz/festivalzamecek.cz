@@ -24,19 +24,11 @@
 
 	header .announce {
 		margin-top: 1rem;
+		margin-bottom: 1rem;
 		font-size: 120%;
 	}
 
 	header .announce-date {
-		font-size: 120%;
-	}
-
-	header .title-image {
-		margin-top: 1rem;
-	}
-
-	header .announce-location {
-		margin-bottom: 0;
 		font-size: 120%;
 	}
 
