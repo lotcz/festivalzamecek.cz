@@ -2,7 +2,7 @@
 	<div class="inner">
 		<header>
 			<div class="pretext white-text">
-				Pod záštitou města Roztoky pořádá RR z.s. a Středočeské muzeum
+				Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum
 			</div>
 
 			<div class="announce white-text">
@@ -259,10 +259,72 @@
 					<h4>Festival ticha</h4>
 				</div>
 				<div>
+					<div>
+						<p>
+							Tichý, klidný a hlavně tichý!
+						</p>
+					</div>
+					<div>
+						<p>
+							Náš festival měl odezvu i v solidních médiích:
+						</p>
+					</div>
 					<div class="video-container">
 						<iframe
 							src="https://www.youtube-nocookie.com/embed/btuBgAyP-aU?si=Qns8DL4KPzq3TFv4"
 							title="Festival ticha"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="promo-video">
+				<div>
+					<h4>Festival proti výkalům</h4>
+				</div>
+				<div>
+					<p>
+						Rozhodli jsme se konečně něco udělat s problémem, který málem zahubil středověký Londýn!
+					</p>
+				</div>
+				<div>
+					<p>
+						Náš dobrý úmysl se však stal terčem posměchu v roztockém bulváru:
+					</p>
+				</div>
+				<div>
+					<div class="video-container">
+						<iframe
+							src="https://www.youtube.com/embed/B9K0Nu1A2cg?si=uj5idRXf3Hae7ULE"
+							title="Festival proti výkalům"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="promo-video">
+				<div>
+					<h4>Festival posmrtného života</h4>
+				</div>
+				<div>
+					<p>
+						Chtěli jsme pro zemřelé udělat něco víc, než jen jednou v roce zapálit svíčku.
+					</p>
+				</div>
+				<div>
+					<p>
+						Aleš Kudrna a jeho štáb s námi natočili reportáž do pořadu Záhady Aleše Kudrny:
+					</p>
+				</div>
+				<div>
+					<div class="video-container">
+						<iframe
+							src="https://www.youtube.com/embed/ogJ7niAvxcs?si=IZ_3AT5wm2dujT8E"
+							title="Festival posmrtného života"
 							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -281,7 +343,7 @@
 <footer>
 	<div class="inner">
 		<p>
-			Pod záštitou města Roztoky pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy
+			Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy
 		</p>
 		<img class="sponsors" src="img/sponsors_2024.jpg" alt="sponzoři" />
 		<div>

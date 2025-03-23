@@ -25,6 +25,11 @@
                 'label' => 'Image',
                 'type' => 'image'
             ],
+			[
+				'name' => 'festival_sponsor_link',
+				'label' => 'URL',
+				'type' => 'text'
+			],
 		],
 		null, //before update
 		null, //after update
