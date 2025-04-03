@@ -21,7 +21,7 @@
 				</small>
 			</div>
 
-			<div class="announce-location white-text">
+			<div class="announce announce-location">
 				ve Středočeském muzeu v Roztokách u Prahy
 			</div>
 		</header>
@@ -126,7 +126,16 @@
 							foreach ($artists_details as $artist) {
 								?>
 									<div class="band" id="<?=z::slugify($artist->val('festival_artist_name'))?>-detail">
-										<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
+										<div class="band-name">
+											<?=$artist->val('festival_artist_name')?>
+											<?php
+												if ($artist->val('festival_artist_secondary_name')) {
+													?>
+														<div class="secondary-text"><?=$artist->val('festival_artist_secondary_name')?></div>
+													<?php
+												}
+											?>
+										</div>
 										<?php
 											if ($artist->val('festival_artist_show_in_program')) {
 												?>
@@ -170,7 +179,16 @@
 											</div>
 										</div>
 										<div class="band-section">
-											<div class="band-name"><?=$artist->val('festival_artist_name')?></div>
+											<div class="band-name">
+												<?=$artist->val('festival_artist_name')?>
+												<?php
+													if ($artist->val('festival_artist_secondary_name')) {
+														?>
+														<div class="secondary-text"><?=$artist->val('festival_artist_secondary_name')?></div>
+														<?php
+													}
+												?>
+											</div>
 												<?php
 													if ($artist->val('festival_artist_show_in_program')) {
 														?>
@@ -199,19 +217,18 @@
 
 		?>
 
-<!--
 		<h2 class="section-header">Plakát</h2>
 		<section>
 			<div
 				class="image align-center image-preview"
-				data-src="https://galerie.festivalzamecek.cz/upload/2024/04/02/20240402224906-b1010c65.jpg">
+				data-src="https://galerie.festivalzamecek.cz/upload/2025/04/03/20250403175132-e0fb37fc.jpg">
 				<div>
-					<img src="https://galerie.festivalzamecek.cz/i.php?/upload/2024/04/02/20240402224906-b1010c65-sm.jpg" />
+					<img src="https://galerie.festivalzamecek.cz/_data/i/upload/2025/04/03/20250403175132-e0fb37fc-me.jpg" />
 				</div>
 				<div class="primary-text">Plakát festivalu pro letošní rok</div>
 			</div>
 		</section>
--->
+
 		<h2 class="section-header">Kontakt</h2>
 		<section>
 			<p>
@@ -282,9 +299,9 @@
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
-					<div>
+					<div class="desc">
 						<p>
-							Tichý, klidný a hlavně tichý!
+							Ticho, klid a pokoj v duši.
 						</p>
 						<p>
 							Náš festival měl odezvu i v <a target="_blank" href="https://youtu.be/btuBgAyP-aU?si=NJC0SGgmy9LKb1nH">solidních médiích</a>.
@@ -307,7 +324,7 @@
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
-					<div>
+					<div class="desc">
 						<p>
 							Rozhodli jsme se konečně něco udělat s problémem, který málem zahubil středověký Londýn!
 						</p>
@@ -331,7 +348,7 @@
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
-					<div>
+					<div class="desc">
 						<p>
 							Chtěli jsme pro zemřelé udělat něco víc, než jen jednou v roce zapálit svíčku.
 						</p>

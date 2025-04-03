@@ -142,8 +142,7 @@ header .announce-location {
 /* LINKS */
 a,
 a:visited,
-a:active,
-.band-name {
+a:active {
 	color: var(--a-color);
 	text-decoration: none;
 }
@@ -212,6 +211,13 @@ section {
 	text-align: right;
 }
 
+.align-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
 .text-center {
 	text-align: center;
 }
@@ -265,7 +271,12 @@ section {
 	margin-top: 0;
 }
 
+.promo-video .row > div > p:last-child {
+	margin-bottom: 0;
+}
+
 .video-container {
+	border-radius: 10px;
     position: relative;
     width: 360px !important;
     min-width: 360px !important;
@@ -311,6 +322,7 @@ section {
 #program .band-name {
 	font-size: 150%;
 	padding-bottom: 5px;
+	color: var(--orange);
 }
 
 ul.with-paragraph {
@@ -328,9 +340,17 @@ ul.with-paragraph {
 }
 
 .band .band-name {
-	display: inline-block;
+	color:var(--orange);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.5rem;
 	margin: 0;
 	font-weight: bold;
+}
+
+.band .band-name .secondary-text {
+	color: var(--text-color);
 }
 
 .band > .band-name,
@@ -362,6 +382,10 @@ ul.with-paragraph {
 .bands .band:nth-child(even) {
 	text-align: right;
 	flex-direction: row-reverse;
+}
+
+.bands .band:nth-child(even) .band-name {
+	justify-content: end;
 }
 
 .band .social {

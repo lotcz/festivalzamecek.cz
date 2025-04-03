@@ -5,7 +5,7 @@
 		// this is application version represented as real number in format: MAJOR.MINOR
 		// MAJOR should be identical with GIT branch name, or like v1, v2, v3, etc.
 		// MINOR versions are bugfixes and small improvements
-		'app_version' => 2.4,
+		'app_version' => 2.50,
 
 		// this is minimum required zEngine version
 		'minimum_z_version' => 20,
@@ -17,7 +17,7 @@
 		// modules that are not enabled by default, but need to be installed
 		'also_install_modules' => ['forms', 'tinymce', 'emails'],
 
-		'site_title' => 'Zámeček 2024',
+		'site_title' => 'Zámeček 2025',
 		'site_description' => 'Pohodový multižánrový festival konaný každoročně ve Středočeském muzeu v Roztokách u Prahy.',
 		'site_author' => 'Karel Zavadil',
 		'site_keywords' => 'festival,Zámeček,hudba,multižánrový,hudební,Středočeské muzeum,Roztoky u Prahy,Roztoky',

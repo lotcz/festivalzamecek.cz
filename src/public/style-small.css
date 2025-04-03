@@ -28,8 +28,9 @@
 		font-size: 120%;
 	}
 
-	header .announce-date {
-		font-size: 120%;
+	header .announce-location {
+		font-size: 100%;
+		margin-bottom: 2rem;
 	}
 
 	h1 {
@@ -156,12 +157,37 @@
 
 	/* PROMO */
 
+	.intro-video .video-container {
+		width: auto !important;
+		min-width: initial !important;
+		max-width: initial !important;
+	}
+
 	#promo, .intro-video {
 		display: block;
 	}
 
+	.promo-video {
+		display: block;
+		padding-bottom: 0;
+	}
+
+	.promo-video .row {
+		display: block;
+	}
+
+	.promo-video .row .desc {
+		padding-top: 1rem;
+	}
+
+	.promo-video .row > div > p:last-child {
+		margin-bottom: 1rem;
+	}
+
 	.video-container {
-		width: auto;
+		width: auto !important;
+		min-width: initial !important;
+		max-width: initial !important;
 	}
 
 	#bottom {
