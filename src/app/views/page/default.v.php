@@ -5,13 +5,9 @@
 				Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum
 			</p>
 
-			<p>
-				15. ročník
+			<p class="secondary-text">
+				15. ročník festivalu
 			</p>
-
-			<div class="announce secondary-text">
-				<small>festivalu</small>
-			</div>
 
 			<div class="title-image">
 				<h1 class="invisible"><?=$this->getFullPageTitle()?></h1>
@@ -29,6 +25,18 @@
 				ve Středočeském muzeu v Roztokách u Prahy
 			</div>
 		</header>
+
+		<div class="intro-video">
+			<div class="video-container">
+				<iframe
+					src="https://www.youtube.com/embed/cnAgkkb_W0Y?si=CEWdiPwiYEOIER_7"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen></iframe>
+			</div>
+		</div>
 
 		<h2 class="section-header">Program</h2>
 
@@ -265,15 +273,7 @@
 				<div>
 					<h4>Festival ticha</h4>
 				</div>
-				<div>
-					<p>
-						Tichý, klidný a hlavně tichý!
-					</p>
-					<p>
-						Náš festival měl odezvu i v solidních médiích:
-					</p>
-				</div>
-				<div>
+				<div class="row">
 					<div class="video-container">
 						<iframe
 							src="https://www.youtube-nocookie.com/embed/btuBgAyP-aU?si=Qns8DL4KPzq3TFv4"
@@ -282,6 +282,15 @@
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
+					<div>
+						<p>
+							Tichý, klidný a hlavně tichý!
+						</p>
+						<p>
+							Náš festival měl odezvu i v <a target="_blank" href="https://youtu.be/btuBgAyP-aU?si=NJC0SGgmy9LKb1nH">solidních médiích</a>.
+						</p>
+					</div>
+
 				</div>
 			</div>
 
@@ -289,15 +298,7 @@
 				<div>
 					<h4>Festival proti výkalům</h4>
 				</div>
-				<div>
-					<p>
-						Rozhodli jsme se konečně něco udělat s problémem, který málem zahubil středověký Londýn!
-					</p>
-					<p>
-						Náš dobrý úmysl se však stal terčem posměchu v roztockém bulváru:
-					</p>
-				</div>
-				<div>
+				<div class="row">
 					<div class="video-container">
 						<iframe
 							src="https://www.youtube.com/embed/B9K0Nu1A2cg?si=uj5idRXf3Hae7ULE"
@@ -306,6 +307,14 @@
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
+					<div>
+						<p>
+							Rozhodli jsme se konečně něco udělat s problémem, který málem zahubil středověký Londýn!
+						</p>
+						<p>
+							Náš dobrý úmysl se však stal terčem posměchu v <a target="_blank" href="https://youtu.be/B9K0Nu1A2cg?si=YbOSXwv1G-5U5N0_">roztockém bulváru</a>.
+						</p>
+					</div>
 				</div>
 			</div>
 
@@ -313,15 +322,7 @@
 				<div>
 					<h4>Festival posmrtného života</h4>
 				</div>
-				<div>
-					<p>
-						Chtěli jsme pro zemřelé udělat něco víc, než jen jednou v roce zapálit svíčku.
-					</p>
-					<p>
-						Aleš Kudrna a jeho štáb s námi natočili reportáž do pořadu Záhady Aleše Kudrny:
-					</p>
-				</div>
-				<div>
+				<div class="row">
 					<div class="video-container">
 						<iframe
 							src="https://www.youtube.com/embed/ogJ7niAvxcs?si=IZ_3AT5wm2dujT8E"
@@ -329,6 +330,14 @@
 							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<div>
+						<p>
+							Chtěli jsme pro zemřelé udělat něco víc, než jen jednou v roce zapálit svíčku.
+						</p>
+						<p>
+							Aleš Kudrna a jeho štáb s námi natočili reportáž do pořadu <a target="_blank" href="https://youtu.be/ogJ7niAvxcs?si=CXDUItY-l4Zs05JI">Záhady Aleše Kudrny</a>.
+						</p>
 					</div>
 				</div>
 			</div>

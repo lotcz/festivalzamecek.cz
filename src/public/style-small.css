@@ -156,7 +156,7 @@
 
 	/* PROMO */
 
-	#promo {
+	#promo, .intro-video {
 		display: block;
 	}
 

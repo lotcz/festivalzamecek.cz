@@ -17,7 +17,7 @@
 		],
 
 		// absolute path to disk where all images are stored, include trailing slash
-		'images_disk_path' => 'C:\\develop\\festivalzamecek.cz\\src\\public\\uploaded_images\\',
+		'images_disk_path' => 'C:\\develop\\z\\festivalzamecek.cz\\src\\public\\uploaded_images\\',
 
 		// base url for images src, no trailing slash
 		'images_url' => 'http://festivalzamecek.loc/uploaded_images',
