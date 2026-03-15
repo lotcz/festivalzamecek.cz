@@ -358,6 +358,31 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="promo-video">
+				<div>
+					<h4>První festival na Měsíci</h4>
+				</div>
+				<div class="row">
+					<div class="video-container">
+						<iframe
+							src="https://www.youtube.com/embed/EYmdWLvaKwY?si=bsuqCowuD3VsnYLq"
+							title="První festival na Měsíci"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<div class="desc">
+						<p>
+							Triumf roztockého vesmírného programu a opravdový vrchol pozemské festivalové produkce.
+						</p>
+						<p>
+							O naší cestě vznikl v Hollywoodu celovečerní
+							<a target="_blank" href="https://youtu.be/EYmdWLvaKwY">film podle skutečných událostí</a>.
+						</p>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="bottom">
