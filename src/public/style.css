@@ -8,13 +8,13 @@
 	--black: #000000;
 	--light-blue: #a4beb1;
 	--blue: #4da1a3;
-	--dark-blue: #1c2f3d;
+	--dark-blue: #173a56;
 	--red: #d73a27;
-	--dark-red: #b51d13;
+	--dark-red: #690f45;
 	--beige: #f9d9c0;
-	--light-beige: #ffeed4;
-	--pink: #e07e5e;
-	--orange: #f37239;
+	--light-beige: #fdfff2;
+	--pink: #ffb5ba;
+	--orange: #f77d4a;
 
 	--text-blur: 3px;
 	--text-shadow-offset: 2px;
@@ -24,13 +24,13 @@
 	--text-shadow-offset-small: 1px;
 	--text-shadow-offset-negative-small: -1px;
 
-	--bg-color: var(--light-blue);
+	--bg-color: var(--pink);
 	--bg-color-end: var(--blue);
 	--text-color: var(--dark-blue);
 	--text-secondary-color: var(--light-beige);
-	--h2-color: var(--dark-blue);
+	--h2-color: var(--dark-red);
 	--h2-shadow-color: var(--light-beige);
-	--a-color: var(--red);
+	--a-color: var(--dark-red);
 	--a-hover-color: var(--white);
 }
 
@@ -41,7 +41,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background-image: linear-gradient(var(--bg-color), var(--bg-color-end));
+	-background-image: linear-gradient(var(--bg-color), var(--bg-color-end));
 	-background-image: url('img/bg.jpg?v=2024.0');
 	background-color: var(--bg-color);
 	background-repeat: repeat;

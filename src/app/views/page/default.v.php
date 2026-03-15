@@ -6,7 +6,7 @@
 			</p>
 
 			<p class="secondary-text">
-				15. ročník festivalu
+				16. ročník festivalu
 			</p>
 
 			<div class="title-image">
@@ -15,7 +15,7 @@
 			</div>
 
 			<div class="announce">
-				17.5.2025
+				16.5.2026
 				<small>
 					od 13 hodin
 				</small>
@@ -25,18 +25,6 @@
 				ve Středočeském muzeu v Roztokách u Prahy
 			</div>
 		</header>
-
-		<div class="intro-video">
-			<div class="video-container">
-				<iframe
-					src="https://www.youtube.com/embed/cnAgkkb_W0Y?si=CEWdiPwiYEOIER_7"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin"
-					allowfullscreen></iframe>
-			</div>
-		</div>
 
 		<h2 class="section-header">Program</h2>
 
@@ -217,18 +205,6 @@
 
 		?>
 
-		<h2 class="section-header">Plakát</h2>
-		<section>
-			<div
-				class="image align-center image-preview"
-				data-src="https://galerie.festivalzamecek.cz/upload/2025/04/03/20250403175132-e0fb37fc.jpg">
-				<div>
-					<img src="https://galerie.festivalzamecek.cz/_data/i/upload/2025/04/03/20250403175132-e0fb37fc-me.jpg" />
-				</div>
-				<div class="primary-text">Plakát festivalu pro letošní rok</div>
-			</div>
-		</section>
-
 		<h2 class="section-header">Kontakt</h2>
 		<section>
 			<p>
@@ -284,107 +260,6 @@
 			</p>
 		</section>
 
-		<h2 class="section-header">Naše další projekty</h2>
-		<section id="promo">
-			<div class="promo-video">
-				<div>
-					<h4>Festival ticha</h4>
-				</div>
-				<div class="row">
-					<div class="video-container">
-						<iframe
-							src="https://www.youtube-nocookie.com/embed/btuBgAyP-aU?si=Qns8DL4KPzq3TFv4"
-							title="Festival ticha"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-					</div>
-					<div class="desc">
-						<p>
-							Ticho, klid a pokoj v duši.
-						</p>
-						<p>
-							Náš festival měl odezvu i v <a target="_blank" href="https://youtu.be/btuBgAyP-aU?si=NJC0SGgmy9LKb1nH">solidních médiích</a>.
-						</p>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="promo-video">
-				<div>
-					<h4>Festival proti výkalům</h4>
-				</div>
-				<div class="row">
-					<div class="video-container">
-						<iframe
-							src="https://www.youtube.com/embed/B9K0Nu1A2cg?si=uj5idRXf3Hae7ULE"
-							title="Festival proti výkalům"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-					</div>
-					<div class="desc">
-						<p>
-							Rozhodli jsme se konečně něco udělat s problémem, který málem zahubil středověký Londýn!
-						</p>
-						<p>
-							Náš dobrý úmysl se však stal terčem posměchu v <a target="_blank" href="https://youtu.be/B9K0Nu1A2cg?si=YbOSXwv1G-5U5N0_">roztockém bulváru</a>.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="promo-video">
-				<div>
-					<h4>Festival posmrtného života</h4>
-				</div>
-				<div class="row">
-					<div class="video-container">
-						<iframe
-							src="https://www.youtube.com/embed/ogJ7niAvxcs?si=IZ_3AT5wm2dujT8E"
-							title="Festival posmrtného života"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-					</div>
-					<div class="desc">
-						<p>
-							Chtěli jsme pro zemřelé udělat něco víc, než jen jednou v roce zapálit svíčku.
-						</p>
-						<p>
-							Aleš Kudrna a jeho štáb s námi natočili reportáž do pořadu <a target="_blank" href="https://youtu.be/ogJ7niAvxcs?si=CXDUItY-l4Zs05JI">Záhady Aleše Kudrny</a>.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="promo-video">
-				<div>
-					<h4>První festival na Měsíci</h4>
-				</div>
-				<div class="row">
-					<div class="video-container">
-						<iframe
-							src="https://www.youtube.com/embed/EYmdWLvaKwY?si=bsuqCowuD3VsnYLq"
-							title="První festival na Měsíci"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-					</div>
-					<div class="desc">
-						<p>
-							Triumf roztockého vesmírného programu a opravdový vrchol pozemské festivalové produkce.
-						</p>
-						<p>
-							O naší cestě vznikl v Hollywoodu celovečerní
-							<a target="_blank" href="https://youtu.be/EYmdWLvaKwY">film podle skutečných událostí</a>.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<section id="bottom">
 			<a href="mailto:info@festivalzamecek.cz">info@festivalzamecek.cz</a>
 		</section>
@@ -397,8 +272,8 @@
 		<p>
 			Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy
 		</p>
-		<img class="sponsors" src="img/sponsors_2024.jpg" alt="sponzoři" />
-		<div>
+		<!--img class="sponsors" src="img/sponsors_2024.jpg" alt="sponzoři" /-->
+		<!--div>
 			<a
 				href="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner"
 				title="Kudyznudy.cz - tipy na výlet"
@@ -417,6 +292,6 @@
 				alt="FESTIVALY.EU"
 				style="width:76px;height:51px;margin:9px"
 			/></a>
-		</div>
+		</div-->
 	</div>
 </footer>
