@@ -1,17 +1,17 @@
 <div id="wrapper">
 	<div class="inner">
 		<header>
-			<p>
+			<p class="secondary-text">
 				Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum
 			</p>
 
-			<p class="secondary-text">
+			<p class="primary-text">
 				16. ročník festivalu
 			</p>
 
 			<div class="title-image">
-				<h1 class="invisible"><?=$this->getFullPageTitle()?></h1>
-				<img src="img/title.png"/>
+				<h1 class="invisible"><?= $this->getFullPageTitle() ?></h1>
+				<img src="img/title.png" />
 			</div>
 
 			<div class="announce">
@@ -21,75 +21,94 @@
 				</small>
 			</div>
 
-			<div class="announce announce-location">
+			<div class="primary-text">
 				ve Středočeském muzeu v Roztokách u Prahy
 			</div>
+
+			<div class="promo-video">
+				<div class="video-container">
+					<iframe
+						width="240"
+						height="426"
+						src="https://www.youtube.com/embed/yoxt8W5xczc"
+						title="Přípravy na festival Zámeček 2026"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></iframe>
+				</div>
+			</div>
+
+
 		</header>
 
 		<h2 class="section-header">Program</h2>
 
 		<section id="program">
 			<?php
-				if (empty($artists_program)) {
+			if (empty($artists_program)) {
+				?>
+				<p>Program letošního ročníku uveřejníme již brzy.</p>
+				<?php
+			} else {
+				foreach ($stages as $stage) {
 					?>
-						<p>Program letošního ročníku uveřejníme již brzy.</p>
-					<?php
-				} else {
-					foreach ($stages as $stage) {
-						?>
-							<h3>
-								<?php
-									echo $stage->val('festival_stage_name');
-									if (strlen($stage->val('festival_stage_place')) > 0) {
-										echo " - ";
-                                        echo $stage->val('festival_stage_place');
-                                    }
-								?>
-							</h3>
-
-							<ul>
-								<?php
-									foreach ($artists_program as $artist) {
-										if (!($artist->ival('festival_artist_stage_id') == $stage->ival('festival_stage_id'))) {
-											continue;
-										}
-
-										?>
-											<li>
-												<div class="program-item" id="<?=z::slugify($artist->val('festival_artist_name'))?>-program">
-													<div class="program-time"><?=$artist->val('festival_artist_program_time')?></div>
-													<div class="program-name">
-														<div class="band-name">
-															<?php
-																if ($artist->val('festival_artist_show_in_details')) {
-																	?>
-																		<a href="#<?=z::slugify($artist->val('festival_artist_name'))?>-detail">
-																			<?=$artist->val('festival_artist_name')?>
-																		</a>
-																	<?php
-                                                                } else {
-																	echo $artist->val('festival_artist_name');
-                                                                }
-															?>
-														</div>
-
-														<?php
-															if (!empty($artist->val('festival_artist_secondary_name'))) {
-																?>
-																	<div class="band-genre"><?=$artist->val('festival_artist_secondary_name')?></div>
-																<?php
-															}
-														?>
-													</div
-												</div>
-											</li>
-										<?php
-									}
-								?>
-							</ul>
+					<h3>
 						<?php
-					}
-                }
+						echo $stage->val('festival_stage_name');
+						if (strlen($stage->val('festival_stage_place')) > 0) {
+							echo " - ";
+							echo $stage->val('festival_stage_place');
+						}
+						?>
+					</h3>
+
+					<ul>
+						<?php
+						foreach ($artists_program as $artist) {
+							if (!($artist->ival('festival_artist_stage_id') == $stage->ival('festival_stage_id'))) {
+								continue;
+							}
+
+							?>
+							<li>
+								<div class="program-item"
+									 id="<?= z::slugify($artist->val('festival_artist_name')) ?>-program">
+									<div class="program-time"><?= $artist->val('festival_artist_program_time') ?></div>
+									<div class="program-name">
+										<div class="band-name">
+											<?php
+											if ($artist->val('festival_artist_show_in_details')) {
+												?>
+												<a href="#<?= z::slugify($artist->val('festival_artist_name')) ?>-detail">
+													<?= $artist->val('festival_artist_name') ?>
+												</a>
+												<?php
+											} else {
+												echo $artist->val('festival_artist_name');
+											}
+											?>
+										</div>
+
+										<?php
+										if (!empty($artist->val('festival_artist_secondary_name'))) {
+											?>
+											<div
+												class="band-genre"><?= $artist->val('festival_artist_secondary_name') ?></div>
+											<?php
+										}
+										?>
+									</div
+								</div>
+							</li>
+							<?php
+						}
+						?>
+					</ul>
+					<?php
+				}
+			}
 			?>
 		</section>
 
@@ -97,7 +116,7 @@
 
 		<section id="program">
 			<p>
-			Vstupné na festival je dobrovolné.
+				Vstupné na festival je dobrovolné.
 			</p>
 			<p>
 				Budeme rádi, když nás podpoříte koupí památeční placky.
@@ -106,102 +125,107 @@
 
 		<?php
 
-			if (!empty($artists_details)) {
-				?>
-					<h2 class="section-header">Účinkující</h2>
-					<section id="artists" class="bands">
-						<?php
-							foreach ($artists_details as $artist) {
+		if (!empty($artists_details)) {
+			?>
+			<h2 class="section-header">Účinkující</h2>
+			<section id="artists" class="bands">
+				<?php
+				foreach ($artists_details as $artist) {
+					?>
+					<div class="band" id="<?= z::slugify($artist->val('festival_artist_name')) ?>-detail">
+						<div class="band-name">
+							<?= $artist->val('festival_artist_name') ?>
+							<?php
+							if ($artist->val('festival_artist_secondary_name')) {
 								?>
-									<div class="band" id="<?=z::slugify($artist->val('festival_artist_name'))?>-detail">
-										<div class="band-name">
-											<?=$artist->val('festival_artist_name')?>
-											<?php
-												if ($artist->val('festival_artist_secondary_name')) {
-													?>
-														<div class="secondary-text"><?=$artist->val('festival_artist_secondary_name')?></div>
-													<?php
-												}
-											?>
-										</div>
-										<?php
-											if ($artist->val('festival_artist_show_in_program')) {
-												?>
-													<div class="band-program-link">
-														<a href="#<?=z::slugify($artist->val('festival_artist_name'))?>-program">
-                                                            <?=$artist->val('festival_artist_program_time')?>
-															<?=$artist->val('festival_stage_place')?>
-														</a>
-													</div>
-												<?php
-											}
-										?>
-										<div class="band-img">
-											<?php
-												$this->z->images->renderImage($artist->val('festival_artist_image'), 'thumb');
-											?>
-											<div class="social">
-												<?php
-													if (!empty($artist->val('festival_artist_link_youtube'))) {
-														?>
-															<a class="yt" href="<?=$artist->val('festival_artist_link_youtube')?>" target="_blank" title="YouTube">&nbsp;</a>
-														<?php
-													}
-													if (!empty($artist->val('festival_artist_link_instagram'))) {
-														?>
-															<a class="ig" href="<?=$artist->val('festival_artist_link_instagram')?>" target="_blank" title="Instagram">&nbsp;</a>
-														<?php
-													}
-													if (!empty($artist->val('festival_artist_link_facebook'))) {
-														?>
-															<a class="fb" href="<?=$artist->val('festival_artist_link_facebook')?>" target="_blank" title="Facebook">&nbsp;</a>
-														<?php
-													}
-													if (!empty($artist->val('festival_artist_link_web'))) {
-														?>
-															<a class="web" href="<?=$artist->val('festival_artist_link_web')?>" target="_blank" title="Web">&nbsp;</a>
-														<?php
-													}
-												?>
-
-											</div>
-										</div>
-										<div class="band-section">
-											<div class="band-name">
-												<?=$artist->val('festival_artist_name')?>
-												<?php
-													if ($artist->val('festival_artist_secondary_name')) {
-														?>
-														<div class="secondary-text"><?=$artist->val('festival_artist_secondary_name')?></div>
-														<?php
-													}
-												?>
-											</div>
-												<?php
-													if ($artist->val('festival_artist_show_in_program')) {
-														?>
-															<div class="band-program-link">
-																<p>
-																	<a href="#<?=z::slugify($artist->val('festival_artist_name'))?>-program">
-                                                                        <?=$artist->val('festival_artist_program_time')?>
-																		<?=$artist->val('festival_stage_place')?>
-																	</a>
-																</p>
-															</div>
-														<?php
-													}
-												?>
-											<div class="band-description">
-												<?=$artist->val('festival_artist_description')?>
-											</div>
-										</div>
-									</div>
+								<div class="secondary-text"><?= $artist->val('festival_artist_secondary_name') ?></div>
 								<?php
 							}
+							?>
+						</div>
+						<?php
+						if ($artist->val('festival_artist_show_in_program')) {
+							?>
+							<div class="band-program-link">
+								<a href="#<?= z::slugify($artist->val('festival_artist_name')) ?>-program">
+									<?= $artist->val('festival_artist_program_time') ?>
+									<?= $artist->val('festival_stage_place') ?>
+								</a>
+							</div>
+							<?php
+						}
 						?>
-					</section>
-				<?php
-			}
+						<div class="band-img">
+							<?php
+							$this->z->images->renderImage($artist->val('festival_artist_image'), 'thumb');
+							?>
+							<div class="social">
+								<?php
+								if (!empty($artist->val('festival_artist_link_youtube'))) {
+									?>
+									<a class="yt" href="<?= $artist->val('festival_artist_link_youtube') ?>"
+									   target="_blank" title="YouTube">&nbsp;</a>
+									<?php
+								}
+								if (!empty($artist->val('festival_artist_link_instagram'))) {
+									?>
+									<a class="ig" href="<?= $artist->val('festival_artist_link_instagram') ?>"
+									   target="_blank" title="Instagram">&nbsp;</a>
+									<?php
+								}
+								if (!empty($artist->val('festival_artist_link_facebook'))) {
+									?>
+									<a class="fb" href="<?= $artist->val('festival_artist_link_facebook') ?>"
+									   target="_blank" title="Facebook">&nbsp;</a>
+									<?php
+								}
+								if (!empty($artist->val('festival_artist_link_web'))) {
+									?>
+									<a class="web" href="<?= $artist->val('festival_artist_link_web') ?>"
+									   target="_blank" title="Web">&nbsp;</a>
+									<?php
+								}
+								?>
+
+							</div>
+						</div>
+						<div class="band-section">
+							<div class="band-name">
+								<?= $artist->val('festival_artist_name') ?>
+								<?php
+								if ($artist->val('festival_artist_secondary_name')) {
+									?>
+									<div
+										class="secondary-text"><?= $artist->val('festival_artist_secondary_name') ?></div>
+									<?php
+								}
+								?>
+							</div>
+							<?php
+							if ($artist->val('festival_artist_show_in_program')) {
+								?>
+								<div class="band-program-link">
+									<p>
+										<a href="#<?= z::slugify($artist->val('festival_artist_name')) ?>-program">
+											<?= $artist->val('festival_artist_program_time') ?>
+											<?= $artist->val('festival_stage_place') ?>
+										</a>
+									</p>
+								</div>
+								<?php
+							}
+							?>
+							<div class="band-description">
+								<?= $artist->val('festival_artist_description') ?>
+							</div>
+						</div>
+					</div>
+					<?php
+				}
+				?>
+			</section>
+			<?php
+		}
 
 		?>
 
@@ -212,7 +236,8 @@
 			</p>
 
 			<p>
-				Pokud chcete být v obraze o tom, co zrovna připravujeme, sledujte naši <a href="https://www.facebook.com/FestivalZamecek/" target="_blank">stránku na Facebooku</a>.
+				Pokud chcete být v obraze o tom, co zrovna připravujeme, sledujte naši <a
+					href="https://www.facebook.com/FestivalZamecek/" target="_blank">stránku na Facebooku</a>.
 			</p>
 
 			<p>Dramaturgie, booking kapel a stánkový prodej:</p>
@@ -258,40 +283,17 @@
 				Na fotky z minulých ročníků se můžete podívat v naší
 				<a href="http://galerie.festivalzamecek.cz">fotogalerii</a>.
 			</p>
+			<p>
+				Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy
+			</p>
 		</section>
 
 		<section id="bottom">
 			<a href="mailto:info@festivalzamecek.cz">info@festivalzamecek.cz</a>
 		</section>
-
 	</div>
 </div>
 
-<footer>
-	<div class="inner">
-		<p>
-			Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy
-		</p>
-		<!--img class="sponsors" src="img/sponsors_2024.jpg" alt="sponzoři" /-->
-		<!--div>
-			<a
-				href="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner"
-				title="Kudyznudy.cz - tipy na výlet"
-				target="_blank"
-			><img
-				src="https://s3.amazonaws.com/pro.brandkit.io/accounts/visitczechrepublic/asset_files/904402/prev_preview."
-				style="width:125px;height:30px;margin:15px"
-				alt="Kudyznudy.cz - tipy na výlet"
-			/></a>
-			<a
-				href="https://festivaly.eu"
-				title="FESTIVALY.EU"
-				target="_blank"
-			><img
-				src="https://fstvls.s3.amazonaws.com/static/festivaly.png"
-				alt="FESTIVALY.EU"
-				style="width:76px;height:51px;margin:9px"
-			/></a>
-		</div-->
-	</div>
-</footer>
+<footer></footer>
+
+<div class="bottom-overlay"></div>
