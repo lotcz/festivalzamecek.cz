@@ -5,9 +5,10 @@ const PARALLAX = {
 
 function parallaxUpdate() {
 	if (PARALLAX.element === null) {
-		PARALLAX.element = document.getElementById('wrapper');
+		PARALLAX.element = document.querySelector('.bottom-overlay');
 		// Parallax wrapper not found!
 		if (PARALLAX.element === null) {
+			console.warn('Parallax has no element');
 			return;
 		}
 	}
@@ -16,16 +17,15 @@ function parallaxUpdate() {
 	const viewHeight = window.innerHeight;
 	const contentHeight = document.body.offsetHeight;
 
-	// Parallax disabled in mobile view.
-	if (window.innerWidth < 1000) {
-		PARALLAX.element.style.backgroundPositionY = "";
-		return;
-	}
+	const height = (658 / 1920) *  window.innerWidth;
+
+	PARALLAX.element.style.height = `${height}px`;
 
 	const scrollMax = contentHeight - viewHeight;
 	const scrollProgress = scrollMax > 0 ? scrollTop / scrollMax : 0;
 
-	PARALLAX.element.style.backgroundPositionY = `${scrollProgress * 100}%`;
+
+	PARALLAX.element.style.bottom = `-${(1 - scrollProgress) * height}px`;
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {

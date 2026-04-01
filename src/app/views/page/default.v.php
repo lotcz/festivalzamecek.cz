@@ -1,8 +1,8 @@
 <div id="wrapper">
 	<div class="inner">
 		<header>
-			<p class="secondary-text">
-				Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum
+			<p class="secondary-text pretext">
+				<small>Pod záštitou města Roztoky a Středočeského kraje pořádá spolek RR a Středočeské muzeum</small>
 			</p>
 
 			<p class="primary-text">
@@ -39,7 +39,6 @@
 					></iframe>
 				</div>
 			</div>
-
 
 		</header>
 

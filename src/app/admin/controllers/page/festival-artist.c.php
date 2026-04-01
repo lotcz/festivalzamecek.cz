@@ -1,6 +1,7 @@
 <?php
 
     $this->z->enableModule('tinymce');
+	$this->z->tinymce->activateTinyMce('admin.bottom');
 
     $onAfterUpdate = function($z, $form, $data, $oldData) {
         if ($oldData->val('festival_artist_image') !== $data->val('festival_artist_image')) {
