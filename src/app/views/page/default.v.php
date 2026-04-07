@@ -16,8 +16,8 @@
 
 			<div class="announce">
 				16.5.2026
-				<small>
-					od 13 hodin
+				<small class="secondary-text">
+					začátek ve 12:30
 				</small>
 			</div>
 
@@ -283,16 +283,21 @@
 				<a href="http://galerie.festivalzamecek.cz">fotogalerii</a>.
 			</p>
 			<p>
-				Pod záštitou města Roztoky a Letiště Praha a.s. pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy
+				Pod záštitou města Roztoky a Středočeského kraje pořádá RR z.s. a Středočeské muzeum v Roztokách u Prahy.
 			</p>
 		</section>
 
 		<section id="bottom">
+			<div class="text-center">
+				<p>
+					<a href="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner" title="Kudyznudy.cz – tipy na výlet"> <img src="https://www.kudyznudy.cz/App_Themes/KzN/CSS/Images/svg/new-logo.svg" width="150"  height="33" border="0" alt="Kudyznudy.cz – tipy na výlet"> </a>
+				</p>
+			</div>
 			<a href="mailto:info@festivalzamecek.cz">info@festivalzamecek.cz</a>
+
 		</section>
 	</div>
 </div>
 
 <footer></footer>
-
 <div class="bottom-overlay"></div>
