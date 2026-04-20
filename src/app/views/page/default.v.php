@@ -38,6 +38,18 @@
 						allowfullscreen
 					></iframe>
 				</div>
+				<div class="video-container">
+					<iframe
+						width="240"
+						height="426"
+						src="https://www.youtube.com/embed/FwXAukwaco0"
+						title="Program festivalu Zámeček 2026"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></iframe>
+				</div>
 			</div>
 
 		</header>

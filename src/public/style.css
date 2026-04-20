@@ -215,8 +215,10 @@ section {
 	margin-top: 2rem;
 	padding-bottom: 2rem;
 	display: flex;
-	flex-direction: column;
-	justify-content: start;
+	flex-direction: row;
+	gap: 2rem;
+	align-items: center;
+	justify-content: center;
 }
 
 .promo-video .video-container,
