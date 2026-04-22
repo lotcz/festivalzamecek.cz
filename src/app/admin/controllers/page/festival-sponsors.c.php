@@ -8,13 +8,13 @@
 				'name' => 'festival_sponsor_id',
 				'label' => 'ID'
 			],
+			[
+				'name' => 'festival_sponsor_name',
+				'label' => 'Name'
+			],
             [
                 'name' => 'festival_sponsor_sorting_weight',
                 'label' => 'Weight'
-            ],
-            [
-                'name' => 'festival_sponsor_name',
-                'label' => 'Name'
             ]
 		],
 		'festival_sponsor',

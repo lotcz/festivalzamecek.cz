@@ -14,3 +14,5 @@
             function($a, $b) { return $a->val('festival_artist_sorting_weight') < $b->val('festival_artist_sorting_weight') ? -1 : 1;}
     );
     $this->setData('artists_details', $artists_details);
+
+	$sponsors = $this->z->festival->loadActiveSponsors();

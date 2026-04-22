@@ -423,6 +423,25 @@ ul.with-paragraph {
 	font-size: 125%;
 }
 
+/* SPONSORS */
+
+section.sponsors {
+	margin-top: 5rem;
+	background-color: white;
+	color: black;
+	border-radius: 15px;
+	padding: 3rem 15px;
+	text-align: center;
+}
+
+.sponsors .sponsors-list {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
 /* FOOTER */
 
 footer {

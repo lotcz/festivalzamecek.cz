@@ -299,6 +299,32 @@
 			</p>
 		</section>
 
+		<section id="sponsors" class="sponsors">
+			<div>Sponzoři festivalu</div>
+			<div class="sponsors-list">
+				<?php
+				foreach ($sponsors as $sponsor) {
+					?>
+						<div class="sponsor">
+							<?php
+							$link = $sponsor->val('festival_sponsor_link');
+							if (!empty($link)) {
+								?>
+									<a href="<?=$link?>" target="_blank">
+										<?php $this->z->images->renderImage($sponsor->val('festival_sponsor_image'), 'thumb'); ?>
+									</a>
+								<?php
+							} else {
+								$this->z->images->renderImage($sponsor->val('festival_sponsor_image'), 'thumb');
+							}
+							?>
+						</div>
+					<?php
+				}
+				?>
+			</div>
+		</section>
+
 		<section id="bottom">
 			<div class="text-center">
 				<p>
