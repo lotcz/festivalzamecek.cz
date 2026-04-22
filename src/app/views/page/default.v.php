@@ -311,11 +311,11 @@
 							if (!empty($link)) {
 								?>
 									<a href="<?=$link?>" target="_blank">
-										<?php $this->z->images->renderImage($sponsor->val('festival_sponsor_image'), 'thumb'); ?>
+										<?php $this->z->images->renderImage($sponsor->val('festival_sponsor_image'), 'sponsor'); ?>
 									</a>
 								<?php
 							} else {
-								$this->z->images->renderImage($sponsor->val('festival_sponsor_image'), 'thumb');
+								$this->z->images->renderImage($sponsor->val('festival_sponsor_image'), 'sponsor');
 							}
 							?>
 						</div>
@@ -326,13 +326,7 @@
 		</section>
 
 		<section id="bottom">
-			<div class="text-center">
-				<p>
-					<a href="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner" title="Kudyznudy.cz – tipy na výlet"> <img src="https://www.kudyznudy.cz/App_Themes/KzN/CSS/Images/svg/new-logo.svg" width="150"  height="33" border="0" alt="Kudyznudy.cz – tipy na výlet"> </a>
-				</p>
-			</div>
 			<a href="mailto:info@festivalzamecek.cz">info@festivalzamecek.cz</a>
-
 		</section>
 	</div>
 </div>

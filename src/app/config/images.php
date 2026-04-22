@@ -13,6 +13,7 @@
 		'formats' => [
 			'mini' => ['width' => 75, 'height' => 50 ],
 			'thumb' => ['width' => 150, 'height' => 100, 'mode' => 'crop'],
+			'sponsor' => ['width' => 200, 'height' => 150, 'mode' => 'fit'],
 			'view' => ['width' => 1200, 'height' => 800 ]
 		],
 
