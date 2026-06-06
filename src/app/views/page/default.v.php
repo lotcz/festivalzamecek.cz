@@ -6,7 +6,7 @@
 			</p>
 
 			<p class="primary-text">
-				16. ročník festivalu
+				17. ročník festivalu
 			</p>
 
 			<div class="title-image">
@@ -15,41 +15,11 @@
 			</div>
 
 			<div class="announce">
-				16.5.2026
-				<small class="secondary-text">
-					začátek ve 12:30
-				</small>
+				15.5.2027
 			</div>
 
 			<div class="primary-text">
 				ve Středočeském muzeu v Roztokách u Prahy
-			</div>
-
-			<div class="promo-video">
-				<div class="video-container">
-					<iframe
-						width="240"
-						height="426"
-						src="https://www.youtube.com/embed/yoxt8W5xczc"
-						title="Přípravy na festival Zámeček 2026"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin"
-						allowfullscreen
-					></iframe>
-				</div>
-				<div class="video-container">
-					<iframe
-						width="240"
-						height="426"
-						src="https://www.youtube.com/embed/FwXAukwaco0"
-						title="Program festivalu Zámeček 2026"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin"
-						allowfullscreen
-					></iframe>
-				</div>
 			</div>
 
 		</header>
@@ -60,7 +30,7 @@
 			<?php
 			if (empty($artists_program)) {
 				?>
-				<p>Program letošního ročníku uveřejníme již brzy.</p>
+				<p>Na programu 17. ročníku teprve pracujeme.</p>
 				<?php
 			} else {
 				foreach ($stages as $stage) {
